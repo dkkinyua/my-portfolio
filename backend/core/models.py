@@ -23,7 +23,7 @@ class Post(models.Model):
     title = models.CharField(max_length=350)
     content = models.TextField(null=False)
     likes = models.IntegerField(default=0)
-    image = models.ImageField(null=True, blank=True, default='image.jpg')
+    image = models.ImageField(null=True, blank=True, default='default_image.jpg')
 
     def __str__(self):
         return self.name
