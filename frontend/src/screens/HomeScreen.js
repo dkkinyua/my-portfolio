@@ -7,7 +7,7 @@ function HomeScreen() {
   return (
     <div className='justify-content-center text-center'>
         <Container>
-            Intro
+            <Intro/>
         </Container>
     </div>
   )
