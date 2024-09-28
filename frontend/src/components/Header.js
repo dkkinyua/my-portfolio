@@ -6,12 +6,18 @@ function Header() {
     const navBarStyles = {
         backgroundColor: '#E5E4E2'
     }
+
+    const textStyle = {
+        fontFamily: "PT Mono, monospace",
+        fontStyle: 'normal'
+    }
+
     return (
         <div className='mt-1'>
             <Navbar expand="lg" style={navBarStyles}>
                 <Navbar.Brand href="/home" className='mx-3'><i class="fa-solid fa-code fa-2x"></i></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav" style={textStyle}>
                     <Nav className="ms-auto mx-5">
                         <LinkContainer to='/'>
                             <Nav.Link><i className="fa-solid fa-house"></i> Home</Nav.Link>

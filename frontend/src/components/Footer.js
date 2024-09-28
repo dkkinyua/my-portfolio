@@ -6,9 +6,14 @@ function Footer() {
         height: '50px',
     }
 
+    const textStyle = {
+        fontFamily: "PT Mono, monospace",
+        fontStyle: 'normal'
+    }
+
     return (
         <footer style={footerStyles} className='justify-content-center text-center'>
-            Made by <i class="fa-solid fa-heart"></i> by dkkinyua. &copy; 2024, All Rights Reserved
+            <h6 style={textStyle}>Engineered with <i class="fa-solid fa-heart"></i> by dkkinyua. &copy; 2024, All Rights Reserved</h6>
         </footer>
     )
 }

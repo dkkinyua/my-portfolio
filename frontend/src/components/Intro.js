@@ -12,8 +12,8 @@ function Intro() {
   }
 
   const imageDivStyle = {
-    height: '150px',
-    width: '150px',
+    height: '125px',
+    width: '125px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -24,12 +24,12 @@ function Intro() {
     height: '100%',
     width: '100%',
     borderRadius: '50%',
-    border: '2px solid #28282B'
+    border: '1px solid #28282B'
   }
 
   const cardStyle = {
-    width: '100%',
-    boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.5)',
+    width: '95%',
+    boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.7)',
   }
 
   return (
@@ -40,8 +40,8 @@ function Intro() {
             <Image style={imageStyle} src={profile} />
           </div>
           <div className='mt-3 text-center'>
-            <h4>Denzel Kanyeki Kinyua</h4>
-            <h6>Backend Developer, Civil Engineer</h6>
+            <h3>Denzel Kanyeki Kinyua</h3>
+            <h5>Full-Stack Developer, Civil Engineer</h5>
           </div>
           <div className='mt-3 text-center'>
             <p>
