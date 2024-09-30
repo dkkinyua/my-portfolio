@@ -17,7 +17,7 @@ function Main() {
     };
 
     const buttonContainerStyle = {
-        textAlign: 'right', 
+        textAlign: 'right',
     };
 
     const cardStyle = {
@@ -56,13 +56,15 @@ function Main() {
                     <Card.Body>
                         <h3>Blog:</h3>
                         <p>
-                            I'll be writing blogs about development, football, engineering among other topics on my portfolio to keep up with upcoming tech trends, football banter or engineering trends as they come and also putting me on my toes on development too.
+                            I'll be writing blogs about software development, football, video games, engineering, and other topics on my portfolio.
+                            Keep up with the latest tech trends, football banter, gaming news, and engineering innovations.
+                            My blog will also keep me sharp in development, so feel free to follow along on this journey!
 
-                            Check my blog by clicking the button below here!
+                            Subscribe to my blog to get the latest updates as soon as they come out by clicking the button below!
                         </p>
 
                         <div style={buttonContainerStyle}>
-                            <Link to='/blog'><Button variant='dark'><i class="fa-solid fa-book-open-reader"></i> Blog</Button></Link>
+                            <Link to='/posts'><Button variant='dark'><i class="fa-solid fa-book-open-reader"></i> Blog</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>

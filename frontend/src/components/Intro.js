@@ -1,7 +1,5 @@
 import React from 'react'
-import { Image, Card } from 'react-bootstrap'
-
-import profile from '../assets/profile.jpeg'
+import { Card } from 'react-bootstrap'
 
 function Intro() {
   const outerDivStyle = {
@@ -12,19 +10,18 @@ function Intro() {
   }
 
   const imageDivStyle = {
-    height: '125px',
-    width: '125px',
+    height: '250px', // Set the height to 200px as required
+    width: '100%',   // Set the width to 100%
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    margin: '0 auto'
+    margin: '0 auto',
   }
 
-  const imageStyle = {
-    height: '100%',
-    width: '100%',
-    borderRadius: '50%',
-    border: '1px solid #28282B'
+  const imgStyle = {
+    width: '100%',   // Make the image take 100% of the width of its container
+    height: '100%',  // Set the height to fill the container
+    objectFit: 'contain',  // Ensures the image is scaled appropriately
   }
 
   const cardStyle = {
@@ -37,7 +34,11 @@ function Intro() {
       <Card style={cardStyle} className='mt-3 mb-3'>
         <Card.Body className='d-flex flex-column align-items-center'>
           <div style={imageDivStyle}>
-            <Image style={imageStyle} src={profile} />
+            <img
+              src='https://cdn.dribbble.com/users/244516/screenshots/15180098/media/35301f78c0ba0d242a6703b927814e23.gif'
+              alt='Profile GIF'
+              style={imgStyle}
+            />
           </div>
           <div className='mt-3 text-center'>
             <h3>Denzel Kanyeki Kinyua</h3>
@@ -45,8 +46,15 @@ function Intro() {
           </div>
           <div className='mt-3 text-center'>
             <p>
-              A highly motivated and skilled Civil Engineering student with a passion for software development, combining a strong foundation in engineering principles with extensive experience in web development. I excel in both backend and frontend technologies, including Python (Django, Flask) and React, with a proficiency in database management using PostgreSQL and MySQL. My freelancing background has honed my ability to deliver high-quality, customized digital solutions, while internships in engineering and operations have strengthened my project management and problem-solving skills. Eager to contribute to innovative projects, I am adaptable, a quick learner, and fluent in English, Kiswahili, and French (B2).
+              A highly motivated and skilled Civil Engineering student with a passion for software development, combining a strong foundation in engineering principles with extensive experience in web development. I excel in both backend and frontend technologies, including Python (Django, Flask) and React, with a proficiency in database management using PostgreSQL and MySQL. My freelancing background has honed my ability to deliver high-quality, customized digital solutions, while internships in engineering and operations have strengthened my project management and problem-solving skills.
+
+              <br/>
+              In the realm of structural engineering, I have developed expertise in analyzing and designing structures to ensure stability and safety. I am proficient in using <strong>AutoCAD</strong> and <strong>Civil 3D</strong> for creating detailed 2D and 3D designs of infrastructure projects such as buildings, roads, and bridges. My knowledge of these tools allows me to generate precise drawings and simulations, streamlining the design and planning phases of projects.
+
+              <br/>
+              Eager to contribute to innovative projects, I am adaptable, a quick learner, and fluent in English, Kiswahili, and French (B2).
             </p>
+
           </div>
         </Card.Body>
       </Card>
