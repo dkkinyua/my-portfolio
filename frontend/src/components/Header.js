@@ -4,12 +4,13 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 function Header() {
     const navBarStyles = {
-        backgroundColor: '#E5E4E2'
+        backgroundColor: '#343434'
     }
 
     const textStyle = {
         fontFamily: "PT Mono, monospace",
-        fontStyle: 'normal'
+        fontStyle: 'normal',
+        color: '#E5E4E2'
     }
 
     return (
