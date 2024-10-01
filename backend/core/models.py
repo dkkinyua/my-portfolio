@@ -24,9 +24,11 @@ class Projects(models.Model):
 class Post(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=350)
+    description = models.CharField(max_length=350, default='This is a post, thanks')
     content = models.TextField(null=False)
     likes = models.IntegerField(default=0)
     image = models.ImageField(null=True, blank=True, default='default_image.jpg')
+    card_image = models.ImageField(null=True, blank=True, default='default_image.jpg')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True, null=True, blank=True)
     id = models.AutoField(primary_key=True, editable=False)
