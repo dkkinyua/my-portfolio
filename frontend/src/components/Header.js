@@ -1,8 +1,9 @@
 import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import { Switch } from '@mui/material';
 
-function Header() {
+function Header({ darkMode, toggleDarkMode }) {
     const navBarStyles = {
         backgroundColor: '#343434'
     }
@@ -10,7 +11,7 @@ function Header() {
     const textStyle = {
         fontFamily: "PT Mono, monospace",
         fontStyle: 'normal',
-        color: '#E5E4E2'
+        color: darkMode ? '#E5E4E2' : '#000',
     }
 
     return (
@@ -29,6 +30,14 @@ function Header() {
                         <LinkContainer to='/projects'>
                             <Nav.Link><i class="fa-solid fa-list-check"></i> Projects</Nav.Link>
                         </LinkContainer>
+                        <div className="d-flex align-items-center mx-2">
+                            <span style={{ marginRight: '10px', color: '#E5E4E2' }}> Dark Mode</span>
+                            <Switch
+                                checked={darkMode}
+                                onChange={toggleDarkMode}
+                                color="default"
+                            />
+                        </div>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
