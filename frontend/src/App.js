@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
 import TopHeader from './components/TopHeader';
 import Header from './components/Header';
@@ -9,19 +11,42 @@ import ContactScreen from './screens/ContactScreen';
 import BlogScreen from './screens/BlogScreen';
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(false)
+
+  const darkTheme = createTheme({
+    palette: {
+      mode: darkMode ? 'dark' : 'light',
+      background: {
+        default: darkMode ? '#28282B' : '#fff',
+        paper: darkMode ? '#28282B' : '#fff',
+      },
+      text: {
+        primary: darkMode ? '#E5E4E2' : '#000',
+      },
+    },
+  });
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevMode) => !prevMode)
+  }
+
   return (
-    <Router>
-      <TopHeader />
-      <Header />
-      <main>
-        <Routes>
-          <Route path='/' element={<HomeScreen />} exact />
-          <Route path='/contact-me' element={<ContactScreen />}/>
-          <Route path='/posts' element={<BlogScreen />}/>
-        </Routes>
-      </main>
-      <Footer />
-    </Router>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <Router>
+        <TopHeader />
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <main>
+          <Routes>
+            <Route path='/' element={<HomeScreen />} exact />
+            <Route path='/contact-me' element={<ContactScreen />} />
+            <Route path='/posts' element={<BlogScreen />} />
+          </Routes>
+        </main>
+        <Footer darkMode={darkMode} />
+      </Router>
+    </ThemeProvider>
   );
 }
 
