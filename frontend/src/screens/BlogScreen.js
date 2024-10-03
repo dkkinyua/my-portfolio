@@ -16,7 +16,7 @@ function BlogScreen() {
     }
 
     const outerDivStyle = {
-        height: '80vh'
+        height: '90vh'
     } 
 
     return (
