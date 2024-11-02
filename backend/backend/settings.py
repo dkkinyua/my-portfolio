@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-0fck+^0)@-jbg@)c*agd8&_h0*s%&5cwya(y^t$n&*p!t1s-0@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "*"
+]
 
 
 # Application definition
@@ -148,4 +150,5 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
+    'https://e8a3-102-0-12-122.ngrok-free.app',
 ]
