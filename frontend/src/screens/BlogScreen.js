@@ -16,14 +16,14 @@ function BlogScreen() {
     }
 
     const outerDivStyle = {
-        height: '90vh'
+        minHeight: '100vh'
     } 
 
     return (
         <>
             <div style={outerDivStyle}>
                 <div style={textStyle} className='text-center'>
-                    <h2> DENZEL'S BLOG </h2>
+                    <h2> BLOG </h2>
                 </div>
                 <div style={divStyle}>
                     <PostCard />
