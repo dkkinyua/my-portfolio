@@ -24,12 +24,15 @@ function Header({ darkMode, toggleDarkMode }) {
                         <LinkContainer to='/'>
                             <Nav.Link><i className="fa-solid fa-house"></i> Home</Nav.Link>
                         </LinkContainer>
+
                         <LinkContainer to='/posts'>
                             <Nav.Link><i class="fa-solid fa-book-open-reader"></i> Blog</Nav.Link>
                         </LinkContainer>
+
                         <LinkContainer to='/projects'>
                             <Nav.Link><i class="fa-solid fa-list-check"></i> Projects</Nav.Link>
                         </LinkContainer>
+                        
                         <div className="d-flex align-items-center mx-2">
                             <span style={{ marginRight: '10px', color: '#E5E4E2' }}> Dark Mode</span>
                             <Switch

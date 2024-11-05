@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Button } from 'react-bootstrap';
-import axios from 'axios';
+import { Card, Container, Button, Row, Col } from 'react-bootstrap';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
+import { JellyfishSpinner } from "react-spinners-kit";
+import axios from 'axios';
 
 function PostCard() {
+    const containerStyle = {
+        display: 'flex',
+        alignItems: 'stretch', // Ensures the card and image are the same height
+        width: '98%',
+        marginBottom: '20px', // Space between cards
+    };
+
     const cardStyle = {
-        width: '95%',
+        flex: 1, // Takes the remaining space beside the image
         boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.7)',
+        overflow: 'hidden',
     };
 
     const textStyle = {
@@ -15,13 +24,22 @@ function PostCard() {
         fontStyle: 'normal',
     };
 
+    const imageStyle = {
+        width: "150px",
+        height: "200px",// Set a fixed width for the image
+        objectFit: 'cover', // Ensures the image covers its container
+    };
+
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        const baseURL = 'http://127.0.0.1:8000/api/posts/';
+
         axios
-            .get('http://localhost:8000/api/posts')
+            .get(baseURL)
             .then((response) => {
+                console.log(response.data);
                 setPosts(response.data);
                 setLoading(false);
             })
@@ -33,32 +51,35 @@ function PostCard() {
     }, []);
 
     if (loading) {
-        return <p>I'm loading, please chill</p>;
+        return <JellyfishSpinner size={150} color='#4b4c56' loading={loading} />;
     }
 
     return (
-        <>
+        <Container fluid>
             <div>
                 <Toaster />
             </div>
             {posts.map((post) => (
-                <Card style={cardStyle} key={post.id} className="mb-4">
-                    <Card.Title style={textStyle}>
-                        <h2 className="mx-3">{post.title}</h2>
-                    </Card.Title>
-                    <Card.Body className="d-flex flex-column" style={textStyle}>
-                        <h5>{post.description}</h5>
-                        <div className="d-flex justify-content-end mt-3">
-                            <Link to={`/posts/${post.id}`}>
-                                <Button variant="dark">
-                                    <i className="fa-solid fa-book-open"></i> Read More
-                                </Button>
-                            </Link>
-                        </div>
-                    </Card.Body>
-                </Card>
+                <div style={containerStyle} key={post.id}>
+                    {/* Card on the right side */}
+                    <Card style={cardStyle}>
+                        <Card.Title style={textStyle} className="p-3">
+                            <h2>{post.title}</h2>
+                        </Card.Title>
+                        <Card.Body className="d-flex flex-column" style={textStyle}>
+                            <h5>{post.description}</h5>
+                            <div className="d-flex justify-content-end mt-3">
+                                <Link to={`/posts/${post.id}`}>
+                                    <Button variant="dark">
+                                        <i className="fa-solid fa-book-open"></i> Read More
+                                    </Button>
+                                </Link>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </div>
             ))}
-        </>
+        </Container>
     );
 }
 
