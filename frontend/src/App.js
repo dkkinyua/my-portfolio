@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
 import ContactScreen from './screens/ContactScreen';
 import BlogScreen from './screens/BlogScreen';
+import PostScreen from './screens/PostScreen';
+import ProjectScreen from './screens/ProjectScreen';
 
 function App() {
 
@@ -42,6 +44,8 @@ function App() {
             <Route path='/' element={<HomeScreen />} exact />
             <Route path='/contact-me' element={<ContactScreen />} />
             <Route path='/posts' element={<BlogScreen />} />
+            <Route path='/projects' element={<ProjectScreen />} />
+            <Route path='/posts/:id' element={<PostScreen />} />
           </Routes>
         </main>
         <Footer darkMode={darkMode} />
