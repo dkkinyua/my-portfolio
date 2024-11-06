@@ -1,19 +1,36 @@
-import React, { useState } from 'react'
-import { Button } from 'react-bootstrap'
+import React from 'react'
+
+import ProjectCard from '../components/ProjectCard'
 
 function ProjectScreen() {
 
-    const [count, setCount] = useState(0)
+  const textStyle = {
+    fontFamily: "PT Mono, monospace",
+    fontStyle: 'normal'
+  }
 
-    const clickHandler = () => {
-        setCount(count + 1)
-    }
+  const divStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+  }
+
+  const outerDivStyle = {
+    minHeight: '100vh'
+  }
 
   return (
-    <div>
-        <Button variant='primary' onClick={clickHandler}>Click Me</Button>
-        <p>Count: {count}</p>
-    </div>
+    <>
+      <div style={outerDivStyle}>
+        <div style={textStyle} className='text-center'>
+          <h2> PROJECTS </h2>
+        </div>
+        <div style={divStyle}>
+          <ProjectCard />
+        </div>
+      </div>
+    </>
   )
 }
 
