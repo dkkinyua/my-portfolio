@@ -12,13 +12,13 @@ function TopHeader() {
         <div className='d-flex justify-content-center'>
             <Row>
                 <Col xs={3}>
-                    <a href='https://github.com/dkkinyua' style={linkStyle}><i className="fa-brands fa-github fa-2x"></i></a>
+                    <a href='https://github.com/dkkinyua' target="_blank" rel="noopener noreferrer" style={linkStyle}><i className="fa-brands fa-github fa-2x"></i></a>
                 </Col>
                 <Col xs={3}>
-                    <a href='https://x.com/nyekssotrilll?t=t1b2X9PoKBlN11XM4Pt3YQ&s=09' style={linkStyle}><i className="fa-brands fa-x-twitter fa-2x"></i></a>
+                    <a href='https://x.com/nyekssotrilll?t=t1b2X9PoKBlN11XM4Pt3YQ&s=09' target="_blank" rel="noopener noreferrer" style={linkStyle}><i className="fa-brands fa-x-twitter fa-2x"></i></a>
                 </Col>
                 <Col xs={3}>
-                    <a href='https://www.instagram.com/dkkinyua?igsh=dzFobWhraGpwNHh0' style={linkStyle}><i className="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href='https://www.instagram.com/dkkinyua?igsh=dzFobWhraGpwNHh0' target="_blank" rel="noopener noreferrer" style={linkStyle}><i className="fa-brands fa-instagram fa-2x"></i></a>
                 </Col>
                 <Col xs={3}>
                     <Link to='/contact-me' style={linkStyle}><i className='fa-regular fa-envelope open fa-2x'></i></Link>
