@@ -94,7 +94,7 @@ function Main() {
                         </p>
 
                         <div style={buttonContainerStyle}>
-                            <a href='/docs/cv.pdf' download><Button variant='dark'><i class="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
+                            <a href="\docs\Denzel Kanyeki Kinyua's CV.pdf" download><Button variant='dark'><i class="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
                         </div>
                     </Card.Body>
                 </Card>

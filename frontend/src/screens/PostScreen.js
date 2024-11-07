@@ -4,7 +4,6 @@ import { Image, Row, Col } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
 import { JellyfishSpinner } from 'react-spinners-kit'
-import { fontFamily, fontSize, fontStyle } from '@mui/system'
 
 function PostScreen() {
     const [post, setPost] = useState()
@@ -31,13 +30,8 @@ function PostScreen() {
         fontSize: "33px"
     }
 
-    const rowStyle = {
-        backgroundColor: "#28282B",
-        color: "#fff"
-    }
-
     useEffect(() => {
-        const baseURL = `http://localhost:8000/api/posts/${id}`
+        const baseURL = `https://myportfoliobackend-rirg.onrender.com/api/posts/${id}`
 
         axios
             .get(baseURL)
@@ -52,7 +46,7 @@ function PostScreen() {
                 setLoading(false);
             });
 
-    }, [])
+    }, [id])
 
     if (loading) {
         return <JellyfishSpinner size={150} color='#4b4c56' loading={loading} />;

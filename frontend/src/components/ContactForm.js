@@ -35,7 +35,7 @@ function ContactForm() {
         e.preventDefault();
 
         try {
-           const response = await axios.post('http://localhost:8000/api/contact-me/', body)
+           const response = await axios.post('https://myportfoliobackend-rirg.onrender.com/api/contact-me/', body)
            
            if (response.status === 200) {
             toast.success("Message delivered successfully")

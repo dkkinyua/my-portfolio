@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Container, Button, Row, Col } from 'react-bootstrap';
+import { Card, Container, Button } from 'react-bootstrap';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { JellyfishSpinner } from "react-spinners-kit";
@@ -23,18 +23,12 @@ function PostCard() {
         fontFamily: 'PT Mono, monospace',
         fontStyle: 'normal',
     };
-
-    const imageStyle = {
-        width: "150px",
-        height: "200px",// Set a fixed width for the image
-        objectFit: 'cover', // Ensures the image covers its container
-    };
-
+    
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const baseURL = 'http://127.0.0.1:8000/api/posts/';
+        const baseURL = 'https://myportfoliobackend-rirg.onrender.com/api/posts/';
 
         axios
             .get(baseURL)
