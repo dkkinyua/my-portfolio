@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer({ darkMode }) {
     const footerStyles = {
-        backgroundColor: darkMode ? '#28282B' : '#E5E4E2',
+        backgroundColor: darkMode ? '#C19A6B' : '#C19A6B',
         height: '50px',
         color: darkMode ? '#E5E4E2' : '#000',
     };

@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Button, Card, Container } from 'react-bootstrap'
-import { JellyfishSpinner } from 'react-spinners-kit'
-import toast, { Toaster } from 'react-hot-toast'
-import axios from 'axios'
+import { Toaster } from 'react-hot-toast'
 
 function ProjectCard() {
     const containerStyle = {
@@ -23,29 +21,10 @@ function ProjectCard() {
         fontStyle: 'normal',
     };
 
-    const [projects, setProjects] = useState([])
-    const [loading, setLoading] = useState(true)
+    // const [projects, setProjects] = useState([])
+    // const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
-        const baseURL = 'https://myportfoliobackend-rirg.onrender.com/api/projects/';
 
-        axios
-            .get(baseURL)
-            .then((response) => {
-                console.log(response.data);
-                setProjects(response.data);
-                setLoading(false);
-            })
-            .catch((error) => {
-                toast.error('Failed to load projects, try reloading page');
-                console.error(error);
-                setLoading(false);
-            });
-    }, [])
-
-    if (loading) {
-        return <JellyfishSpinner size={150} color='#4b4c56' loading={loading} />;
-    }
 
 
     return (
@@ -53,28 +32,62 @@ function ProjectCard() {
             <div>
                 <Toaster />
             </div>
-
             <div>
-                {projects.map((project) => (
-                    <div style={containerStyle} key={project.id}>
-                        {/* Card on the right side */}
-                        <Card style={cardStyle}>
-                            <Card.Title style={textStyle} className="p-3">
-                                <h2>{project.name}</h2>
-                            </Card.Title>
-                            <Card.Body className="d-flex flex-column" style={textStyle}>
-                                <p>{project.description}</p>
-                                <div className="d-flex justify-content-end mt-3">
-                                    <a href={`${project.url}`} target="_blank" rel="noopener noreferrer">
-                                        <Button variant="dark">
-                                            <i class="fa-solid fa-location-arrow"></i> Check it out
-                                        </Button>
-                                    </a>
-                                </div>
-                            </Card.Body>
-                        </Card>
-                    </div>
-                ))}
+                <div style={containerStyle}>
+                    {/* Card on the right side */}
+                    <Card style={cardStyle}>
+                        <Card.Title style={textStyle} className="p-3">
+                            <h2>1. Distrikt Arts</h2>
+                        </Card.Title>
+                        <Card.Body className="d-flex flex-column" style={textStyle}>
+                            <p>Distrikt Arts is a unique brand specializing in handcrafted beaded accessories, including anklets, chokers, necklaces, and armbands. Each piece is designed to celebrate diverse cultures, representing different countries and U.S. states. With a commitment to artistry and cultural connection, Distrikt Arts’ collections bring a vibrant blend of tradition and modern style to every accessory.</p>
+                            <div className="d-flex justify-content-end mt-3">
+                                <a href='https://distriktarts.net' target="_blank" rel="noopener noreferrer">
+                                    <Button variant="dark">
+                                        <i class="fa-solid fa-location-arrow"></i> Check it out
+                                    </Button>
+                                </a>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div style={containerStyle}>
+                    <Card style={cardStyle}>
+                        <Card.Title style={textStyle} className="p-3">
+                            <h2>2. Sales Rates API</h2>
+                        </Card.Title>
+                        <Card.Body className="d-flex flex-column" style={textStyle}>
+                            <p>This API calculates the sales tax rates in all U.S. states. There's a funny backstory to this. I didn't want to pay $15 to use an API for a website, so I created this API to do so. I update the tax.json file manually by prompting ChatGPT to provide me with the tax rates every day.</p>
+                            <div className="d-flex justify-content-end mt-3">
+                                <a href='https://tax-rates-api.onrender.com' target="_blank" rel="noopener noreferrer">
+                                    <Button variant="dark">
+                                        <i class="fa-solid fa-location-arrow"></i> Check it out
+                                    </Button>
+                                </a>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </div>
+
+                <div style={containerStyle}>
+                    <Card style={cardStyle}>
+                        <Card.Title style={textStyle} className="p-3">
+                            <h2>3. Organic Tents Technology.</h2>
+                        </Card.Title>
+                        <Card.Body className="d-flex flex-column" style={textStyle}>
+                            <p>Organic Tents Technology specializes in high-quality tents, shades, canopies, and artificial grass solutions for versatile outdoor needs. Their products combine durability with eco-friendly design, ideal for events, leisure, and business spaces. They focus on innovative, sustainable materials to provide functional and aesthetically pleasing outdoor coverage.</p>
+                            <div className="d-flex justify-content-end mt-3">
+                                <a href='https://www.organictentstechnology.co.ke' target="_blank" rel="noopener noreferrer">
+                                    <Button variant="dark">
+                                        <i class="fa-solid fa-location-arrow"></i> Check it out
+                                    </Button>
+                                </a>
+                            </div>
+                        </Card.Body>
+                    </Card>
+                </div>
+
+
             </div>
         </Container>
     )

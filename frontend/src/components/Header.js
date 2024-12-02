@@ -11,7 +11,7 @@ function Header({ darkMode, toggleDarkMode }) {
     const textStyle = {
         fontFamily: "PT Mono, monospace",
         fontStyle: 'normal',
-        color: darkMode ? '#E5E4E2' : '#000',
+        color: darkMode ? '#E5E4E2' : '#ffffff',
     }
 
     return (
@@ -30,7 +30,7 @@ function Header({ darkMode, toggleDarkMode }) {
                         </LinkContainer>
 
                         <LinkContainer to='/projects'>
-                            <Nav.Link><i class="fa-solid fa-list-check"></i> Projects</Nav.Link>
+                            <Nav.Link style={{ color: "#ffffff"}}><i class="fa-solid fa-list-check"></i> Projects</Nav.Link>
                         </LinkContainer>
                         
                         <div className="d-flex align-items-center mx-2">
