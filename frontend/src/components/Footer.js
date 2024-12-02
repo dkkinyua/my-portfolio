@@ -2,14 +2,15 @@ import React from 'react'
 
 function Footer({ darkMode }) {
     const footerStyles = {
-        backgroundColor: darkMode ? '#C19A6B' : '#C19A6B',
+        backgroundColor: darkMode ? '#E5E4E2' : '#E5E4E2',
         height: '50px',
         color: darkMode ? '#E5E4E2' : '#000',
     };
 
     const textStyle = {
         fontFamily: "PT Mono, monospace",
-        fontStyle: 'normal'
+        fontStyle: 'normal',
+        color: darkMode ? '#343434' : "#343434"
     }
 
     return (

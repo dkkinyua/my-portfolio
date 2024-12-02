@@ -5,7 +5,7 @@ import { Switch } from '@mui/material';
 
 function Header({ darkMode, toggleDarkMode }) {
     const navBarStyles = {
-        backgroundColor: '#343434'
+        backgroundColor: '#E5E4E2'
     }
 
     const textStyle = {
@@ -34,7 +34,7 @@ function Header({ darkMode, toggleDarkMode }) {
                         </LinkContainer>
                         
                         <div className="d-flex align-items-center mx-2">
-                            <span style={{ marginRight: '10px', color: '#E5E4E2' }}> Dark Mode</span>
+                            <span style={{ marginRight: '10px', color: '#343434' }}> Dark Mode</span>
                             <Switch
                                 checked={darkMode}
                                 onChange={toggleDarkMode}
