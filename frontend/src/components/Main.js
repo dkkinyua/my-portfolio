@@ -40,9 +40,12 @@ function Main() {
                                 <li>Version Control: Git</li>
                                 <li>CI/CD: Github Actions</li>
                                 <li>Databases: mySQL, PostgreSQL</li>
-                                <li>Civil Engineering drawings and design through AutoCAD and Civil3D</li>
+                                <li>Civil Engineering drawings through engineering software e.g. AutoCAD</li>
+                                <li>Structural Design through manual calculation and engineering software e.g. Etabs</li>
                             </ul>
                             Check my projects here or in my <a href='https://github.com/dkkinyua' style={linkStyle}>GitHub</a>!
+                            <br/>
+                            <strong>For my engineering projects, design, detailing and calculations, a page with all scanned documents will be added soon in our Projects page or I can send them to you via email.</strong> 
                         </p>
                         <div style={buttonContainerStyle}>
                             <Link to='/projects'><Button variant='dark'><i className="fa-solid fa-list-check"></i> Projects</Button></Link>

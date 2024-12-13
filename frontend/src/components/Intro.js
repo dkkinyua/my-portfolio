@@ -42,17 +42,19 @@ function Intro() {
           </div>
           <div className='mt-3 text-center'>
             <h3>Denzel Kanyeki Kinyua</h3>
-            <h5>Full-Stack Developer, Civil Engineer</h5>
+            <h5>Civil Engineer, Software Developer</h5>
           </div>
           <div className='mt-3 text-center'>
             <p>
-              A highly motivated and skilled Civil Engineering student with a passion for software development, combining a strong foundation in engineering principles with extensive experience in web development. I excel in both backend and frontend technologies, including Python (Django, Flask) and React, with a proficiency in database management using PostgreSQL and MySQL. My freelancing background has honed my ability to deliver high-quality, customized digital solutions, while internships in engineering and operations have strengthened my project management and problem-solving skills.
+              A highly motivated and skilled Civil Engineering student with a passion for combining engineering principles and software development. I have developed expertise in analyzing and designing structures to ensure stability and safety, utilizing tools like <strong>AutoCAD</strong> for creating detailed 2D and 3D designs of infrastructure projects such as buildings. My proficiency in generating precise drawings streamlines the design and planning phases of projects. Additionally, I am skilled in the design and detailing of structures using manual calculations and engineering software like <strong>Etabs.</strong>
 
-              <br/>
-              In the realm of structural engineering, I have developed expertise in analyzing and designing structures to ensure stability and safety. I am proficient in using <strong>AutoCAD</strong> and <strong>Civil 3D</strong> for creating detailed 2D and 3D designs of infrastructure projects such as buildings, roads, and bridges. My knowledge of these tools allows me to generate precise drawings and simulations, streamlining the design and planning phases of projects.
+              <br />
+              Complementing my civil engineering knowledge, I bring extensive experience in web development. I excel in both backend and frontend technologies, including Python (Django, Flask) and React, with proficiency in database management using PostgreSQL and MySQL. My freelancing background has honed my ability to deliver high-quality, customized digital solutions, while internships in engineering and operations have strengthened my project management and problem-solving skills.
 
-              <br/>
-              Eager to contribute to innovative projects, I am adaptable, a quick learner, and fluent in English, Kiswahili, and French (B2).
+              <br />
+              Eager to learn and contribute to innovative projects, I am adaptable, a quick learner, and fluent in English, Kiswahili, and French (B1 - Conversational).
+
+
             </p>
 
           </div>

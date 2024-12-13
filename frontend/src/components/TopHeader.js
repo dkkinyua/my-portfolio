@@ -21,7 +21,7 @@ function TopHeader() {
                     <a href='https://www.instagram.com/dkkinyua?igsh=dzFobWhraGpwNHh0' target="_blank" rel="noopener noreferrer" style={linkStyle}><i className="fa-brands fa-instagram fa-2x"></i></a>
                 </Col>
                 <Col xs={3}>
-                    <Link to='/contact-me' style={linkStyle}><i className='fa-regular fa-envelope open fa-2x'></i></Link>
+                    <a href='https://www.linkedin.com/in/denzel-kinyua-a73597277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank' rel='noopener noreferrer' style={linkStyle}><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
                 </Col>
             </Row>
         </div>
