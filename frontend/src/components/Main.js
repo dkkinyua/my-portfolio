@@ -44,12 +44,22 @@ function Main() {
                                 <li>Structural Design through manual calculation and engineering software e.g. Etabs</li>
                             </ul>
                             Check my projects here or in my <a href='https://github.com/dkkinyua' style={linkStyle}>GitHub</a>!
-                            <br/>
-                            <strong>For my engineering projects, design, detailing and calculations, a page with all scanned documents will be added soon in our Projects page or I can send them to you via email.</strong> 
+                            <br />
+                            <strong>For my engineering projects, design, detailing and calculations, a page with all scanned documents will be added soon in our Projects page or I can send them to you via email.</strong>
                         </p>
-                        <div style={buttonContainerStyle}>
-                            <Link to='/projects'><Button variant='dark'><i className="fa-solid fa-list-check"></i> Projects</Button></Link>
+                        <div style={{ display: 'flex', justifyContent: 'right', gap: '10px' }}>
+                            <Link to='/civil-projects'>
+                                <Button variant='dark'>
+                                    <i className="fa-solid fa-list-check"></i> Civil Projects
+                                </Button>
+                            </Link>
+                            <Link to='/projects'>
+                                <Button variant='dark'>
+                                    <i className="fa-solid fa-list-check"></i> Projects
+                                </Button>
+                            </Link>
                         </div>
+
                     </Card.Body>
                 </Card>
             </div>
