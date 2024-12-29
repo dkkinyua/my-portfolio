@@ -11,6 +11,7 @@ import ContactScreen from './screens/ContactScreen';
 import BlogScreen from './screens/BlogScreen';
 import PostScreen from './screens/PostScreen';
 import ProjectScreen from './screens/ProjectScreen';
+import CivilProjectScreen from './screens/CivilProjectScreen';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
             <Route path='/contact-me' element={<ContactScreen />} />
             <Route path='/posts' element={<BlogScreen />} />
             <Route path='/projects' element={<ProjectScreen />} />
+            <Route path='/civil-projects' element={<CivilProjectScreen />} />
             <Route path='/posts/:id' element={<PostScreen />} />
           </Routes>
         </main>
