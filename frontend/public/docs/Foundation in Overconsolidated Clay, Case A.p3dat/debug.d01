@@ -1,0 +1,3671 @@
+ DATE 2024-12-27 TIME  9:05:10.998
+ BLD: Jul 20 2023 18:19:32
+ Now: 2024/12/27 at 9:5:10
+ if64 2021
+ Ref: *
+ Win: 1.6.2.9200
+ Mem: 1 16222 (4903) MB (free) physical memory
+ Process ID, MemMB : 3212 6
+ EXE: C:\Program Files\Seequent\PLAXIS 3D 2023.2\kernel\
+ BLD: Jul 20 2023 18:30:29
+ CWD: C:\Users\LENOVO\Desktop 476.2 (284.8) GB (free)
+ WRK: C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\ 476.2 (284.8) GB (free)
+ Trim(fName):
+ C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.log
+ CL iHand           27
+ plswhile
+ iHand0  :          27
+ iHand   :           7
+ iCoupled:           0
+ iGWFCal :           0
+ nDof    :           3
+ NewArgs : T
+ p_DLL_CE 0:        140726211444736       140726211448848
+ p_DLL_CE 1:        140726211444736       140726211449184
+ nArgs:           3
+ Lic  : 3166
+ timms         904
+ io =           12
+ $$PROLAYSI##           8
+ $$PROLAYDI##           8
+ $$PROLAYSR##        3200
+ $$SOILXIDT##          88
+ $$SOILXVLR##         800
+ $$HTUWCT_R##          64
+ $$SOILXVLI##          80
+ $$SOILNAMT##          34
+ $$SOILNAMB##          24
+ $$ANCHXIDT##           4
+ $$ANCHNAMT##           4
+ $$ANCHNAMB##           0
+ $$BEAMXIDT##           4
+ $$FSBEAMPI##           8
+ $$FSBEAMNT##           4
+ $$FSBEAMNB##           0
+ $$EMBEXIDT##           4
+ $$FSEPILNT##           4
+ $$FSEPILNB##           0
+ $$FSEPXIDT##           4
+ $$EBEANAMT##           4
+ $$EBEANAMB##           0
+ $$SKINRESR##           0
+ $$LATRES_R##           0
+ $$PILE_MKR##           0
+ $$BONDSTRR##           0
+ $$GEOTXIDT##           4
+ $$GEO_NE1R##           0
+ $$GEO_NE2R##           0
+ $$GEOTNAMT##           4
+ $$GEOTNAMB##           0
+ $$PLATXIDT##           4
+ $$PLAT_MKR##           0
+ $$BEAMNAMT##           4
+ $$BEAMNAMB##           0
+ $$FSPLATNT##           4
+ $$FSPLATNB##           0
+ $$DBASEIDI##           8
+ $$COLOURSI##           8
+ $$METADATT##          12
+ $$COMMENTT##          12
+ $$GUIDS__T##          88
+ GUID           1  {E0F7FDFC-3F58-448B-9318-9B64E055B5D5}
+ GUID           2  {1C9829FA-1C47-4AEC-97F4-F3B6B62B190A}
+ $$MATINDXT##          88
+ $$NAMES__T##          34
+ Name           1  LacustrineClay
+ Name           2  Building
+  nSoilSet :            2
+  nGeoSet  :            0
+  nNNAnch  :            0
+  nFEAnch  :            0
+  nPlateSet:            0
+  nBeamSet :            0
+  nEPilSet :            0
+ Guid           1  {E0F7FDFC-3F58-448B-9318-9B64E055B5D5}           1
+           1 LacustrineClay
+ Guid           2  {1C9829FA-1C47-4AEC-97F4-F3B6B62B190A}           1
+           2 Building
+ $$NAMES__B##          24
+ $$UNITS__T##          44
+ $$GRAVTDII##           4
+ $$_APPINFT##         220
+ $$ENDOFFII##           0
+ NProDi, nBeamSet=          50           1
+ Size of iFsBeamPI=           9
+ NProDi, nPlatSet=          20           1
+ NProAn, nAnchSet=           5           1
+  IN RDMAT:
+ C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.m01
+ Read_SOILXIDT
+ SoilIdxT           1           1
+ SoilIdxT           2           2
+ nLayer:           2
+ Read_SoilXVLR           2          50
+ Unread block [MAT] : $$HTUWCT_R##          64
+ Unread block [MAT] : $$SOILXVLI##          80
+ Unread block [MAT] : $$SOILNAMT##          34
+ Unread block [MAT] : $$SOILNAMB##          24
+    1 LacustrineClay
+    2 Building
+ Read_ANCHXIDT
+ Unread block [MAT] : $$ANCHNAMT##           4
+ Unread block [MAT] : $$ANCHNAMB##           0
+ Read_BEAMXIDT
+ Unread block [MAT] : $$FSBEAMNT##           4
+ Unread block [MAT] : $$FSBEAMNB##           0
+ Unread block [MAT] : $$EMBEXIDT##           4
+ Unread block [MAT] : $$FSEPILNT##           4
+ Unread block [MAT] : $$FSEPILNB##           0
+ Read_FsEPXIDT
+ Unread block [MAT] : $$EBEANAMT##           4
+ Unread block [MAT] : $$EBEANAMB##           0
+ Unread block [MAT] : $$SKINRESR##           0
+ Unread block [MAT] : $$LATRES_R##           0
+ Unread block [MAT] : $$PILE_MKR##           0
+ Unread block [MAT] : $$GEOTNAMT##           4
+ Unread block [MAT] : $$GEOTNAMB##           0
+ Read_PLATXIDT
+ Unread block [MAT] : $$PLAT_MKR##           0
+ Unread block [MAT] : $$BEAMNAMT##           4
+ Unread block [MAT] : $$BEAMNAMB##           0
+ Unread block [MAT] : $$FSPLATNT##           4
+ Unread block [MAT] : $$FSPLATNB##           0
+ Unread block [MAT] : $$DBASEIDI##           8
+ Unread block [MAT] : $$COLOURSI##           8
+ Unread block [MAT] : $$METADATT##          12
+ Unread block [MAT] : $$COMMENTT##          12
+ Unread block [MAT] : $$GUIDS__T##          88
+ Unread block [MAT] : $$MATINDXT##          88
+ Unread block [MAT] : $$NAMES__T##          34
+ Unread block [MAT] : $$NAMES__B##          24
+    1 LacustrineClay
+    2 Building
+ nUnits:           7
+ Unit L: m
+ Unit F: kN
+ Unit T: day
+ Unit Temp: K
+ OneAtm :   100.000000000000       [F/L2]
+ OnekNpm:   1.00000000000000       [F/L]
+ OnekNm :   1.00000000000000       [F L]
+ OnekN  :   1.00000000000000       [F]
+ Unread block [MAT] : $$_APPINFT##         220
+ After RdMatW
+ PropSoil:
+ 
+Set                  1            2
+MTypeL             152          351
+   1       3.84615E+03  1.30435E+07
+   2       3.00000E-01  1.50000E-01
+   3       5.00000E-01  0.00000E+00
+   4       1.00000E+01  0.00000E+00
+   9       1.70000E+01  5.00000E+01
+  10       1.80000E+01  5.00000E+01
+  13       1.00000E+00  1.00000E+00
+  20       3.33333E-01  3.33333E-01
+  27       1.00000E+15  1.00000E+15
+  28       4.95000E-01  4.95000E-01
+  91       1.00000E+00  1.00000E+00
+  99       1.00000E+00  1.00000E+00
+ 101       5.00000E-01  5.00000E-01
+ 102       5.00000E-01  5.00000E-01
+ 103       1.00000E+00  1.00000E+00
+ 105       2.00000E+00  2.00000E+00
+ 106      -1.06000E+00 -1.06000E+00
+ 107      -2.37000E+00 -2.37000E+00
+ 110       1.00000E+04  1.00000E+04
+ 111       1.00000E+00  1.00000E+00
+ 112       6.20347E-02  6.20347E-02
+ 113       3.83000E+00  3.83000E+00
+ 114       1.37740E+00  1.37740E+00
+ 115       1.25000E+00  1.25000E+00
+ 117       1.00000E+00  1.00000E+00
+ 184       2.60000E+00  2.60000E+00
+ 191       1.00000E+01  1.00000E+01
+ 192       1.30000E+01  1.30000E+01
+ 193       7.70000E+01  7.70000E+01
+ $$GENERALI##          16
+ Unread block [INP a] : $$GENERALR##          16
+ $$COUNTERI##          28
+ Unread block [INP a] : $$GRAVTDII##           4
+ $$GRAVITYR##           8
+ Unread block [INP a] : $$FSINTFAR##           0
+ Unread block [INP a] : $$_APPINFT##         220
+ $$SOILBHSI##           8
+ BKName ,nByts $$SOILBHSI##           8
+ Skipping            8  bytes
+ $$SOILBHPR##          16
+ BKName ,nByts $$SOILBHPR##          16
+ Skipping           16  bytes
+ $$SOILBHLR##          16
+ BKName ,nByts $$SOILBHLR##          16
+ Skipping           16  bytes
+ $$NODECOOR##       93744
+ BKName ,nByts $$NODECOOR##       93744
+ NodTotZMS:        3906
+ Skipping        93744  bytes
+ $$FSCLUSTI##        8792
+ BKName ,nByts $$FSCLUSTI##        8792
+ nClustFNS:           2
+ Skipping            0  bytes
+ $$CLUSTELI##           8
+ BKName ,nByts $$CLUSTELI##           8
+ Skipping            8  bytes
+ $$FSSOILCI##       87880
+ BKName ,nByts $$FSSOILCI##       87880
+ Skipping        87880  bytes
+ $$FSPLATCI##           0
+ $$LOCALCPR##           0
+ $$GEOGRDCI##           0
+ $$LOCALCGR##           0
+ $$FSDLOACI##           0
+ $$DRAINSCI##           0
+ $$CONTRACI##           0
+ $$LOCALCCR##           0
+ $$WESMASSI##           0
+ $$SNEIGH_I##           0
+ $$FSLOA1CI##           0
+ $$FSSUP1CI##           0
+ $$FSANCHCI##           0
+ $$FSBEAMCI##           0
+ $$LOCAXPNR##           0
+ $$FSLOA3CI##           0
+ $$DRAINLCI##           0
+ $$LOCALCER##           0
+ $$LOCCOCBR##           0
+ $$WELLSCOI##           0
+ $$FSINTFAI##           0
+ $$FSINTFNI##           0
+ $$LOCALCIR##           0
+ $$DISCONTI##           0
+ $$DISCTCHI##           0
+ $$LOCALCDR##           0
+ $$_APPINFT##         220
+ BKName ,nByts $$_APPINFT##         220
+ Skipping          220  bytes
+ $$ENDOFFII##           0
+ Anchors : j1,j2:            1           1
+ IsBatch :  F
+ fGUlt=    1.00000000000000     
+ Set_Picos_nThreadsPref           2
+ iSolver
+       2      2   -999   -999   -999    -999   -999   -999   -999   -999
+ PICOS: nCPU:           4
+ call mkl_set_Num_Threads           2
+ mkl_set_Num_Threads done
+ isolver
+       2      2      4   -999   -999    -999      2   -999      2      4
+ iHand from SF5           7
+ FacKwNew:  1.000000000000000E-008
+ after SF5, ppLimit, pptco:  1.000000000000000E+030  0.000000000000000E+000
+ Control file : 
+ C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.l01
+ $$PHASNAMT##          58
+ Current phase:Building
+ $$CONSBN3R##          48
+ Skipping Lxx          48  bytes
+ $$FSSOILSI##        8788
+ Skipping Lxx        8788  bytes
+ $$FSPLATSI##           0
+ $$GEOGRDSI##           0
+ $$DISCSETI##           0
+ $$FSDLOADR##           0
+ $$DYDLOADR##           0
+ $$FSLOAD3R##           0
+ $$DYLOAD3R##           0
+ $$MVLOAD3I##           0
+ $$MVLOAD3R##           0
+ $$PTHLOADI##           0
+ $$PTHLINER##           0
+ $$VELLOADI##           0
+ $$VELLINER##           0
+ $$VELHARMR##           0
+ $$VELTABLR##           0
+ $$FSBEAMSI##           0
+ $$FSEPILSI##           0
+ $$PILCONNI##           0
+ $$CAB3SETI##           0
+ $$CAB3CNTI##           0
+ $$PRSTRCAR##           0
+ $$FSLOAD1R##           0
+ $$DYLOAD1R##           0
+ $$MVLOAD1I##           0
+ $$MVLOAD1R##           0
+ $$FSSUP1SI##           0
+ $$PRSTRFER##           0
+ $$SPRIDIRR##           0
+ $$FIXANCHR##           0
+ $$FSANCHSI##           0
+ $$PRSTRNNR##           0
+ $$DISPLA2R##       44128
+ Skipping Lxx       44128  bytes
+ $$DYDISP2R##           0
+ $$RIGBODCR##           0
+ $$RIGBODNI##           0
+ $$RIGBODMI##           0
+ $$RIGENTSI##           0
+ $$FSINTFSI##           0
+ $$FSVOLCLI##           0
+ $$FSVOLCLR##           0
+ $$CONTRAAI##           0
+ $$CONTRAVR##           0
+ $$DYMULLII##           0
+ $$DYMULHAR##           0
+ $$DYMULTAR##           0
+ $$BCDYNMCI##          24
+ Skipping Lxx          24  bytes
+ $$BCDYNMCR##          96
+ Skipping Lxx          96  bytes
+ $$BCDYNFXI##          12
+ Skipping Lxx          12  bytes
+ $$BCFIELDR##          96
+ Skipping Lxx          96  bytes
+ $$BCFIELDI##           8
+ Skipping Lxx           8  bytes
+ $$SLPRECOR##          24
+ Skipping Lxx          24  bytes
+ $$SLPRECAI##           0
+ $$_APPINFT##         220
+ Skipping Lxx         220  bytes
+ $$ENDOFFII##           0
+ End Of RdLxx
+ iValD           2
+ iValF           0
+ iValT          -1
+ Opened file C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\data.convd.rr1
+ nStep :         1000
+ fTUlt :   0.000000000000000E+000
+ iWxxFile :            1
+ iLxxFile :            1
+ iPhase   :            1
+ Tolerance for stop criterion error1=  1.000000000000000E-002
+ NFIRST=            1
+ NNN   =            0
+ Using default settings for iterative solver
+ Parameters iterative solver:
+ itsolv(           1 )=         180
+ itsolv(           2 )=      150000
+ itsolv(           3 )=          20
+ itsolv(           4 )=         600
+ itsolv(           5 )=         500
+ itsolv(          11 )=          40
+ itsolv(          12 )=          55
+ itsolv(          13 )=          20
+ itsolv(          20 )=          50
+ itsolv(          21 )=         300
+ itsolv(          22 )=       20000
+ itsolv(          25 )=           2
+ itsolv(          26 )=          15
+ itsolv(          27 )=          15
+ itsolv(          28 )=         500
+ itsolv(          29 )=        1000
+ itsolv(          41 )=         160
+ itsolv(          42 )=         400
+ itsolv(          43 )=         800
+ Ritsolv(           1 )=  0.100000000000000     
+ Ritsolv(           2 )=  2.000000000000000E-005
+ Ritsolv(           3 )=   2.00000000000000     
+ Ritsolv(           4 )=   1.20000000000000     
+ Ritsolv(           5 )=  1.000000000000000E-006
+ Ritsolv(           6 )=  2.000000000000000E-005
+ Ritsolv(           7 )=   3.00000000000000     
+ Ritsolv(           8 )=  1.000000000000000E-003
+ Ritsolv(           9 )=  1.000000000000000E-010
+ Ritsolv(          10 )=   1.40000000000000     
+ Ritsolv(          11 )=  0.480000100000000     
+ Ritsolv(          15 )=  0.100000000000000     
+ Ritsolv(          16 )=  5.999999999999999E-004
+ Ritsolv(          21 )=  1.000000000000000E-004
+ Modyn:           0
+ before openform
+ initialize showmode 23
+ Batstr   : [<Phase 1>]           9
+ after openform
+LRiks :      4
+ nodtot=         3906
+ nint1 =            4
+ nin   =         8788
+ nel   =         2197
+ nintel=            0
+ nodtot=         3906
+idim,nodtot,n,ndof,ndofbm:          3       3906      11718          3          0
+ RdGW_dum (
+ C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.w01
+ RDGW_dum:$$PHASNAMT##          58
+ Skipping block           58
+ RDGW_dum:$$FSWPRESR##      175760
+ Skipping block       175760
+ RDGW_dum:$$CLUSDRYI##           8
+ Skipping block            8
+ RDGW_dum:$$WP_DISCR##           0
+ Skipping block            0
+ RDGW_dum:$$FSEWPRCI##       22088
+ nLoadW6/8:         920           0
+ RDGW_dum:$$FSEWPRSR##      132480
+ Skipping block       132480
+ RDGW_dum:$$GWFBC__I##           0
+ Skipping block            0
+ RDGW_dum:$$GWFBCRVR##           0
+ Skipping block            0
+ RDGW_dum:$$GWFBCHDR##           0
+ Skipping block            0
+ RDGW_dum:$$GWFFUNCI##           0
+ Skipping block            0
+ RDGW_dum:$$FFUNCHAR##           0
+ Skipping block            0
+ RDGW_dum:$$FFUNCTAR##           0
+ Skipping block            0
+ RDGW_dum:$$FFUNCLIR##           0
+ Skipping block            0
+ RDGW_dum:$$WELLSPRR##           0
+ Skipping block            0
+ RDGW_dum:$$DRAINLAI##           0
+ Skipping block            0
+ RDGW_dum:$$DRAINLHR##           0
+ Skipping block            0
+ RDGW_dum:$$DRAINSAI##           0
+ Skipping block            0
+ RDGW_dum:$$DRAINSHR##           0
+ Skipping block            0
+ RDGW_dum:$$BCGFLOWI##          24
+ Skipping block           24
+ RDGW_dum:$$INTPERMI##           0
+ Skipping block            0
+ RDGW_dum:$$DISPERMI##           0
+ Skipping block            0
+ RDGW_dum:$$DISCDRYI##           0
+ Skipping block            0
+ RDGW_dum:$$BCPRECII##          12
+ Skipping block           12
+ RDGW_dum:$$BCPRECIR##          24
+ Skipping block           24
+ RDGW_dum:$$WLGEOM_I##           4
+ Skipping block            4
+ RDGW_dum:$$WLGEOM_R##         144
+ Skipping block          144
+ RDGW_dum:$$WLTIME_I##          12
+ Skipping block           12
+ RDGW_dum:$$SOILWL_I##          20
+ Skipping block           20
+ RDGW_dum:$$UDWPRESR##           0
+ Skipping block            0
+ RDGW_dum:$$WESMASSR##           0
+ Skipping block            0
+ RDGW_dum:$$SLPRECOR##          24
+ Skipping block           24
+ RDGW_dum:$$SLPRECAI##           0
+ Skipping block            0
+ RDGW_dum:$$_APPINFT##        1084
+ Skipping block         1084
+idim,nodtot,n,ndof,ndofbm:          3       3906      11718          3          0
+nel :       2197          0
+ NintGP =            0
+ $$GENERALI##          16
+ $$GENERALR##          16
+ $$COUNTERI##          28
+ $$GRAVTDII##           4
+ $$FSINTFAR##           0
+ Control file : 
+ C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.l01 
+           0
+ $$PHASNAMT##          58
+ Skipping Lxx          58  bytes
+ $$CONSBN3R##          48
+ xMinCBC, xMaxCBC  -1.000000000000000E-007   75.0000001000000     
+ yMinCBC, yMaxCBC  -1.000000000000000E-007   75.0000001000000     
+ zMinCBC, zMaxCBC   -10000000000.0000       1.000000000000000E-007
+ $$FSSOILSI##        8788
+ Skipping Lxx        8788  bytes
+ $$FSPLATSI##           0
+ $$GEOGRDSI##           0
+ $$DISCSETI##           0
+ $$FSDLOADR##           0
+ $$DYDLOADR##           0
+ $$FSLOAD3R##           0
+ $$DYLOAD3R##           0
+ $$MVLOAD3I##           0
+ $$MVLOAD3R##           0
+ $$PTHLOADI##           0
+ $$PTHLINER##           0
+ $$VELLOADI##           0
+ $$VELLINER##           0
+ $$VELHARMR##           0
+ $$VELTABLR##           0
+ $$FSBEAMSI##           0
+ $$FSEPILSI##           0
+ $$PILCONNI##           0
+ $$CAB3SETI##           0
+ $$CAB3CNTI##           0
+ $$PRSTRCAR##           0
+ $$FSLOAD1R##           0
+ $$DYLOAD1R##           0
+ $$MVLOAD1I##           0
+ $$MVLOAD1R##           0
+ $$FSSUP1SI##           0
+ $$PRSTRFER##           0
+ $$SPRIDIRR##           0
+ $$FIXANCHR##           0
+ $$FSANCHSI##           0
+ $$PRSTRNNR##           0
+ $$DISPLA2R##       44128
+ Skipping Lxx       44128  bytes
+ $$DYDISP2R##           0
+ $$RIGBODCR##           0
+ $$RIGBODNI##           0
+ $$RIGBODMI##           0
+ $$RIGENTSI##           0
+ $$FSINTFSI##           0
+ $$FSVOLCLI##           0
+ $$FSVOLCLR##           0
+ $$CONTRAAI##           0
+ $$CONTRAVR##           0
+ $$DYMULLII##           0
+ $$DYMULHAR##           0
+ $$DYMULTAR##           0
+ $$BCDYNMCI##          24
+ $$BCDYNMCR##          96
+ $$BCDYNFXI##          12
+ $$BCFIELDR##          96
+ Skipping Lxx          96  bytes
+ $$BCFIELDI##           8
+ Skipping Lxx           8  bytes
+ $$SLPRECOR##          24
+ Skipping Lxx          24  bytes
+ $$SLPRECAI##           0
+ $$_APPINFT##         220
+ Skipping Lxx         220  bytes
+ $$ENDOFFII##           0
+ End Of RdLxx
+ Control file : 
+ C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.l01 
+           1
+ $$PHASNAMT##          58
+ Skipping Lxx          58  bytes
+ $$CONSBN3R##          48
+ xMinCBC, xMaxCBC  -1.000000000000000E-007   75.0000001000000     
+ yMinCBC, yMaxCBC  -1.000000000000000E-007   75.0000001000000     
+ zMinCBC, zMaxCBC   -10000000000.0000       1.000000000000000E-007
+ $$FSSOILSI##        8788
+ $$FSPLATSI##           0
+ $$GEOGRDSI##           0
+ $$DISCSETI##           0
+ $$FSDLOADR##           0
+ $$DYDLOADR##           0
+ $$FSLOAD3R##           0
+ $$DYLOAD3R##           0
+ $$MVLOAD3I##           0
+ $$MVLOAD3R##           0
+ $$PTHLOADI##           0
+ $$PTHLINER##           0
+ $$VELLOADI##           0
+ $$VELLINER##           0
+ $$VELHARMR##           0
+ $$VELTABLR##           0
+ $$FSBEAMSI##           0
+ $$FSEPILSI##           0
+ $$PILCONNI##           0
+ $$CAB3SETI##           0
+ $$CAB3CNTI##           0
+ $$PRSTRCAR##           0
+ $$FSLOAD1R##           0
+ $$DYLOAD1R##           0
+ $$MVLOAD1I##           0
+ $$MVLOAD1R##           0
+ $$FSSUP1SI##           0
+ $$PRSTRFER##           0
+ $$SPRIDIRR##           0
+ $$FIXANCHR##           0
+ $$FSANCHSI##           0
+ $$PRSTRNNR##           0
+ $$DISPLA2R##       44128
+ Nodtot,nNod :         3906        1379
+ $$DYDISP2R##           0
+ $$RIGBODCR##           0
+ $$RIGBODNI##           0
+ $$RIGBODMI##           0
+ $$RIGENTSI##           0
+ $$FSINTFSI##           0
+ $$FSVOLCLI##           0
+ $$FSVOLCLR##           0
+ $$CONTRAAI##           0
+ $$CONTRAVR##           0
+ $$DYMULLII##           0
+ $$DYMULHAR##           0
+ $$DYMULTAR##           0
+ $$BCDYNMCI##          24
+ $$BCDYNMCR##          96
+ $$BCDYNFXI##          12
+ $$BCFIELDR##          96
+ Skipping Lxx          96  bytes
+ $$BCFIELDI##           8
+ Skipping Lxx           8  bytes
+ $$SLPRECOR##          24
+ Skipping Lxx          24  bytes
+ $$SLPRECAI##           0
+ $$_APPINFT##         220
+ Skipping Lxx         220  bytes
+ $$ENDOFFII##           0
+ End Of RdLxx
+ BKNAME,NBYTS:$$PHASNAMT##          63
+ BKNAME,NBYTS:$$INTEGERI##          40
+ BKNAME,NBYTS:$$FSSOILSI##        8788
+ BKNAME,NBYTS:$$PROLAYSI##           8
+ BKNAME,NBYTS:$$PROLAYSR##        3200
+ BKNAME,NBYTS:$$DISCSETI##           0
+ BKNAME,NBYTS:$$LXXFILEI##           4
+ BKNAME,NBYTS:$$SITGWNSI##           4
+ BKNAME,NBYTS:$$MULTIPNR##         208
+ BKNAME,NBYTS:$$SIG_XX0R##       70304
+ BKNAME,NBYTS:$$SIG_YY0R##       70304
+ BKNAME,NBYTS:$$SIG_ZZ0R##       70304
+ BKNAME,NBYTS:$$SIG1MAXR##       70304
+ BKNAME,NBYTS:$$E__C___R##      140608
+ BKNAME,NBYTS:$$PPTCOPCR##           8
+ BKNAME,NBYTS:$$WPINIT_R##       70304
+ BKNAME,NBYTS:$$WPNDIN_R##       31248
+ BKNAME,NBYTS:$$FSEWPRCI##       22088
+ BKNAME,NBYTS:$$FSEWPRSR##      132480
+ BKNAME,NBYTS:$$SIG_WP0R##           0
+ BKNAME,NBYTS:$$FSEPINTR##           0
+ BKNAME,NBYTS:$$DSATURAR##       70304
+ BKNAME,NBYTS:$$SATEFFER##       70304
+ BKNAME,NBYTS:$$IGNRSUCI##           4
+ BKNAME,NBYTS:$$CALCTIMR##          32
+ BKNAME,NBYTS:$$CALCTIMT##          78
+ BKNAME,NBYTS:$$_APPINFT##         652
+ BKNAME,NBYTS:$$ENDOFFII##           0
+ After closing file (000sw)
+ NelBm :            0
+ In RDZMS, mshnm=
+ C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.zms
+ $$SOILBHSI##           8
+ Unread block $$SOILBHSI##
+ Skipping            8  bytes
+ $$SOILBHPR##          16
+ Unread block $$SOILBHPR##
+ Skipping           16  bytes
+ $$SOILBHLR##          16
+ Unread block $$SOILBHLR##
+ Skipping           16  bytes
+ $$NODECOOR##       93744
+ $$NODECOOR##       93744
+ NodTot3:        3906
+ nVals/3:        3906
+ $$FSCLUSTI##        8792
+ $$FSCLUSTI##        8792
+ Skipping         8792  bytes
+ $$CLUSTELI##           8
+ $$CLUSTELI##           8
+           1           1         132
+           2         133        2197
+ $$FSSOILCI##       87880
+ $$FSSOILCI##       87880
+ $$FSPLATCI##           0
+ $$FSPLATCI##           0
+ $$LOCALCPR##           0
+ $$LOCALCPR##           0
+ $$GEOGRDCI##           0
+ $$GEOGRDCI##           0
+ $$LOCALCGR##           0
+ $$LOCALCGR##           0
+ $$FSDLOACI##           0
+ $$FSDLOACI##           0
+ $$DRAINSCI##           0
+ $$DRAINSCI##           0
+ $$CONTRACI##           0
+ $$CONTRACI##           0
+ $$LOCALCCR##           0
+ $$LOCALCCR##           0
+ $$WESMASSI##           0
+ $$WESMASSI##           0
+ $$SNEIGH_I##           0
+ Skipping            0  bytes
+ $$FSLOA1CI##           0
+ $$FSLOA1CI##           0
+ $$FSSUP1CI##           0
+ $$FSSUP1CI##           0
+ $$FSANCHCI##           0
+ $$FSANCHCI##           0
+ $$FSBEAMCI##           0
+ $$FSBEAMCI##           0
+ $$LOCAXPNR##           0
+ $$LOCAXPNR##           0
+ $$FSLOA3CI##           0
+ $$FSLOA3CI##           0
+ $$DRAINLCI##           0
+ $$DRAINLCI##           0
+ $$LOCALCER##           0
+ $$LOCALCER##           0
+ $$LOCCOCBR##           0
+ $$LOCCOCBR##           0
+ $$WELLSCOI##           0
+ $$WELLSCOI##           0
+ $$FSINTFAI##           0
+ $$FSINTFAI##           0
+ $$FSINTFNI##           0
+ $$FSINTFNI##           0
+ $$LOCALCIR##           0
+ $$LOCALCIR##           0
+ $$DISCONTI##           0
+ $$DISCONTI##           0
+ $$DISCTCHI##           0
+ $$DISCTCHI##           0
+ $$LOCALCDR##           0
+ $$LOCALCDR##           0
+ $$_APPINFT##         220
+ Unread block $$_APPINFT##
+ Skipping          220  bytes
+ $$ENDOFFII##           0
+ Check_Plate_Det          10          -1
+ Fill_Neigh           0
+ iconv
+     1    2    4    5    9    8
+     1    3    2    7    6    5
+     1    4    3    8   10    7
+     2    3    4    6   10    9
+ iconvi
+     2    4    6    8   10   12
+     1    5    3   11    9    7
+     0    0    0    0    0    0
+     0    0    0    0    0    0
+ Fill_IH
+ iconvi
+     2    4    6    8   10   12
+     1    5    3   11    9    7
+     0    0    0    0    0    0
+     0    0    0    0    0    0
+ MaxSame :           12  nUnique:        3519  of         8788 and            0
+ Nel     :        2197
+ nVisible:         920  planes
+ Total time :            3
+ Total CPU  :   0.000000000000000E+000
+ Allocated  :        35152  0.134094238281250       Mb
+ Neigh           0           3  total         920  outside tris
+ Nel      :  2197
+ nClust   :     2
+ nFEAnch  :     0
+ nBeamCh  :     0
+ nNNAnch  :     0
+ nEPilCh  :     0
+ nCablBEl       0
+ nPlate   :     0
+ nPlateCh :     0
+ nGeotCh  :     0
+ nInterCh :     0
+ nIntel   :     0
+ nPileElm :     0
+ nCablBEl :     0
+ xyzibar:           0           6
+ nFixed:        2263
+ nel :         2197   nint1 :            4  nin:        8788
+ fexist C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.w01
+ WpIGiI :            0
+ in rdwxx_
+ rdwxx_ (C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.w01)
+ rdwxx_:$$PHASNAMT##          58   F           1
+ skipping block in rdwxx_
+ rdwxx_:$$FSWPRESR##      175760   F           1
+ rdwxx_:$$CLUSDRYI##           8   F           1
+ rdwxx_:$$WP_DISCR##           0   F           1
+ rdwxx_:$$FSEWPRCI##       22088   F           1
+ rdwxx_:$$FSEWPRSR##      132480   F           1
+ rdwxx_:$$GWFBC__I##           0   F           1
+ rdwxx_:$$GWFBCRVR##           0   F           1
+ rdwxx_:$$GWFBCHDR##           0   F           1
+ rdwxx_:$$GWFFUNCI##           0   F           1
+ rdwxx_:$$FFUNCHAR##           0   F           1
+ rdwxx_:$$FFUNCTAR##           0   F           1
+ rdwxx_:$$FFUNCLIR##           0   F           1
+ rdwxx_:$$WELLSPRR##           0   F           1
+ rdwxx_:$$DRAINLAI##           0   F           1
+ rdwxx_:$$DRAINLHR##           0   F           1
+ rdwxx_:$$DRAINSAI##           0   F           1
+ rdwxx_:$$DRAINSHR##           0   F           1
+ rdwxx_:$$BCGFLOWI##          24   F           1
+ rdwxx_:$$INTPERMI##           0   F           1
+ rdwxx_:$$DISPERMI##           0   F           1
+ rdwxx_:$$DISCDRYI##           0   F           1
+ rdwxx_:$$BCPRECII##          12   F           1
+ rdwxx_:$$BCPRECIR##          24   F           1
+ rdwxx_:$$WLGEOM_I##           4   F           1
+ rdwxx_:$$WLGEOM_R##         144   F           1
+ rdwxx_:$$WLTIME_I##          12   F           1
+ rdwxx_:$$SOILWL_I##          20   F           2
+ rdwxx_:$$UDWPRESR##           0   F           2
+ rdwxx_:$$WESMASSR##           0   F           2
+ rdwxx_:$$SLPRECOR##          24   F           2
+ skipping block in rdwxx_
+ rdwxx_:$$SLPRECAI##           0   F           2
+ skipping block in rdwxx_
+ rdwxx_:$$_APPINFT##        1084   F           2
+ skipping block in rdwxx_
+ rdwxx_:$$ENDOFFII##           0   T           2
+ NelBm A=           0
+ 000sw : Read : $$PHASNAMT##           1          63           0
+ 000sw : Read : $$INTEGERI##           1          40           0
+ 000sw : Read : $$FSSOILSI##           2        8788           0
+ 000sw : Read : $$PROLAYSI##           2           8           0
+ 000sw : Read : $$PROLAYSR##           2        3200           0
+ 000sw : Skip : $$DISCSETI##           2           0
+ 000sw : Read : $$LXXFILEI##           2           4           0
+ 000sw : Read : $$SITGWNSI##           2           4           0
+ 000sw : Read : $$MULTIPNR##           2         208           0
+ 000sw : Read : $$SIG_XX0R##           2       70304           0
+ 000sw : Read : $$SIG_YY0R##           2       70304           0
+ 000sw : Read : $$SIG_ZZ0R##           2       70304           0
+ 000sw : Read : $$SIG1MAXR##           2       70304           0
+ 000sw : Read : $$E__C___R##           2      140608           0
+ 000sw : Read : $$PPTCOPCR##           2           8           0
+ 000sw : Read : $$WPINIT_R##           2       70304           0
+ 000sw : Read : $$WPNDIN_R##           2       31248           0
+ 000sw : Read : $$FSEWPRCI##           2       22088           1
+ 000sw : Read : $$FSEWPRSR##           2      132480           1
+ 000sw : Skip : $$SIG_WP0R##           2           0
+ 000sw : Skip : $$FSEPINTR##           2           0
+ 000sw : Read : $$DSATURAR##           2       70304           1
+ 000sw : Read : $$SATEFFER##           2       70304           1
+ 000sw : Read : $$IGNRSUCI##           2           4           1
+ 000sw : Read : $$CALCTIMR##           2          32           1
+ 000sw : Read : $$CALCTIMT##           2          78           1
+ 000sw : Read : $$_APPINFT##           2         652           1
+ After closing file (000sw)           1  ms
+ NelBm B=           0
+ i_stag :           1
+ PStag0:  0.000000000000000E+000
+ PStage:  0.000000000000000E+000
+ i_stag :           1
+ nLayer:           2
+ MaxSet:           2
+ n=       11718
+ n=       11718  ierr=           0
+ n=       11718  ierr=           0
+ NZero =        11718
+ iset, mmod :            1           2
+ iset, mmod :            2           1
+ MMod4 :            0
+ Creep :  F
+LRiks :      4
+ imaxmod           2
+ Put_Load_On_Struct
+ Put_Load_On_Struct done           0  ms
+ CalWt0           1
+ Smallest Jacobian:   11.8663453196738       iel          129           4
+ Largest  Jacobian:   1895.39505166882       iel         1722           4
+ N before Fill_NDofEx :        11718
+ TIME 09:05:11   
+ Nel (Act) :         2197        2197
+ Int (Act) :            0           0
+ Bm  (Act) :            0           0
+ Bm3 (Act) :            0           0
+ NAct :         3906  of         3906
+ nAct:        3906  of        3906
+ dF  1.114317733197367E-006        1950         161        1544
+ MaxFixedDof :            3
+NAct,NInAct :     3485     421
+ rmax :    80.0955970961716     
+ nax=           0
+ NMethod :            1  0.000000000000000E+000
+Numbering method        1
+Number of dof's =    11718
+ Tyings2 allocated            1
+ nmat :     38644390
+ PROF:NMat =     38644390   ->       301910  kB
+Testing      38644390     38644390
+ NMethod :            2  0.000000000000000E+000
+ itype :            0
+ NMethod :            3  0.000000000000000E+000
+ NMethod :            4  0.000000000000000E+000
+Numbering method        4
+Number of dof's =    10458
+ Tyings2 allocated            1
+ nmat :     33984961
+ PROF:NMat =     33984961   ->       265508  kB
+Testing      33984961     38644390
+Best so far             4     33984961       265508  0.9038
+ NMethod :            5  0.000000000000000E+000
+Numbering method        5
+Number of dof's =    10458
+ Tyings2 allocated            1
+ nmat :     36617732
+ PROF:NMat =     36617732   ->       286077  kB
+Testing      36617732     33984961
+ NMethod :            6  0.000000000000000E+000
+ itype :            0
+ NMethod :            7  0.000000000000000E+000
+ itype :            0
+ TIME 09:05:11   
+Numbering method        7
+Number of dof's =    10458
+ Tyings2 allocated            1
+ nmat :      7140561
+ PROF:NMat =      7140561   ->        55786  kB
+Testing       7140561     33984961
+Best so far             7      7140561        55786  0.1774
+ NMethod :            8  0.000000000000000E+000
+ itype :            0
+ TIME 09:05:11   
+Numbering method        8
+Number of dof's =    10458
+ Tyings2 allocated            1
+ nmat :      6789988
+ PROF:NMat =      6789988   ->        53047  kB
+Testing       6789988      7140561
+Best so far             8      6789988        53047  0.1688
+ NMethod :            9  0.000000000000000E+000
+ itype :            0
+ TIME 09:05:11   
+Numbering method        9
+Number of dof's =    10458
+ Tyings2 allocated            1
+ nmat :      8161827
+ PROF:NMat =      8161827   ->        63765  kB
+Testing       8161827      6789988
+ NMethod :           10  0.000000000000000E+000
+ itype :            0
+ TIME 09:05:11   
+Numbering method       10
+Number of dof's =    10458
+ Tyings2 allocated            1
+ nmat :      8109713
+ PROF:NMat =      8109713   ->        63358  kB
+Testing       8109713      6789988
+ NMethod :           11  1.000000000000000E-002
+ itype :            0
+ skipping nmethod :           11
+ NMethod :           12  1.000000000000000E-002
+Numbering method       12
+Number of dof's =    10458
+ Tyings2 allocated            1
+ nmat :     33984961
+ PROF:NMat =     33984961   ->       265508  kB
+Testing      33984961      6789988
+ NMethod :            8  1.000000000000000E-002
+ itype :            0
+ TIME 09:05:11   
+Numbering method        8
+Number of dof's =    10458
+ Tyings2 allocated            1
+ nmat :      6789988
+ PROF:NMat =      6789988   ->        53047  kB
+Resulting numbering method        8
+ Overview:
+  100% =     301910 kB
+Method  1 :      295M 100.00%      294.8M     4738   1.00000  7.563E+10 FLOPs  100.000%
+Method  4 :      259M  87.94%      259.3M     4398   0.90380
+Method  5 :      279M  94.76%      279.4M     4637   0.96307
+Method  7 :       54M  18.48%       54.5M      806   0.17740  2.759E+09 FLOPs    3.648%
+Method  8 :       52M  17.57%       51.8M      767   0.16878
+Method  9 :       62M  21.12%       62.3M      963   0.20724
+Method 10 :       62M  20.99%       61.9M      949   0.20512
+Method 12 :      259M  87.94%      259.3M     4398   0.90380
+  Matrix~        52 MB  avg band      649
+Resulting FLOPs :   2.554E+09 for decomposition
+Resulting FLOPs :   1.358E+07 for backsubstitution
+ Tyings2 allocated            1
+ nOdd, nEven:           0           0
+ End Ty_Anch_To_Struct           0
+ nmat :      6789988
+ PROF:NMat =      6789988   ->        53047  kB
+ nOld :        10458
+ nNew :         9456   90.4188181296615       %
+ nMatOld :                6789987                 53047  kB
+ nMatNew :                6234516                 48708  kB
+   91.8192626878373       %
+Reduced   FLOPs :   2.356E+09 for decomposition
+Reduced   FLOPs :   1.247E+07 for backsubstitution
+Estimated speed :     1362.22 MFl/s
+Estimated decomposition time :        1.73 s =       0.03 min
+Number of dof's =    10458
+Number of active dof's =     9455
+ TIME 09:05:12   
+ Time for opt :   0.370000000000000       s
+ nRigid:           0
+ N after  Fill_NDofEx :        10458
+ ------------Iterative settings-----------------
+ DSCMax =   0.500000000000000     
+ MaxDown =            5
+ UsingLineSearch =  F
+ GradualError =  F
+ Riks_auto =  F
+ ------------Iterative settings end-------------
+ call ReadCrp
+ after ReadCrp
+ Nin_ =            1
+ nodtot F        3906
+  FilNm : C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.000
+ nel,nin:        2197        8788        8788
+ Opening file:
+ C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\data.000
+ XXX_Temp : $$PHASNAMT##          63
+ XXX_Temp : $$INTEGERI##          40
+ XXX_Temp : $$FSSOILSI##        8788
+ XXX_Temp : $$PROLAYSI##           8
+ XXX_Temp : $$PROLAYSR##        3200
+ XXX_Temp : $$DISCSETI##           0
+ XXX_Temp : $$LXXFILEI##           4
+ XXX_Temp : $$SITGWNSI##           4
+ XXX_Temp : $$MULTIPNR##         208
+ XXX_Temp : $$SIG_XX0R##       70304
+ XXX_Temp : $$SIG_YY0R##       70304
+ XXX_Temp : $$SIG_ZZ0R##       70304
+ XXX_Temp : $$SIG1MAXR##       70304
+ XXX_Temp : $$E__C___R##      140608
+ XXX_Temp : $$PPTCOPCR##           8
+ XXX_Temp : $$WPINIT_R##       70304
+ XXX_Temp : $$WPNDIN_R##       31248
+ XXX_Temp : $$FSEWPRCI##       22088
+ nLoadW60, nLoadW80:          920           0
+ XXX_Temp : $$FSEWPRSR##      132480
+ XXX_Temp : $$SIG_WP0R##           0
+ XXX_Temp : $$FSEPINTR##           0
+ XXX_Temp : $$DSATURAR##       70304
+ XXX_Temp : $$SATEFFER##       70304
+ XXX_Temp : $$IGNRSUCI##           4
+ XXX_Temp : $$CALCTIMR##          32
+ XXX_Temp : $$CALCTIMT##          78
+ XXX_Temp : $$_APPINFT##         652
+ Size bBuf, rBuf:       22088       17576
+ BFileS2D          30
+ iPrevCalc :            0
+ iPrevCalc :            0
+ iPrevCalc :            0
+ iPrevCalc :            0
+ Reading block : $$PHASNAMT##          63           0
+ Previous phase:Initial phase
+ Reading block : $$INTEGERI##          40           0
+ Skipping block $$INTEGERI##
+ Reading block : $$FSSOILSI##        8788           0
+ 530  T
+ Reading block : $$PROLAYSI##           8           1
+ Reading block : $$PROLAYSR##        3200           1
+ Reading block : $$LXXFILEI##           4           1
+ Skipping block $$LXXFILEI##
+ Reading block : $$SITGWNSI##           4           1
+ Reading block : $$MULTIPNR##         208           1
+Pm0 T  G  TD SF :   0.00000E+00  1.00000E+00  0.00000E+00  1.00000E+00
+Pm0 SC :   0.00000E+00
+ Reading block : $$SIG_XX0R##       70304           1
+ Reading block : $$SIG_YY0R##       70304           1
+ Reading block : $$SIG_ZZ0R##       70304           1
+ Reading block : $$SIG1MAXR##       70304           1
+ Reading block : $$E__C___R##      140608           1
+ Skipping block $$E__C___R##
+ Reading block : $$PPTCOPCR##           8           1
+ Skipping block $$PPTCOPCR##
+ Reading block : $$WPINIT_R##       70304           1
+ Reading block : $$WPNDIN_R##       31248           1
+ Reading block : $$FSEWPRCI##       22088           1
+ Reading block : $$FSEWPRSR##      132480           2
+ Reading block : $$DSATURAR##       70304           4
+ Reading block : $$SATEFFER##       70304           4
+ Skipping block $$SATEFFER##
+ Reading block : $$IGNRSUCI##           4           4
+ Reading block : $$CALCTIMR##          32           4
+ Reading block : $$CALCTIMT##          78           4
+ Skipping block $$CALCTIMT##
+ Reading block : $$_APPINFT##         652           4
+ Skipping block $$_APPINFT##
+ leaving ReadXXX           4  ms
+ back from ReadXXX
+ Get_CalcType...
+ nHand:           7           7
+ nDof:           3
+ nHand,iUpd,iUnd,iFlo,iPhC:           7           0           0           0
+           0
+ iCalcType:           70           7
+ 
+ Pore pressures from wxx is used
+ 
+ Fill_Neigh           1
+ Fill_IH
+ MaxSame :           12  nUnique:        3519  of         8788 and            0
+ Nel     :        2197
+ Total time :            3
+ Total CPU  :   0.000000000000000E+000
+ Allocated  :        35152  0.134094238281250       Mb
+ Neigh           1           3  total         920  outside tris
+ Chk_WLoad
+ nOutside triangles:         920
+ nLoadW6         920         920
+         920  valid WLoads
+ Chk_WLoad           0  ms
+ Remove_Double_WaterLoads2
+         920  valid WLoads
+ Remove_Double_WaterLoads2           1  ms
+ Modify_Wp_for_Suction...
+ PPTCO:   0.000000000000000E+000
+ Probably 3DF problem
+Pm0 T  G  H  SF :   0.00000E+00  1.00000E+00  0.00000E+00  1.00000E+00
+Pm0 DA C1 C2 SC :   0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00
+Inc D  LA LB    :   0.00000E+00  0.00000E+00  0.00000E+00
+Inc T  G  H  SF :   0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00
+Ult D  LA LB    :   1.00000E+00  1.00000E+00  1.00000E+00
+Ult T  G  H  SF :   0.00000E+00  1.00000E+00  0.00000E+00  1.00000E+00
+Ult DA C1 C2 SC :   0.00000E+00  0.00000E+00  0.00000E+00  1.00000E+00
+ INFO1
+ AddCxx
+ bkhead:$$S000000H##         232
+ end cxx
+ PStag0 (after rdXXX):   0.000000000000000E+000
+ PArea0 (after rdXXX):    1.00000000000000     
+ dUTot0 from 000
+ INFO2
+ SumG  :   0.000000000000000E+000           0           0
+ PropInt na GenMat:
+ n_amat        9456
+IBG 0=      263640       2060
+nnz_amat     6234516      48708
+ Memory needed for BG and Amat                 50768  kB
+ av. bandwitdh of profile matrix   659.318527918782     
+ max material model: (2=Mohr-Coulomb)           2
+ GetFreeMem
+ Tot. Int.:     16611764  kB        16222  Mb
+ Internal :      5010272  kB         4892  Mb free
+ InSwap   :     11564388  kB        11293  Mb free
+ Total    :     16574660  kB        16186  Mb free
+ Use not more than approx.    15686175  kb of internal memory for calculations
+ iRotAct:           0           0           0
+ Solving linear systems with iterative solver
+ after init_pc
+ Init_Crp
+ nodtot G        3906
+ Tyings2 allocated            1
+ start Check_Close_Strucs
+ xMin Max :   0.000000000000000E+000   75.0000000000000     
+ yMin Max :   0.000000000000000E+000   75.0000000000000     
+ zMin Max :   -40.0000000000000       0.000000000000000E+000
+ Diag     :    113.357840487546     
+ end Check_Close_Strucs           0           0
+ Tyings2 allocated            1
+ nmat :      6789988
+ PROF:NMat =      6789988   ->        53047  kB
+ nOld :        10458
+ nNew :         9456   90.4188181296615       %
+ nMatOld :                6789987                 53047  kB
+ nMatNew :                6234516                 48708  kB
+   91.8192626878373       %
+ FillLMat           1 T
+ nLConI:          56
+ size for all LConX :        65910           258  kB
+ Number of relations :       742589
+ Filling relations per dof
+ Safe  nD =       742589
+ Time for FillLmat(1...   0.000000000000000E+000  s
+ FillLMat           2 T
+ nLConI:          56
+ size for all LConX :        65910           258  kB
+ Number of relations :       742589
+ Filling relations per dof
+ Safe  nD =       742589
+ Sorting relations per dof
+ Compressing relations per dof
+ Done, nD =       321757  matrix :         2514  kB
+  dT for filling     :            0
+  dT for finding n   :            0
+  dT for counting    :            5
+  dT for filling     :            7
+  dT for sorting     :           41
+  dT for compression :            1
+  dT for total       :           54  ms
+ dt FillLMat :           50             1  times T
+ C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\PHASE_~1\UsePard F
+ Time for FillLmat(2...   4.687500000000000E-002  s
+ Enough memory to allocate BG available
+ GetFreeMem
+ Tot. Int.:     16611764  kB        16222  Mb
+ Internal :      5002232  kB         4884  Mb free
+ InSwap   :     11556640  kB        11285  Mb free
+ Total    :     16558872  kB        16170  Mb free
+IBG 2=      263640       2059
+ ierr2=           0
+ GetFreeMem
+ Tot. Int.:     16611764  kB        16222  Mb
+ Internal :      5005196  kB         4887  Mb free
+ InSwap   :     11557080  kB        11286  Mb free
+ Total    :     16562276  kB        16174  Mb free
+ Allocate BG Now         2059
+ ierr3=           0
+ GetFreeMem
+ Tot. Int.:     16611764  kB        16222  Mb
+ Internal :      5002168  kB         4884  Mb free
+ InSwap   :     11554964  kB        11284  Mb free
+ Total    :     16557132  kB        16169  Mb free
+ Allocated   :        14704  kB
+ GetFreeMem
+ Tot. Int.:     16611764  kB        16222  Mb
+ Internal :      5001956  kB         4884  Mb free
+ InSwap   :     11554964  kB        11284  Mb free
+ Total    :     16556920  kB        16168  Mb free
+ Ladv0,lType,nDof:           1           1           3
+ Voor Step_From_Ult, dSF   :   0.000000000000000E+000
+ FScUlt:    1.00000000000000     
+ Fac   :   1.000000000000000E-003
+ dSc   :   1.000000000000000E-003
+ dScMax:   0.500000000000000     
+ Na Step_From_Ult, fTUlt :   0.000000000000000E+000
+ Na Step_From_Ult, dSF   :   0.000000000000000E+000
+ Na Step_From_Ult, dTime :   0.000000000000000E+000
+ Chain0   0.000000000000000E+000
+ dsf   0.000000000000000E+000
+ isffac:           0
+ ideform
+       2      0      1      1      1       0      0      0      1   1000
+       0     -1     60      6     15       5      0      0      3      0
+       0      0      1      1      1       0      0      0      1      0
+Step :  1 of 1000
+ GetFreeMem
+ Tot. Int.:     16611764  kB        16222  Mb
+ Internal :      5000912  kB         4883  Mb free
+ InSwap   :     11554964  kB        11284  Mb free
+ Total    :     16555876  kB        16167  Mb free
+ TIME 09:05:12   
+ call form a
+ Pos 413, fTUlt :   0.000000000000000E+000
+ Matrix         123
+ nBmNod  :            6
+ nBmNod3 :            3
+ scRatio:  1.000000000000000E+100
+ After Soil
+ call form b
+ TIME 09:05:12   
+form  amat       0.07 s
+SD,SDnz,HD  1.49359E+04  1.49359E+04  6.25332E+08
+ iSD,iSDnz,iHD           9           9         752
+ uMax :   1.000000000000000E+020
+ PduFree :    99000.0000000000     
+ NelBm in BoundC1 :            0
+ Boundc2iter, nNew:        9456
+ BoundC2iter A
+ BoundC2iter B
+ BoundC2iter C
+ nNewFree         9455
+ BoundC2iter D
+ Time for BoundC2iter   0.000000000000000E+000
+SD,HD  1.49359E+04  6.25332E+08
+ iSD,iHD           9         752
+ lsize:           1
+ Mem: 2 16222 (4885) MB (free) physical memory
+ Process ID, MemMB : 3212 64
+ Process ID, MemMB : 3212 64
+ PASSMBMEM 64
+ Picos_Prep           1  ms
+ TIME 09:05:12   
+ Picos decomposition pos. definite case
+ Checking unrelated dofs
+           1  dofs only used once of         9456
+         316  max dofs for dof        1432
+ First infected dof        1432         316
+           1 nDone :        9064 of         9456         392 T
+           1 nDone :        9456 of         9456           0 T
+ Check time            1 ms
+ dof    1432 node    1296 co     0.000    10.159   -29.640 ldof 1
+ Picos symmetric definite matrix
+ Picos using GMRES
+ Number of original DOF groups:            3
+ Number of merged   DOF groups:            2
+ nCPU:           4
+ nThreads used:            1
+ Picos initial droptol   2.000000000000000E-005
+ set_option
+ set_feedback
+ null_space
+ update_matrix
+ update_precon
+ plxtimerstop
+ check_error
+ TIME 09:05:13   
+(incomplete)decomposition amat      1.04 s
+ UpdWPres
+ UpdWPres End
+ FormGH
+ FormG
+ FormG end
+ Gxyz  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ DaSum(Wtg) :    225000.000000000     
+ DaSum(Gamma) :    74880.0000000000     
+ nLoadW6:         920
+ FormG
+ FormG end
+ Gxyz  0.000000000000000E+000  0.000000000000000E+000  -4058562.56814173     
+ DaSum(Wtg) :    225000.000000000     
+ DaSum(Gamma) :    174308.000000000     
+ GNorm :    2517196.85605429     
+ nBmNod  :            6
+ nBmNod3 :            3
+GNorm :   2.51720E+06
+GNXYZ  :  -2.86347E+01 -8.77208E+01 -1.85754E+06
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+sumerr..  0.00000E+00  1.00000E+00  0.00000E+00
+dt GetSig :  1.000E-02    8788
+ITest,Fac =    1     0.5000
+ FScUlt:    1.00000000000000     
+ Fac   :   0.500000000000000     
+ dSc   :   0.500000000000000     
+ dScMax:   0.500000000000000     
+ len cn :    5541450.60705321     
+ len sig0 :    2923030.29070673     
+ len sigwp0 :   0.000000000000000E+000
+ pSC, |SC|: -0.500000000000000       0.000000000000000E+000
+ xa,xb,xc,xd,xg,rl,xcn:  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000   2605906.63559880     
+   113414.066707698        5541450.60705321     
+ x1,x2:  0.000000000000000E+000  0.000000000000000E+000
+ xa,xb,xc,xd,xg,rl,xcn:  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000   2605906.63559880     
+   113414.066707698        5541450.60705321     
+ x1,x2:  0.000000000000000E+000  0.000000000000000E+000
+ fScUlt:   1.00000000000000     
+ PStag0:  0.000000000000000E+000
+ Dsc   :  0.500000000000000     
+ Fill SC here !!!!
+ xSC =    113414.066707698     
+ScNorm:   8.37141E+04
+ 
+ Process ID, MemMB : 3212 99
+ PASSMBMEM 99
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    4, error =  8.568E-06
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            4
+   tolerance ......   6.0000E-04
+   residual .......   8.5683E-06
+ 
+PrspGG or PCG_Solv:     0.05 s
+ RMinmax:    2521 -1.94761E+02    2122  3.11403E+02
+ UMinmax:      21 -7.04770E-03    1732  1.05322E-02
+ Process ID, MemMB : 3212 99
+ PASSMBMEM 99
+ iDum from Header :          991
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       58       58
+sumerr..  3.24910E+01  1.06874E+02  3.04013E-01
+dt GetSig :   0.00        8788
+ SumCn1   5541450.60705321     
+ SumCn2   5508567.36815653     
+ SumCn3   5508567.36815653     
+ SumCn4   5508567.36815653     
+ pSC: -0.500000000000000     
+ SumCn, SumPBound, SumRLoad   5508567.36815653        9455.00000000000     
+   1191.26755746123     
+ITest =      1
+EglT1,EglT2,EglT :   4.18571E+04  2.51720E+06  2.55905E+06
+RNorm,EglT,Egln1 :   8.99446E+02  2.55905E+06  3.51476E-04
+CSP for Error :        1.0000000
+PG   1=        1.0000000
+PSC   =        0.0000000       0.5000000  5.00000E-01
+EglN1 =   3.51476E-04  3.04013E-01  1.00000E+00  2.55905E+06
+ITest,Fac =    2     0.2500
+ FScUlt:    1.00000000000000     
+ Fac   :   0.250000000000000     
+ dSc   :   0.250000000000000     
+ dScMax:   0.500000000000000     
+ len cn :    5541450.60705321     
+ len sig0 :    2923030.29070673     
+ len sigwp0 :   0.000000000000000E+000
+ pSC, |SC|: -0.750000000000000        4006.70816043693     
+ Process ID, MemMB : 3212 100
+ PASSMBMEM 100
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    4, error =  8.568E-06
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            4
+   tolerance ......   6.0000E-04
+   residual .......   8.5683E-06
+ 
+PrspGG or PCG_Solv:     0.06 s
+ RMinmax:    2521 -9.73807E+01    2122  1.55702E+02
+ UMinmax:      21 -3.52385E-03    1732  5.26612E-03
+ Process ID, MemMB : 3212 100
+ PASSMBMEM 100
+ iDum from Header :          991
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       36       34
+sumerr..  9.89622E+00  6.93201E+01  1.42761E-01
+dt GetSig :  1.000E-02    8788
+ SumCn1   5541450.60705321     
+ SumCn2   5522048.20602991     
+ SumCn3   5522048.20602991     
+ SumCn4   5522048.20602991     
+ pSC: -0.750000000000000     
+ SumCn, SumPBound, SumRLoad   5522048.20602991        9455.00000000000     
+   445.935276398588     
+ITest =      2
+EglT1,EglT2,EglT :   2.09285E+04  2.51720E+06  2.53813E+06
+RNorm,EglT,Egln1 :   3.26166E+02  2.53813E+06  1.28507E-04
+CSP for Error :        1.0000000
+PG   1=        1.0000000
+PSC   =        0.0000000       0.2500000  2.50000E-01
+EglN1 =   1.28507E-04  1.42761E-01  1.00000E+00  2.53813E+06
+ITest,Fac =    3     0.0000
+ FScUlt:    1.00000000000000     
+ Fac   :   0.000000000000000E+000
+ dSc   :   0.000000000000000E+000
+ dScMax:   0.500000000000000     
+ len cn :    5541450.60705321     
+ len sig0 :    2923030.29070673     
+ len sigwp0 :   0.000000000000000E+000
+ pSC, |SC|:  -1.00000000000000        4006.70816043693     
+ Process ID, MemMB : 3212 100
+ PASSMBMEM 100
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  3.319E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   6.0000E-04
+   residual .......   3.3189E-05
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    2245 -5.68434E-14    2069  5.68434E-14
+ UMinmax:    2245 -6.39448E-19    2069  5.74692E-19
+ Process ID, MemMB : 3212 100
+ PASSMBMEM 100
+ iDum from Header :          991
+ Threads in getsig / cluster:            2           1
+sumerr..  0.00000E+00  1.00000E+00  0.00000E+00
+dt GetSig :   0.00        8788
+ SumCn1   5541450.60705321     
+ SumCn2   5541450.60705321     
+ SumCn3   5541450.60705321     
+ SumCn4   5541450.60705321     
+ pSC:  -1.00000000000000     
+ SumCn, SumPBound, SumRLoad   5541450.60705321        9455.00000000000     
+  6.899792571384054E-013
+ITest =      3
+EglT1,EglT2,EglT :   0.00000E+00  2.51720E+06  2.51720E+06
+RNorm,EglT,Egln1 :   6.73493E-13  2.51720E+06  2.67557E-19
+CSP for Error :        1.0000000
+PG   1=        1.0000000
+EglN1 =   2.67557E-19  0.00000E+00  1.00000E+00  2.51720E+06
+  WARNING from STEPSZ: S cannot be found!
+( 0.00   0.00000)( 0.25   0.00013)( 0.50   0.00035)  5.00000E-01  0.010
+( 0.00   0.00000)( 0.25   0.14276)( 0.50   0.30401)  1.86282E-02  0.010
+Step size :    0.01863
+ FScUlt:    1.00000000000000     
+ Fac   :   1.862818880504801E-002
+ dSc   :   1.862818880504801E-002
+ dScMax:   0.500000000000000     
+ Norm GN :    81807.7871996221     
+ Norm SC :    4006.70816043693     
+ BackSub 3
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  0.00086
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   8.5674E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    2521 -7.25611E+00    2122  1.16018E+01
+ UMinmax:      21 -2.62539E-04    1732  3.92409E-04
+ DUDU :   7.262379059303489E-005
+ RLRL :    5570.78866452653     
+ RLDU :   0.227504270408372     
+ RSign =    1.00000000000000     
+ChkUlt    1    0   5.36821E+01
+ ufac  :    53.6820842039679     
+ scfac :    1.00000000000000     
+ dUTot0 from DuTot A           0           0
+ Process ID, MemMB : 3212 100
+ PASSMBMEM 100
+ breakiter:  F
+Iter :        1       1
+ node rload:
+RLoadXYZV :   7.79776E+02  8.23392E+02  5.09531E+02  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  0.00086
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   8.5674E-04
+ 
+PrspGG or PCG_Solv:     0.05 s
+ RMinmax:    2521 -7.25611E+00    2122  1.16018E+01
+ UMinmax:      21 -2.62539E-04    1732  3.92409E-04
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ dUTot0 from dU B
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+sumerr..  0.00000E+00  2.25000E+00  0.00000E+00
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  2.27519E-01  2.27519E-01
+dUMdU,dUKdU,CSP:  2.27519E-01  2.27519E-01  1.00000E+00
+ Rnorm, Eglt, EGLN1 =   1.21851E+00  2.51876E+06  4.83773E-07
+St,It =      1     1
+PSC   =        0.0000000       0.0186282  1.86282E-02
+F,Fold=   1.00000E+00  1.00000E+00  1.00000E+00
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        2       2
+ node rload:
+RLoadXYZV :   5.41967E-01  5.79191E-01  7.00833E-01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  9.703E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   9.7034E-05
+ 
+PrspGG or PCG_Solv:     0.05 s
+ RMinmax:    1500 -8.39470E-03    1932  9.20642E-03
+ UMinmax:    2214 -1.33672E-07     433  4.25459E-09
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   1.54036E-07
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   1.54036E-07  1.00000E+00
+ du0xyz :   3.92409E-04  0.00000E+00  7.14491E-06
+ duexyz :   3.92409E-04  0.00000E+00  7.14491E-06
+ dusxyz :  -1.63717E-08  0.00000E+00 -4.79359E-08
+ Fac,FacOld      :   1.00004E+00  1.00000E+00     100.00 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+sumerr..  0.00000E+00  2.25000E+00  0.00000E+00
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  2.27489E-01  2.27489E-01
+dUMdU,dUKdU,CSP:  2.27489E-01  2.27489E-01  1.00000E+00
+ Rnorm, Eglt, EGLN1 =   1.52537E-04  2.51876E+06  6.05605E-11
+St,It =      1     2
+PSC   =        0.0000000       0.0186282  1.86282E-02
+F,Fold=   1.00000E+00  1.00000E+00  1.00000E+00
+ rescale_iteration...
+ Scaled_Up:  F
+ SumGT :   0.000000000000000E+000           1           2
+  0.000000000000000E+000
+ChkUlt    1    0   5.36821E+01
+Scale Up  A      1     2     2
+ updown =    2.00000000000000     
+ Setting dsc0 =   1.862818880504801E-002
+SCFAC,CHSUB:      2.0000     0.0000  Restart : F
+SCFAC,CHSUB:      1.0000     0.0000  Restart : F
+ breakiter:  F
+Iter :        3       1
+ node rload:
+RLoadXYZV :   7.28221E-05  7.19977E-05  8.43025E-05  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  0.00025
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   2.4652E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    2129 -9.38466E-07    1499  9.47462E-07
+ UMinmax:     740 -5.77339E-13    2775  1.55646E-11
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       18       18
+sumerr..  9.67786E-01  4.10362E+01  2.35837E-02
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  9.09708E-01  9.09957E-01
+dUMdU,dUKdU,CSP:  9.09708E-01  9.09957E-01  9.99726E-01
+ Rnorm, Eglt, EGLN1 =   1.46744E+01  2.52032E+06  5.82244E-06
+St,It =      1     3
+PSC   =        0.0000000       0.0372564  3.72564E-02
+F,Fold=   1.00000E+00  1.00000E+00  1.00000E+00
+Pl,Ina=       18      18      18
+ ErrLoc:  2.358372566061391E-002
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        4       2
+ node rload:
+RLoadXYZV :   4.34542E+00  5.75503E+00  1.00789E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  0.00057
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   5.6648E-04
+ 
+PrspGG or PCG_Solv:     0.03 s
+ RMinmax:    1536 -5.96529E-01    1485  6.00909E-01
+ UMinmax:    1151 -6.39537E-06    2138  6.27995E-06
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   6.16145E-07
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   6.16145E-07  1.00000E+00
+ du0xyz :   7.84819E-04  0.00000E+00  1.42898E-05
+ duexyz :   7.84819E-04  0.00000E+00  1.42898E-05
+ dusxyz :   4.28298E-09  0.00000E+00  1.85849E-07
+ Fac,FacOld      :   9.99990E-01  1.00000E+00     100.00 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       18        0
+sumerr..  1.55124E-01  4.10362E+01  3.78017E-03
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  9.10088E-01  9.10469E-01
+dUMdU,dUKdU,CSP:  9.10088E-01  9.10469E-01  9.99581E-01
+ Rnorm, Eglt, EGLN1 =   5.49054E+00  2.52032E+06  2.17851E-06
+St,It =      1     4
+PSC   =        0.0000000       0.0372560  3.72564E-02
+F,Fold=   9.99990E-01  1.00000E+00  1.00000E+00
+Pl,Ina=       18       0      18
+ rescale_iteration...
+ Scaled_Up:  T
+ChkUlt    1    0   2.68413E+01
+dUMdU,dUKdU soil  9.10088E-01  9.10469E-01
+dUMdU,dUKdU,CSP:  9.10088E-01  9.10469E-01  9.99581E-01
+Uxyz at IStep,Iter :     1     4     1
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+forceXYZ:       0.0000000       0.0000000       0.0000000
+ Writing data ...
+CSP :   9.99581E-01
+PAreaT,PAreaN,PArea :   2.25000E+05  2.25000E+05  1.00000E+00
+ Realised_ClusterVolChange
+ChkUlt    2    0   2.58413E+01
+ Tot, Av Gb: 476.234 284.829
+ Estimated kb:         1094
+ wts :a           0           0  -360467530
+ wts :a        9034        9034  -360467505
+ wts :b        9034        9034  -360467505
+ wts :b        9034        9034  -360467505
+ wts :b        9034        9034  -360467505
+ wts :c        9034        9034  -360467505
+ wts :d       34402       34402  -360467505
+ wts :d2       43614       43614  -360467505
+ wts :e       43630       43630  -360467505
+ wts :f      255174      255174  -360467504
+ wts :g      622538      622538  -360467503
+ wts :h      781314      781314  -360467503
+ wts :h1      781314      781314  -360467503
+ wts :i0      781314      781314  -360467503
+ wts :i      781314      781314  -360467503
+ Nel,Nin:        2197        8788
+ wts :j     1054874     1054874  -360467502
+ wts :k     1054874     1054874  -360467502
+ wts :md     1054874     1054874  -360467502
+ wts :me     1054874     1054874  -360467502
+ wts :m     1054874     1054874  -360467502
+ wts :n     1054874     1054874  -360467502
+ wts :o     1054874     1054874  -360467501
+ wts :p     1054874     1054874  -360467501
+ wts :q     1054874     1054874  -360467501
+ wts :r     1054874     1054874  -360467501
+ wts :s     1054874     1054874  -360467501
+ wts :u     1054874     1054874  -360467501
+ wts :u     1054874     1054874  -360467501
+ wts :v     1054874     1054874  -360467501
+ wts :w     1054874     1054874  -360467501
+ wts :y     1054874     1054874  -360467501
+ wts :z     1054874     1054874  -360467501
+ Tot, Av Gb: 476.234 284.828
+ Used kB:         1030  kB       35174  kB/s          30
+ AddCxx
+ bkhead:$$S000001H##         232
+ end cxx
+ Write_Step: DoneLead, ULTLEV   : F F
+ Write_Step: nStepDef, nStepFlow:           1          -1
+ iRes:            1
+ WrtLog:  T
+ Active           4   1.00000000000000     
+ IMult =            4
+ Call: Step_Ready
+ After Step_Ready
+Time for this step [s]      1.58 s
+Step :  2 of 1000
+ChkUlt    1    0   2.58413E+01
+ ufac  :    25.8413042277858     
+ scfac :    1.00000000000000     
+ dUTot0 from DuTot A           0           0
+ breakiter:  F
+Iter :        1       1
+ node rload:
+RLoadXYZV :   1.55868E+03  1.64591E+03  1.01902E+03  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       20       20
+sumerr..  1.47529E+00  4.37629E+01  3.37109E-02
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  9.09543E-01  9.10469E-01
+dUMdU,dUKdU,CSP:  9.09543E-01  9.10469E-01  9.98983E-01
+ Rnorm, Eglt, EGLN1 =   4.13023E+01  2.52238E+06  1.63743E-05
+St,It =      2     1
+PSC   =        0.0372560       0.0745120  3.72564E-02
+F,Fold=   9.99990E-01  9.99990E-01  9.99990E-01
+Pl,Ina=       20      20      20
+ ErrLoc:  3.371092764250587E-002
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        2       2
+ node rload:
+RLoadXYZV :   1.29267E+01  1.62147E+01  2.89104E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  0.00063
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   6.2566E-04
+ 
+PrspGG or PCG_Solv:     0.05 s
+ RMinmax:    1536 -1.86470E+00    1485  1.90421E+00
+ UMinmax:    1151 -1.41559E-05    1877  1.42986E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   6.16117E-07
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   6.16117E-07  1.00000E+00
+ du0xyz :   7.84783E-04  0.00000E+00  1.43797E-05
+ duexyz :   7.84819E-04  0.00000E+00  1.42898E-05
+ dusxyz :   4.30249E-08  0.00000E+00  4.97369E-07
+ Fac,FacOld      :   9.99924E-01  9.99990E-01      99.99 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       20       12
+sumerr..  4.55650E-01  4.37629E+01  1.04118E-02
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  9.10470E-01  9.12058E-01
+dUMdU,dUKdU,CSP:  9.10470E-01  9.12058E-01  9.98259E-01
+ Rnorm, Eglt, EGLN1 =   1.77631E+01  2.52238E+06  7.04220E-06
+St,It =      2     2
+PSC   =        0.0372560       0.0745096  3.72564E-02
+F,Fold=   9.99924E-01  9.99990E-01  9.99990E-01
+Pl,Ina=       20      12      20
+ ErrLoc:  1.041180459855745E-002
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        3       3
+ node rload:
+RLoadXYZV :   5.54931E+00  7.93283E+00  1.23791E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  2.690E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   2.6901E-05
+ 
+PrspGG or PCG_Solv:     0.06 s
+ RMinmax:    1536 -9.40121E-01    1485  9.84411E-01
+ UMinmax:    1484 -9.14197E-06    1485  5.73238E-06
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   7.84783E-04  0.00000E+00  1.43797E-05
+ duexyz :   7.84819E-04  0.00000E+00  1.42898E-05
+ dusxyz :   1.83022E-08  0.00000E+00  1.42466E-07
+ Fac,FacOld      :   9.99897E-01  9.99924E-01      99.99 %
+ NDofM =          257
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       20        0
+sumerr..  2.12526E-01  4.37629E+01  4.85632E-03
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  9.10967E-01  9.13016E-01
+dUMdU,dUKdU,CSP:  9.10967E-01  9.13016E-01  9.97755E-01
+ Rnorm, Eglt, EGLN1 =   7.07394E+00  2.52238E+06  2.80447E-06
+St,It =      2     3
+PSC   =        0.0372560       0.0745086  3.72564E-02
+F,Fold=   9.99897E-01  9.99924E-01  9.99990E-01
+Pl,Ina=       20       0      20
+ rescale_iteration...
+ Scaled_Up:  F
+ SumGT :   0.000000000000000E+000           2           3
+  0.000000000000000E+000
+ChkUlt    1    0   2.58437E+01
+Scale Up  A      2     3     3
+ updown =    2.00000000000000     
+SCFAC,CHSUB:      2.0000     1.0000  Restart : F
+SCFAC,CHSUB:      1.0000     2.0000  Restart : F
+ breakiter:  F
+Iter :        4       1
+ node rload:
+RLoadXYZV :   2.02810E+00  3.41213E+00  5.03690E+00  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       25       25
+sumerr..  4.68171E+00  5.17194E+01  9.05213E-02
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  3.64351E+00  3.65207E+00
+dUMdU,dUKdU,CSP:  3.64351E+00  3.65207E+00  9.97658E-01
+ Rnorm, Eglt, EGLN1 =   1.99198E+01  2.52550E+06  7.88746E-06
+St,It =      2     4
+PSC   =        0.0372560       0.1117611  7.45128E-02
+F,Fold=   9.99897E-01  9.99897E-01  9.99990E-01
+Pl,Ina=       25      25      25
+ ErrLoc:  9.052132468235365E-002
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        5       2
+ node rload:
+RLoadXYZV :   6.19690E+00  9.47696E+00  1.40550E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  8.558E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   8.5580E-05
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1536 -1.06598E+00    1485  1.16875E+00
+ UMinmax:    1484 -1.33003E-05    1485  7.80562E-06
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   2.46447E-06
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   2.46447E-06  1.00000E+00
+ du0xyz :   1.56957E-03  0.00000E+00  2.87593E-05
+ duexyz :   1.56964E-03  0.00000E+00  2.85797E-05
+ dusxyz :   1.34227E-08  0.00000E+00  1.33711E-07
+ Fac,FacOld      :   9.99887E-01  9.99897E-01      99.99 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       25        1
+sumerr..  2.54070E-01  5.17194E+01  4.91247E-03
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  3.64402E+00  3.65349E+00
+dUMdU,dUKdU,CSP:  3.64402E+00  3.65349E+00  9.97408E-01
+ Rnorm, Eglt, EGLN1 =   1.12244E+01  2.52550E+06  4.44442E-06
+St,It =      2     5
+PSC   =        0.0372560       0.1117604  7.45128E-02
+F,Fold=   9.99887E-01  9.99897E-01  9.99990E-01
+Pl,Ina=       25       1      25
+ rescale_iteration...
+ Scaled_Up:  T
+ChkUlt    1    0   1.29220E+01
+dUMdU,dUKdU soil  3.64402E+00  3.65349E+00
+dUMdU,dUKdU,CSP:  3.64402E+00  3.65349E+00  9.97408E-01
+Uxyz at IStep,Iter :     2     5     2
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+forceXYZ:       0.0000000       0.0000000       0.0000000
+ Writing data ...
+CSP :   9.97408E-01
+PAreaT,PAreaN,PArea :   2.25000E+05  2.25000E+05  1.00000E+00
+ChkUlt    2    0   1.19220E+01
+ Tot, Av Gb: 476.234 284.827
+ wts :a           0           0  -360467262
+ wts :a        9034        9034  -360467261
+ wts :b        9034        9034  -360467261
+ wts :b        9034        9034  -360467261
+ wts :b        9034        9034  -360467261
+ wts :c        9034        9034  -360467261
+ wts :d       34402       34402  -360467261
+ wts :d2       43614       43614  -360467261
+ wts :e       43630       43630  -360467261
+ wts :f      255294      255294  -360467260
+ wts :g      622658      622658  -360467259
+ wts :h      781434      781434  -360467258
+ wts :h1      781434      781434  -360467258
+ wts :i0      781434      781434  -360467258
+ wts :i      781434      781434  -360467258
+ Nel,Nin:        2197        8788
+ wts :j     1054994     1054994  -360467252
+ wts :k     1054994     1054994  -360467252
+ wts :md     1054994     1054994  -360467252
+ wts :me     1054994     1054994  -360467252
+ wts :m     1054994     1054994  -360467252
+ wts :n     1054994     1054994  -360467252
+ wts :o     1054994     1054994  -360467252
+ wts :p     1054994     1054994  -360467252
+ wts :q     1054994     1054994  -360467252
+ wts :r     1054994     1054994  -360467252
+ wts :s     1054994     1054994  -360467252
+ wts :u     1054994     1054994  -360467252
+ wts :u     1054994     1054994  -360467252
+ wts :v     1054994     1054994  -360467252
+ wts :w     1054994     1054994  -360467252
+ wts :y     1054994     1054994  -360467252
+ wts :z     1054994     1054994  -360467252
+ Tot, Av Gb: 476.234 284.827
+ Used kB:         1030  kB       95941  kB/s          11
+ AddCxx
+ bkhead:$$S000002H##         232
+ end cxx
+ Write_Step: DoneLead, ULTLEV   : F F
+ Write_Step: nStepDef, nStepFlow:           2          -1
+ iRes:            1
+ WrtLog:  T
+ Call: Step_Ready
+ After Step_Ready
+Time for this step [s]      0.25 s
+Step :  3 of 1000
+ChkUlt    1    0   1.19220E+01
+ ufac  :    11.9219851301645     
+ scfac :    1.00000000000000     
+ dUTot0 from DuTot A           0           0
+ breakiter:  F
+Iter :        1       1
+ node rload:
+RLoadXYZV :   3.11786E+03  3.29192E+03  2.03808E+03  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       30       30
+sumerr..  5.77413E+00  5.91000E+01  9.77010E-02
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  3.64248E+00  3.65349E+00
+dUMdU,dUKdU,CSP:  3.64248E+00  3.65349E+00  9.96987E-01
+ Rnorm, Eglt, EGLN1 =   5.66379E+01  2.52627E+06  2.24196E-05
+St,It =      3     1
+PSC   =        0.1117604       0.1862647  7.45128E-02
+F,Fold=   9.99887E-01  9.99887E-01  9.99887E-01
+Pl,Ina=       30      30      30
+ ErrLoc:  9.770102901947908E-002
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        2       2
+ node rload:
+RLoadXYZV :   2.08811E+01  2.26799E+01  3.94011E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  5.317E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   5.3169E-05
+ 
+PrspGG or PCG_Solv:     0.06 s
+ RMinmax:    1536 -1.91236E+00    1485  2.09272E+00
+ UMinmax:    1484 -1.93445E-05    1306  2.55101E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   2.46448E-06
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   2.46448E-06  1.00000E+00
+ du0xyz :   1.56955E-03  0.00000E+00  3.02268E-05
+ duexyz :   1.56964E-03  0.00000E+00  2.85797E-05
+ dusxyz :   1.73946E-07  0.00000E+00  8.19104E-07
+ Fac,FacOld      :   9.99766E-01  9.99887E-01      99.98 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       32       21
+sumerr..  7.70522E-01  6.23488E+01  1.23583E-02
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  3.64359E+00  3.65755E+00
+dUMdU,dUKdU,CSP:  3.64359E+00  3.65755E+00  9.96185E-01
+ Rnorm, Eglt, EGLN1 =   3.22987E+01  2.52627E+06  1.27851E-05
+St,It =      3     2
+PSC   =        0.1117604       0.1862557  7.45128E-02
+F,Fold=   9.99766E-01  9.99887E-01  9.99887E-01
+Pl,Ina=       32      21      32
+ ErrLoc:  1.235825822158636E-002
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        3       3
+ node rload:
+RLoadXYZV :   1.15807E+01  1.25333E+01  2.30509E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  0.00026
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   2.5842E-04
+ 
+PrspGG or PCG_Solv:     0.03 s
+ RMinmax:    1536 -1.43295E+00    1485  1.54445E+00
+ UMinmax:    1484 -1.38137E-05    1306  1.10711E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   1.56955E-03  0.00000E+00  3.02268E-05
+ duexyz :   1.56964E-03  0.00000E+00  2.85797E-05
+ dusxyz :   8.99940E-08  0.00000E+00  3.78698E-07
+ Fac,FacOld      :   9.99704E-01  9.99766E-01      99.97 %
+ NDofM =          257
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       32       12
+sumerr..  4.78781E-01  6.23488E+01  7.67907E-03
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  3.64475E+00  3.66128E+00
+dUMdU,dUKdU,CSP:  3.64475E+00  3.66128E+00  9.95486E-01
+ Rnorm, Eglt, EGLN1 =   1.86209E+01  2.52627E+06  7.37093E-06
+St,It =      3     3
+PSC   =        0.1117604       0.1862511  7.45128E-02
+F,Fold=   9.99704E-01  9.99766E-01  9.99887E-01
+Pl,Ina=       32      12      32
+ rescale_iteration...
+ Scaled_Up:  F
+ SumGT :   0.000000000000000E+000           3           3
+  0.000000000000000E+000
+ChkUlt    1    0   1.19242E+01
+Scale Up  A      3     3     3
+ updown =    2.00000000000000     
+SCFAC,CHSUB:      2.0000     1.0000  Restart : F
+SCFAC,CHSUB:      1.0000     2.0000  Restart : F
+ breakiter:  F
+Iter :        4       1
+ node rload:
+RLoadXYZV :   6.34455E+00  7.24171E+00  1.35685E+01  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       36       36
+sumerr..  1.60451E+01  6.99535E+01  2.29369E-01
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.45746E+01  1.46451E+01
+dUMdU,dUKdU,CSP:  1.45746E+01  1.46451E+01  9.95185E-01
+ Rnorm, Eglt, EGLN1 =   7.53867E+01  2.53250E+06  2.97677E-05
+St,It =      3     4
+PSC   =        0.1117604       0.2607418  1.49026E-01
+F,Fold=   9.99704E-01  9.99704E-01  9.99887E-01
+Pl,Ina=       36      36      36
+ ErrLoc:  0.229368622950922     
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        5       2
+ node rload:
+RLoadXYZV :   3.01097E+01  2.80396E+01  5.25689E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  3.477E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   3.4769E-05
+ 
+PrspGG or PCG_Solv:     0.06 s
+ RMinmax:    1536 -1.83620E+00    1485  1.97591E+00
+ UMinmax:     946 -3.91919E-05    1588  2.50886E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   9.85793E-06
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   9.85793E-06  1.00000E+00
+ du0xyz :   3.13909E-03  0.00000E+00  6.04535E-05
+ duexyz :   3.13927E-03  0.00000E+00  5.71593E-05
+ dusxyz :   2.38957E-07  0.00000E+00  1.07047E-06
+ Fac,FacOld      :   9.99622E-01  9.99704E-01      99.96 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       36       30
+sumerr..  1.08429E+00  6.99535E+01  1.55001E-02
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.45782E+01  1.46579E+01
+dUMdU,dUKdU,CSP:  1.45782E+01  1.46579E+01  9.94558E-01
+ Rnorm, Eglt, EGLN1 =   4.68131E+01  2.53250E+06  1.84849E-05
+St,It =      3     5
+PSC   =        0.1117604       0.2607295  1.49026E-01
+F,Fold=   9.99622E-01  9.99704E-01  9.99887E-01
+Pl,Ina=       36      30      36
+ ErrLoc:  1.550011431897893E-002
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        6       3
+ node rload:
+RLoadXYZV :   1.76259E+01  1.62068E+01  3.34202E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  0.00073
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   7.3236E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1536 -1.38149E+00    1485  1.48712E+00
+ UMinmax:     946 -2.11856E-05    1306  1.28843E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   3.13909E-03  0.00000E+00  6.04535E-05
+ duexyz :   3.13927E-03  0.00000E+00  5.71593E-05
+ dusxyz :   1.23814E-07  0.00000E+00  5.41861E-07
+ Fac,FacOld      :   9.99579E-01  9.99622E-01      99.96 %
+ NDofM =          257
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       36       22
+sumerr..  7.25477E-01  6.99535E+01  1.03708E-02
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.45814E+01  1.46694E+01
+dUMdU,dUKdU,CSP:  1.45814E+01  1.46694E+01  9.94000E-01
+ Rnorm, Eglt, EGLN1 =   2.95159E+01  2.53250E+06  1.16548E-05
+St,It =      3     6
+PSC   =        0.1117604       0.2607231  1.49026E-01
+F,Fold=   9.99579E-01  9.99622E-01  9.99887E-01
+Pl,Ina=       36      22      36
+ ErrLoc:  1.037084845550120E-002
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        7       4
+ node rload:
+RLoadXYZV :   1.07080E+01  1.01913E+01  2.14987E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  0.00064
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   6.4355E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1536 -1.05214E+00    1485  1.13128E+00
+ UMinmax:    2135 -1.03762E-05    1485  7.23182E-06
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   3.13909E-03  0.00000E+00  6.04535E-05
+ duexyz :   3.13927E-03  0.00000E+00  5.71593E-05
+ dusxyz :   6.01427E-08  0.00000E+00  3.01223E-07
+ Fac,FacOld      :   9.99558E-01  9.99579E-01      99.96 %
+ NDofM =          257
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       36        5
+sumerr..  4.61695E-01  6.99535E+01  6.60003E-03
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.45834E+01  1.46770E+01
+dUMdU,dUKdU,CSP:  1.45834E+01  1.46770E+01  9.93622E-01
+ Rnorm, Eglt, EGLN1 =   1.92890E+01  2.53250E+06  7.61657E-06
+St,It =      3     7
+PSC   =        0.1117604       0.2607200  1.49026E-01
+F,Fold=   9.99558E-01  9.99579E-01  9.99887E-01
+Pl,Ina=       36       5      36
+ rescale_iteration...
+ Scaled_Up:  T
+ChkUlt    1    0   5.96296E+00
+dUMdU,dUKdU soil  1.45834E+01  1.46770E+01
+dUMdU,dUKdU,CSP:  1.45834E+01  1.46770E+01  9.93622E-01
+Uxyz at IStep,Iter :     3     7     3
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+forceXYZ:       0.0000000       0.0000000       0.0000000
+ Writing data ...
+CSP :   9.93622E-01
+PAreaT,PAreaN,PArea :   2.25000E+05  2.25000E+05  1.00000E+00
+ChkUlt    2    0   4.96296E+00
+ Tot, Av Gb: 476.234 284.826
+ wts :a           0           0  -360466901
+ wts :a        9034        9034  -360466876
+ wts :b        9034        9034  -360466876
+ wts :b        9034        9034  -360466876
+ wts :b        9034        9034  -360466876
+ wts :c        9034        9034  -360466876
+ wts :d       34402       34402  -360466876
+ wts :d2       43614       43614  -360466875
+ wts :e       43630       43630  -360466875
+ wts :f      255534      255534  -360466875
+ wts :g      622898      622898  -360466874
+ wts :h      781674      781674  -360466873
+ wts :h1      781674      781674  -360466873
+ wts :i0      781674      781674  -360466873
+ wts :i      781674      781674  -360466873
+ Nel,Nin:        2197        8788
+ wts :j     1055234     1055234  -360466872
+ wts :k     1055234     1055234  -360466872
+ wts :md     1055234     1055234  -360466872
+ wts :me     1055234     1055234  -360466872
+ wts :m     1055234     1055234  -360466872
+ wts :n     1055234     1055234  -360466872
+ wts :o     1055234     1055234  -360466872
+ wts :p     1055234     1055234  -360466872
+ wts :q     1055234     1055234  -360466872
+ wts :r     1055234     1055234  -360466872
+ wts :s     1055234     1055234  -360466872
+ wts :u     1055234     1055234  -360466872
+ wts :u     1055234     1055234  -360466872
+ wts :v     1055234     1055234  -360466872
+ wts :w     1055234     1055234  -360466872
+ wts :y     1055234     1055234  -360466872
+ wts :z     1055234     1055234  -360466872
+ Tot, Av Gb: 476.234 284.826
+ Used kB:         1030  kB       34051  kB/s          31
+ AddCxx
+ bkhead:$$S000003H##         232
+ end cxx
+ Write_Step: DoneLead, ULTLEV   : F F
+ Write_Step: nStepDef, nStepFlow:           3          -1
+ iRes:            1
+ WrtLog:  T
+ Call: Step_Ready
+ After Step_Ready
+Time for this step [s]      0.38 s
+Step :  4 of 1000
+ChkUlt    1    0   4.96296E+00
+ ufac  :    4.96295573021785     
+ scfac :    1.00000000000000     
+ dUTot0 from DuTot A           0           0
+ breakiter:  F
+Iter :        1       1
+ node rload:
+RLoadXYZV :   6.23324E+03  6.58204E+03  4.07519E+03  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       42       42
+sumerr..  2.13232E+01  8.44059E+01  2.52626E-01
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.45706E+01  1.46770E+01
+dUMdU,dUKdU,CSP:  1.45706E+01  1.46770E+01  9.92754E-01
+ Rnorm, Eglt, EGLN1 =   1.42319E+02  2.53544E+06  5.61320E-05
+St,It =      4     1
+PSC   =        0.2607200       0.4096796  1.49026E-01
+F,Fold=   9.99558E-01  9.99558E-01  9.99558E-01
+Pl,Ina=       42      42      42
+ ErrLoc:  0.252626397749580     
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        2       2
+ node rload:
+RLoadXYZV :   4.47718E+01  5.14198E+01  1.08283E+02  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  6.332E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   6.3324E-05
+ 
+PrspGG or PCG_Solv:     0.05 s
+ RMinmax:    1206 -5.73664E+00    1485  4.22643E+00
+ UMinmax:     944 -5.81363E-05    1484  1.11818E-04
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   9.85816E-06
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   9.85816E-06  1.00000E+00
+ du0xyz :   3.13908E-03  0.00000E+00  6.50640E-05
+ duexyz :   3.13927E-03  0.00000E+00  5.71593E-05
+ dusxyz :  -3.30138E-07  0.00000E+00  2.55531E-06
+ Fac,FacOld      :   9.99646E-01  9.99558E-01      99.96 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       42       37
+sumerr..  2.02076E+00  8.44059E+01  2.39410E-02
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.45906E+01  1.47136E+01
+dUMdU,dUKdU,CSP:  1.45906E+01  1.47136E+01  9.91641E-01
+ Rnorm, Eglt, EGLN1 =   7.08260E+01  2.53544E+06  2.79344E-05
+St,It =      4     2
+PSC   =        0.2607200       0.4096928  1.49026E-01
+F,Fold=   9.99646E-01  9.99558E-01  9.99558E-01
+Pl,Ina=       42      37      42
+ ErrLoc:  2.394099743700331E-002
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        3       3
+ node rload:
+RLoadXYZV :   2.41064E+01  2.60212E+01  5.03130E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  3.952E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   3.9519E-05
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1206 -1.62920E+00    2136  1.73848E+00
+ UMinmax:     944 -4.36253E-05    1484  4.51818E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   3.13908E-03  0.00000E+00  6.50640E-05
+ duexyz :   3.13927E-03  0.00000E+00  5.71593E-05
+ dusxyz :  -3.32278E-08  0.00000E+00  1.03997E-06
+ Fac,FacOld      :   9.99650E-01  9.99646E-01      99.96 %
+ NDofM =          257
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       42       36
+sumerr..  1.26494E+00  8.44059E+01  1.49864E-02
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.45999E+01  1.47365E+01
+dUMdU,dUKdU,CSP:  1.45999E+01  1.47365E+01  9.90729E-01
+ Rnorm, Eglt, EGLN1 =   4.11368E+01  2.53544E+06  1.62247E-05
+St,It =      4     3
+PSC   =        0.2607200       0.4096933  1.49026E-01
+F,Fold=   9.99650E-01  9.99646E-01  9.99558E-01
+Pl,Ina=       42      36      42
+ ErrLoc:  1.498636630154487E-002
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        4       4
+ node rload:
+RLoadXYZV :   1.47875E+01  1.46073E+01  2.91956E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  2.946E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   2.9459E-05
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1212 -1.07089E+00    2175  1.12615E+00
+ UMinmax:     944 -2.34416E-05    1484  1.89658E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   3.13908E-03  0.00000E+00  6.50640E-05
+ duexyz :   3.13927E-03  0.00000E+00  5.71593E-05
+ dusxyz :   1.81294E-08  0.00000E+00  4.70112E-07
+ Fac,FacOld      :   9.99641E-01  9.99650E-01      99.96 %
+ NDofM =          257
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       42       23
+sumerr..  7.88664E-01  8.44059E+01  9.34370E-03
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.46038E+01  1.47492E+01
+dUMdU,dUKdU,CSP:  1.46038E+01  1.47492E+01  9.90145E-01
+ Rnorm, Eglt, EGLN1 =   2.71715E+01  2.53544E+06  1.07167E-05
+St,It =      4     4
+PSC   =        0.2607200       0.4096920  1.49026E-01
+F,Fold=   9.99641E-01  9.99650E-01  9.99558E-01
+Pl,Ina=       42      23      42
+ rescale_iteration...
+ Scaled_Up:  F
+ SumGT :   0.000000000000000E+000           4           4
+  0.000000000000000E+000
+ChkUlt    1    0   4.96254E+00
+Scale Up  A      4     4     4
+ updown =    2.00000000000000     
+SCFAC,CHSUB:      2.0000     1.0000  Restart : F
+SCFAC,CHSUB:      1.0000     2.0000  Restart : F
+ breakiter:  F
+Iter :        5       1
+ node rload:
+RLoadXYZV :   9.91015E+00  9.40800E+00  1.96046E+01  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       52       52
+sumerr..  5.26522E+01  1.02662E+02  5.12871E-01
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  5.84047E+01  5.89967E+01
+dUMdU,dUKdU,CSP:  5.84047E+01  5.89967E+01  9.89965E-01
+ Rnorm, Eglt, EGLN1 =   9.60471E+01  2.54791E+06  3.76964E-05
+St,It =      4     5
+PSC   =        0.2607200       0.5586640  2.98051E-01
+F,Fold=   9.99641E-01  9.99641E-01  9.99558E-01
+Pl,Ina=       52      52      52
+ ErrLoc:  0.512870740378774     
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        6       2
+ node rload:
+RLoadXYZV :   2.74993E+01  2.98829E+01  7.60653E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  6.486E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   6.4856E-05
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1206 -2.63469E+00    2175  2.77457E+00
+ UMinmax:     944 -1.98146E-05     945  4.84586E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   3.94327E-05
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   3.94327E-05  1.00000E+00
+ du0xyz :   6.27817E-03  0.00000E+00  1.30128E-04
+ duexyz :   6.27855E-03  0.00000E+00  1.14319E-04
+ dusxyz :  -3.77475E-08  0.00000E+00  1.10722E-06
+ Fac,FacOld      :   9.99643E-01  9.99641E-01      99.96 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       52       42
+sumerr..  1.46886E+00  1.02662E+02  1.43078E-02
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  5.84220E+01  5.90362E+01
+dUMdU,dUKdU,CSP:  5.84220E+01  5.90362E+01  9.89595E-01
+ Rnorm, Eglt, EGLN1 =   5.24288E+01  2.54791E+06  2.05772E-05
+St,It =      4     6
+PSC   =        0.2607200       0.5586647  2.98051E-01
+F,Fold=   9.99643E-01  9.99641E-01  9.99558E-01
+Pl,Ina=       52      42      52
+ ErrLoc:  1.430777823539019E-002
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        7       3
+ node rload:
+RLoadXYZV :   1.76846E+01  1.67796E+01  3.97937E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  4.244E-05
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   4.2439E-05
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1986 -1.38964E+00    1962  1.47566E+00
+ UMinmax:     944 -2.63238E-05    1484  3.04996E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   6.27817E-03  0.00000E+00  1.30128E-04
+ duexyz :   6.27855E-03  0.00000E+00  1.14319E-04
+ dusxyz :   2.42346E-08  0.00000E+00  6.14314E-07
+ Fac,FacOld      :   9.99637E-01  9.99643E-01      99.96 %
+ NDofM =          257
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       52       27
+sumerr..  9.95688E-01  1.02662E+02  9.69873E-03
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  5.84313E+01  5.90647E+01
+dUMdU,dUKdU,CSP:  5.84313E+01  5.90647E+01  9.89276E-01
+ Rnorm, Eglt, EGLN1 =   3.48061E+01  2.54791E+06  1.36606E-05
+St,It =      4     7
+PSC   =        0.2607200       0.5586629  2.98051E-01
+F,Fold=   9.99637E-01  9.99643E-01  9.99558E-01
+Pl,Ina=       52      27      52
+ rescale_iteration...
+ Scaled_Up:  T
+ChkUlt    1    0   2.48128E+00
+dUMdU,dUKdU soil  5.84313E+01  5.90647E+01
+dUMdU,dUKdU,CSP:  5.84313E+01  5.90647E+01  9.89276E-01
+Uxyz at IStep,Iter :     4     7     4
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+forceXYZ:       0.0000000       0.0000000       0.0000000
+ Writing data ...
+CSP :   9.89276E-01
+PAreaT,PAreaN,PArea :   2.25000E+05  2.25000E+05  1.00000E+00
+ChkUlt    2    0   1.48128E+00
+ Tot, Av Gb: 476.234 284.826
+ wts :a           0           0  -360466563
+ wts :a        9034        9034  -360466537
+ wts :b        9034        9034  -360466536
+ wts :b        9034        9034  -360466536
+ wts :b        9034        9034  -360466536
+ wts :c        9034        9034  -360466536
+ wts :d       34402       34402  -360466536
+ wts :d2       43614       43614  -360466536
+ wts :e       43630       43630  -360466536
+ wts :f      255534      255534  -360466536
+ wts :g      622898      622898  -360466535
+ wts :h      781674      781674  -360466535
+ wts :h1      781674      781674  -360466535
+ wts :i0      781674      781674  -360466534
+ wts :i      781674      781674  -360466534
+ Nel,Nin:        2197        8788
+ wts :j     1055234     1055234  -360466533
+ wts :k     1055234     1055234  -360466533
+ wts :md     1055234     1055234  -360466533
+ wts :me     1055234     1055234  -360466533
+ wts :m     1055234     1055234  -360466533
+ wts :n     1055234     1055234  -360466533
+ wts :o     1055234     1055234  -360466533
+ wts :p     1055234     1055234  -360466533
+ wts :q     1055234     1055234  -360466533
+ wts :r     1055234     1055234  -360466533
+ wts :s     1055234     1055234  -360466533
+ wts :u     1055234     1055234  -360466533
+ wts :u     1055234     1055234  -360466533
+ wts :v     1055234     1055234  -360466533
+ wts :w     1055234     1055234  -360466533
+ wts :y     1055234     1055234  -360466533
+ wts :z     1055234     1055234  -360466533
+ Tot, Av Gb: 476.234 284.825
+ Used kB:         1030  kB       34051  kB/s          31
+ AddCxx
+ bkhead:$$S000004H##         232
+ end cxx
+ Write_Step: DoneLead, ULTLEV   : F F
+ Write_Step: nStepDef, nStepFlow:           4          -1
+ iRes:            1
+ WrtLog:  T
+ Call: Step_Ready
+ After Step_Ready
+Time for this step [s]      0.34 s
+Step :  5 of 1000
+ChkUlt    1    0   1.48128E+00
+ ufac  :    1.48128034093554     
+ scfac :    1.00000000000000     
+ dUTot0 from DuTot A           0           0
+ breakiter:  F
+Iter :        1       1
+ node rload:
+RLoadXYZV :   1.24690E+04  1.31675E+04  8.15490E+03  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc       94       91
+sumerr..  7.10034E+01  2.29737E+02  3.09063E-01
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  5.82049E+01  5.90647E+01
+dUMdU,dUKdU,CSP:  5.82049E+01  5.90647E+01  9.85443E-01
+ Rnorm, Eglt, EGLN1 =   5.29465E+02  2.56191E+06  2.06668E-04
+St,It =      5     1
+PSC   =        0.5586629       0.8566059  2.98051E-01
+F,Fold=   9.99637E-01  9.99637E-01  9.99637E-01
+Pl,Ina=       94      91      82
+ ErrLoc:  0.309063304883868     
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        2       2
+ node rload:
+RLoadXYZV :   1.66987E+02  2.14492E+02  3.26296E+02  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  0.00078
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   7.8074E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1021 -2.22920E+01    1282  1.55972E+01
+ UMinmax:    1083 -6.38042E-05    1038  3.94324E-04
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   3.94326E-05
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   3.94326E-05  1.00000E+00
+ du0xyz :   6.27796E-03  0.00000E+00  1.40716E-04
+ duexyz :   6.27855E-03  0.00000E+00  1.14319E-04
+ dusxyz :   4.06742E-06  0.00000E+00  2.25792E-05
+ Fac,FacOld      :   9.98909E-01  9.99637E-01      99.89 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+fac,old       0   9.98909E-01  9.99637E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      100       93
+sumerr..  8.18829E+00  2.42618E+02  3.37498E-02
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  5.84530E+01  5.94933E+01
+dUMdU,dUKdU,CSP:  5.84530E+01  5.94933E+01  9.82513E-01
+ Rnorm, Eglt, EGLN1 =   2.12309E+02  2.56191E+06  8.28712E-05
+St,It =      5     2
+PSC   =        0.5586629       0.8563889  2.98051E-01
+F,Fold=   9.98909E-01  9.99637E-01  9.99637E-01
+Pl,Ina=      100      93      84
+ ErrLoc:  3.374976672562445E-002
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        3       3
+ node rload:
+RLoadXYZV :   6.27212E+01  7.95296E+01  1.45949E+02  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  0.00015
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   1.5027E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1021 -5.16830E+00    1282  3.98428E+00
+ UMinmax:    1256 -1.21266E-05    1258  1.77554E-04
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   6.27796E-03  0.00000E+00  1.40716E-04
+ duexyz :   6.27855E-03  0.00000E+00  1.14319E-04
+ dusxyz :   1.04253E-06  0.00000E+00  8.39717E-06
+ Fac,FacOld      :   9.98713E-01  9.98909E-01      99.87 %
+ NDofM =          257
+fac,old       0   9.98713E-01  9.98909E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      103       76
+sumerr..  4.09740E+00  2.47601E+02  1.65484E-02
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  5.85843E+01  5.97383E+01
+dUMdU,dUKdU,CSP:  5.85843E+01  5.97383E+01  9.80684E-01
+ Rnorm, Eglt, EGLN1 =   9.36761E+01  2.56191E+06  3.65649E-05
+St,It =      5     3
+PSC   =        0.5586629       0.8563305  2.98051E-01
+F,Fold=   9.98713E-01  9.98909E-01  9.99637E-01
+Pl,Ina=      103      76      85
+ ErrLoc:  1.654839889046899E-002
+ rescale_iteration...
+ Scaled_Up:  F
+ breakiter:  F
+Iter :        4       4
+ node rload:
+RLoadXYZV :   2.96457E+01  3.37110E+01  6.46482E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  0.00012
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   1.2306E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1206 -1.82760E+00    1484  2.18899E+00
+ UMinmax:    1910 -1.80221E-05    1484  7.73642E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   6.27796E-03  0.00000E+00  1.40716E-04
+ duexyz :   6.27855E-03  0.00000E+00  1.14319E-04
+ dusxyz :   3.20696E-07  0.00000E+00  2.57894E-06
+ Fac,FacOld      :   9.98653E-01  9.98713E-01      99.87 %
+ NDofM =          257
+fac,old       0   9.98653E-01  9.98713E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      105       35
+sumerr..  2.04597E+00  2.57231E+02  7.95381E-03
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  5.86273E+01  5.98355E+01
+dUMdU,dUKdU,CSP:  5.86273E+01  5.98355E+01  9.79808E-01
+ Rnorm, Eglt, EGLN1 =   5.53955E+01  2.56191E+06  2.16227E-05
+St,It =      5     4
+PSC   =        0.5586629       0.8563125  2.98051E-01
+F,Fold=   9.98653E-01  9.98713E-01  9.99637E-01
+Pl,Ina=      105      35      85
+ rescale_iteration...
+ Scaled_Up:  F
+ SumGT :   0.000000000000000E+000           5           4
+  0.000000000000000E+000
+ChkUlt    1    0   1.48274E+00
+Scale Up  A      5     4     4
+ updown =    1.85342549245153     
+SCFAC,CHSUB:      1.8534     1.0000  Restart : F
+ A:ScFac,dsc:   1.85342549245153       0.298051020880768     
+SCFAC,CHSUB:      1.0000     1.6776  Restart : F
+ breakiter:  F
+Iter :        5       1
+ node rload:
+RLoadXYZV :   1.92796E+01  1.99234E+01  3.85773E+01  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+fac,old       0   9.98653E-01  9.98653E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      134      134
+sumerr..  2.04428E+02  3.97344E+02  5.14486E-01
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.64279E+02  1.68390E+02
+dUMdU,dUKdU,CSP:  1.64279E+02  1.68390E+02  9.75587E-01
+ Rnorm, Eglt, EGLN1 =   7.66373E+02  2.57877E+06  2.97186E-04
+St,It =      5     5
+PSC   =        0.5586629       1.0579895  5.00000E-01
+F,Fold=   9.98653E-01  9.98653E-01  9.99637E-01
+Pl,Ina=      134     134     102
+ ErrLoc:  0.514486428066039     
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        6       2
+ node rload:
+RLoadXYZV :   2.45110E+02  3.31219E+02  4.43187E+02  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  0.00023
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   2.2944E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1814 -2.01338E+01    1943  1.42516E+01
+ UMinmax:    1395 -1.55975E-04    1166  4.31805E-04
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+NDOFM,VALMAX :    257   1.10972E-04
+CoXYZ(nDofM) :    257      20.126      0.000    -18.425
+  du0due,sign :   1.10972E-04  1.00000E+00
+ du0xyz :   1.05317E-02  0.00000E+00  2.36061E-04
+ duexyz :   1.05327E-02  0.00000E+00  1.91777E-04
+ dusxyz :   7.01295E-06  0.00000E+00  3.15540E-05
+ Fac,FacOld      :   9.97920E-01  9.98653E-01      99.79 %
+ NDofM =          257
+ relaxT =    1.00000000000000     
+fac,old       0   9.97920E-01  9.98653E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      136      114
+sumerr..  1.16036E+01  3.97595E+02  2.91844E-02
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.65059E+02  1.69749E+02
+dUMdU,dUKdU,CSP:  1.65059E+02  1.69749E+02  9.72377E-01
+ Rnorm, Eglt, EGLN1 =   3.58624E+02  2.57877E+06  1.39068E-04
+St,It =      5     6
+PSC   =        0.5586629       1.0576232  5.00000E-01
+F,Fold=   9.97920E-01  9.98653E-01  9.99637E-01
+Pl,Ina=      136     114     104
+ ErrLoc:  2.918439256597466E-002
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        7       3
+ node rload:
+RLoadXYZV :   1.05869E+02  1.51682E+02  2.22024E+02  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  0.00042
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   4.1908E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:     978 -6.47416E+00    1943  7.13800E+00
+ UMinmax:    2136 -3.01087E-05     944  2.53114E-04
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   1.05317E-02  0.00000E+00  2.36061E-04
+ duexyz :   1.05327E-02  0.00000E+00  1.91777E-04
+ dusxyz :   1.22037E-06  0.00000E+00  1.32508E-05
+ Fac,FacOld      :   9.97776E-01  9.97920E-01      99.78 %
+ NDofM =          257
+fac,old       0   9.97776E-01  9.97920E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      136      109
+sumerr..  7.13254E+00  3.97595E+02  1.79392E-02
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.65496E+02  1.70558E+02
+dUMdU,dUKdU,CSP:  1.65496E+02  1.70558E+02  9.70318E-01
+ Rnorm, Eglt, EGLN1 =   1.88850E+02  2.57877E+06  7.32327E-05
+St,It =      5     7
+PSC   =        0.5586629       1.0575512  5.00000E-01
+F,Fold=   9.97776E-01  9.97920E-01  9.99637E-01
+Pl,Ina=      136     109     105
+ ErrLoc:  1.793919264423836E-002
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        8       4
+ node rload:
+RLoadXYZV :   5.82390E+01  8.38925E+01  1.14128E+02  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  0.00088
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   8.7869E-04
+ 
+PrspGG or PCG_Solv:     0.02 s
+ RMinmax:     978 -3.74113E+00    1571  4.01286E+00
+ UMinmax:    2136 -1.86068E-05     944  1.61177E-04
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   1.05317E-02  0.00000E+00  2.36061E-04
+ duexyz :   1.05327E-02  0.00000E+00  1.91777E-04
+ dusxyz :   1.37397E-07  0.00000E+00  4.71513E-06
+ Fac,FacOld      :   9.97753E-01  9.97776E-01      99.78 %
+ NDofM =          257
+fac,old       0   9.97753E-01  9.97776E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      134       75
+sumerr..  4.37763E+00  3.82679E+02  1.14394E-02
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.65671E+02  1.70914E+02
+dUMdU,dUKdU,CSP:  1.65671E+02  1.70914E+02  9.69327E-01
+ Rnorm, Eglt, EGLN1 =   1.16059E+02  2.57877E+06  4.50054E-05
+St,It =      5     8
+PSC   =        0.5586629       1.0575396  5.00000E-01
+F,Fold=   9.97753E-01  9.97776E-01  9.99637E-01
+Pl,Ina=      134      75     105
+ ErrLoc:  1.143944429895549E-002
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        9       5
+ node rload:
+RLoadXYZV :   3.86291E+01  5.24547E+01  6.90679E+01  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    2, error =  0.00056
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            2
+   tolerance ......   1.0000E-03
+   residual .......   5.6450E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:     978 -2.40852E+00    1571  2.80929E+00
+ UMinmax:    2136 -1.76902E-05     944  1.14260E-04
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ 
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+dutotE        1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ du0xyz :   1.05317E-02  0.00000E+00  2.36061E-04
+ duexyz :   1.05327E-02  0.00000E+00  1.91777E-04
+ dusxyz :  -9.53230E-08  0.00000E+00  2.09301E-06
+ Fac,FacOld      :   9.97758E-01  9.97753E-01      99.78 %
+ NDofM =          257
+fac,old       0   9.97758E-01  9.97753E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      134       58
+sumerr..  3.04538E+00  3.82679E+02  7.95805E-03
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.65761E+02  1.71099E+02
+dUMdU,dUKdU,CSP:  1.65761E+02  1.71099E+02  9.68802E-01
+ Rnorm, Eglt, EGLN1 =   8.06727E+01  2.57877E+06  3.12834E-05
+St,It =      5     9
+PSC   =        0.5586629       1.0575419  5.00000E-01
+F,Fold=   9.97758E-01  9.97753E-01  9.99637E-01
+Pl,Ina=      134      58     105
+ rescale_iteration...
+ Scaled_Up:  T
+Parm,dParm,PUlt,UFac: SC   5.58663E-01  5.00000E-01  1.00000E+00  8.84658E-01  1
+ChkUlt    1    1   8.84658E-01
+Scale Ult       5     9     5
+SCFAC,CHSUB:      0.8847     1.6776  Restart : F
+SCFAC,CHSUB:      1.0000     1.4841  Restart : F
+ breakiter:  F
+Iter :        1       1
+ node rload:
+RLoadXYZV :   2.88476E+01  3.64127E+01  4.87645E+01  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+fac,old       0   9.97758E-01  9.97758E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      129      127
+sumerr..  1.57843E+02  3.52210E+02  4.48151E-01
+dt GetSig :   0.00        8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.29913E+02  1.33905E+02
+dUMdU,dUKdU,CSP:  1.29913E+02  1.33905E+02  9.70182E-01
+ Rnorm, Eglt, EGLN1 =   1.83660E+02  2.57877E+06  7.12198E-05
+St,It =      5     1
+PSC   =        0.5586629       1.0000000  4.42329E-01
+Pl,Ina=      129     127     100
+ ErrLoc:  0.448150564083963     
+ rescale_iteration...
+ Scaled_Up:  T
+ breakiter:  F
+Iter :        2       2
+ node rload:
+RLoadXYZV :   6.04919E+01  7.96208E+01  1.13349E+02  0.00000E+00
+ iPlxDebug(94):           0           0        9456
+ GMRES: iter =    0, error =  1.00000
+ GMRES: iter =    3, error =  0.00017
+ 
+ Picos Memory usage:
+   matrix .........                3861084
+   precon .........               29457424
+   solver .........                8472576
+   total [MB]......           40
+ 
+ Picos Preconditioner info:
+   max fill .......            1
+   droptol ........   2.0000E-05
+   quality ........   2.0000E+00
+   diag shift fact    2.0000E-06
+ 
+ Picos Solver info:
+   threads ........            1
+   iterations .....            3
+   tolerance ......   1.0000E-03
+   residual .......   1.7374E-04
+ 
+PrspGG or PCG_Solv:     0.04 s
+ RMinmax:    1602 -5.84715E+00    1536  4.66904E+00
+ UMinmax:    1535 -7.45538E-05    2310  4.68133E-05
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+du            1   0.00000E+00  0.00000E+00  0.00000E+00
+ NDofM =          257
+ relaxT =    1.00000000000000     
+fac,old       0   9.97758E-01  9.97758E-01
+ iDum from Header :          992
+ Threads in getsig / cluster:            2           1
+NPLast,NInAcc      129       36
+sumerr..  2.64993E+00  3.52210E+02  7.52372E-03
+dt GetSig :  1.000E-02    8788
+ |SA|  0.000000000000000E+000
+dUMdU,dUKdU soil  1.29710E+02  1.33607E+02
+dUMdU,dUKdU,CSP:  1.29710E+02  1.33607E+02  9.70829E-01
+ Rnorm, Eglt, EGLN1 =   6.98378E+01  2.57877E+06  2.70818E-05
+St,It =      5     2
+PSC   =        0.5586629       1.0000000  4.42329E-01
+Pl,Ina=      129      36      99
+ rescale_iteration...
+ Scaled_Up:  T
+dUMdU,dUKdU soil  1.29710E+02  1.33607E+02
+dUMdU,dUKdU,CSP:  1.29710E+02  1.33607E+02  9.70829E-01
+Uxyz at IStep,Iter :     5     2     5
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+     1     75.000     0.000   -40.000    0.0000E+00  0.0000E+00  0.0000E+00
+forceXYZ:       0.0000000       0.0000000       0.0000000
+ Writing data ...
+CSP :   9.70829E-01
+PAreaT,PAreaN,PArea :   2.25000E+05  2.25000E+05  1.00000E+00
+Parm,dParm,PUlt,UFac: SC   1.00000E+00  4.42329E-01  1.00000E+00  0.00000E+00  1
+ChkUlt    2    1   0.00000E+00
+ LAST STEP DETECTED
+ Tot, Av Gb: 476.234 284.824
+ wts :a           0           0  -360466065
+ wts :a        9034        9034  -360466040
+ wts :b        9034        9034  -360466040
+ wts :b        9034        9034  -360466040
+ wts :b        9034        9034  -360466040
+ wts :c        9034        9034  -360466040
+ wts :d       56466       56466  -360466040
+ wts :d2       65678       65678  -360466040
+ wts :e       65694       65694  -360466040
+ wts :f      276998      276998  -360466039
+ wts :g     1011506     1011506  -360466036
+ wts :h     1306826     1306826  -360466035
+ wts :h1     1306826     1306826  -360466035
+ wts :i0     1306826     1306826  -360466035
+ wts :i     1306826     1306826  -360466035
+ Nel,Nin:        2197        8788
+ wts :j     1783498     1783498  -360466034
+ wts :k     1783498     1783498  -360466034
+ wts :md     1783498     1783498  -360466034
+ wts :me     1783498     1783498  -360466034
+ wts :m     1783498     1783498  -360466034
+ wts :n     1783498     1783498  -360466034
+ wts :o     1783498     1783498  -360466034
+ wts :p     1783498     1783498  -360466034
+ wts :q     1783498     1783498  -360466034
+ wts :r     1783498     1783498  -360466033
+ wts :s     1783498     1783498  -360466033
+ wts :u     1783498     1783498  -360466033
+ wts :u     1783498     1783498  -360466033
+ wts :v     1783498     1783498  -360466033
+ wts :w     1783498     1783498  -360466033
+ wts :y     1783498     1783498  -360466033
+ wts :z     1783498     1783498  -360466033
+ Tot, Av Gb: 476.234 284.823
+ Used kB:         1742  kB       54056  kB/s          33
+ AddCxx
+ bkhead:$$S000005H##         232
+ end cxx
+ Write_Step: DoneLead, ULTLEV   : F T
+ Write_Step: nStepDef, nStepFlow:           5          -1
+ iRes:            1
+ WrtLog:  T
+ Call: Step_Ready
+ After Step_Ready
+Time for this step [s]      0.50 s
+ Final node rload:
+RLoadXYZV :   2.21714E+01  3.42770E+01  4.16475E+01  0.00000E+00
+RLoadMXYZ :   0.00000E+00  0.00000E+00  0.00000E+00
+ Final node pbound*rload:
+pb*RLoadXYZV :   2.21714E+01  3.42770E+01  4.16475E+01  0.00000E+00
+pb*RLoadMXYZ :   0.00000E+00  0.00000E+00  0.00000E+00
+ Itt            34
+ Nel          2197
+ Nodes        3906
+ NNew         9456
+ NMat    6789988.00000000              718  /dof
+ in Mb   51.8034973144531     
+ in Gb  5.058935284614563E-002
+ nnzA       321757           3  Mb          34  nnz/dof
+ nnzL      2041000          23  Mb         216  nnz/dof
+ Allocated   :        14704  kB
+ Used memory :            0  kB
+ Lerr        :            0
+Total time       4.48 s      0 hr  0 min  4.48 s
+Total CPU        5.44 s      0 hr  0 min  5.44 s
+ DATE 2024-12-27 TIME  9:05:15.483
+ p_DLL_CE 3:        140726211444736       140726211448928
+ FFUninitialize
+ Total cpu  :    5.64062500010000     
+ Total wall :    4.64000000000000     
+ 
+ +------+--------+-------------+--------+-------------+--------+----------+
+ | Task |  Count |       CPU   |    %   |  Wall clock |    %   | Name     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    0 |      1 |        5.64 | 100.00 |        4.64 | 100.00 | Total    |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    5 |     38 |        0.45 |   8.03 |        0.24 |   5.15 | GetSig   |
+ |    6 |     47 |        0.05 |   0.83 |        0.06 |   1.34 | BT_Sig   |
+ |    7 |      5 |        0.19 |   3.32 |        0.14 |   2.95 | WriteXXX |
+ |    8 |     11 |        0.02 |   0.28 |        0.01 |   0.17 | Profil3D |
+ |    9 |      2 |        0.05 |   0.83 |        0.06 |   1.27 | FillLMat |
+ |   10 |      7 |        0.02 |   0.28 |        0.01 |   0.28 | Reading  |
+ |   21 |      2 |        0.00 |   0.00 |        0.01 |   0.13 | Neigh    |
+ |   52 |      1 |        1.02 |  18.01 |        1.03 |  22.18 | PicosDec |
+ |   53 |     29 |        2.12 |  37.67 |        1.22 |  26.23 | PicosBck |
+ |   54 |      1 |        0.00 |   0.00 |        0.00 |   0.02 | Pic_Prep |
+ |   55 |      1 |        0.02 |   0.28 |        0.01 |   0.28 | PicosNwA |
+ |   88 |      1 |        0.67 |  11.91 |        0.90 |  19.48 | chk241   |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |  100 |      1 |        1.05 |  18.56 |        0.95 |  20.52 | Rest     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ Mem: 4 16222 (4850) MB (free) physical memory
+ Process ID, MemMB : 3212 102
+ Prescribed ultimate state fully reached

@@ -1,0 +1,64 @@
+﻿##~ running Plaxis3DInput.exe 2023.2.0.1059
+_setproperties "Title" "Foundation in Overconsolidated Clay, Case A" "Company" "only @::LAVteam::®" "Comments" "" "UnitForce" "kN" "UnitLength" "m" "UnitTime" "day" "WaterWeight" 10 "ReferenceTemperature" 293.15 "LiquidSpecificHeatCapacity" 4181.3 "LiquidThermalConductivity" 0.0006 "LiquidLatentHeat" 334000 "LiquidThermalExpansion" 0.00021 "LiquidTemperature" 293.15 "IceSpecificHeatCapacity" 2108 "IceThermalConductivity" 0.00222 "IceThermalExpansion" 5E-5 "VapourSpecificHeatCapacity" 1930 "VapourThermalConductivity" 2.5E-5 "VapourSpecificGasConstant" 461.5 "UseTemperatureDepWaterPropsTable" False "ModelType" "Full" "ElementType" "10-Noded"
+_initializerectangular SoilContour 0 0 75 75
+_borehole 0 0
+_set Borehole_1.Head -2
+_soillayer 0
+_set Soillayer_1.Zones[0].Bottom -40
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set Soillayer_1.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "Lacustrine Clay"
+_set LacustrineClay.gammaUnsat 17
+_set LacustrineClay.gammaSat 18
+_set LacustrineClay.ERef 10000
+_set LacustrineClay.nu 0.3
+_set LacustrineClay.cRef 30
+_set LacustrineClay.cRef 10
+_set LacustrineClay.phi 30
+_soillayer 0
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set Soillayer_2.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "Building"
+_set Building.SoilModel "Linear Elastic"
+_set Building.DrainageType "Non-porous"
+_set Building.gammaUnsat 50
+_set Building.ERef 30000000
+_set Building.nu 0.15
+_delete Soillayer_2
+_borehole -3 -3
+_borehole 0 -9
+_delete Borehole_2
+_delete Borehole_3
+_gotostructures
+_gotosoil
+_gotostructures
+_surface 0 0 0 18 0 18 18 0 18 0 0
+_surface 0 0 0 0 18 0 18 18 0 18 0 0
+_gotosoil
+_gotostructures
+_extrude (Polygon_1) 0 0 -2
+_delete Geometry Polygon_1
+_gotomesh
+_mesh "Coarseness" 0.075 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_viewmesh
+_gotostages
+_set InitialPhase.ShouldCalculate False
+_set InitialPhase.ShouldCalculate True
+_phase InitialPhase
+_set Phase_1.Identification "Building"
+_setmaterial Soil_1_Soil_2_1 InitialPhase Building
+_calculate
+_view InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate) True
+_calculate
+_view InitialPhase
+_set (InitialPhase.ShouldCalculate Phase_1.ShouldCalculate) True
+_calculate
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Model.CurrentPhase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set (Phase_1.ShouldCalculate) True
+_calculate
+_view Phase_1

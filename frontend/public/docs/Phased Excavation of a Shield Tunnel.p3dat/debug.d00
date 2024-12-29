@@ -1,0 +1,464 @@
+ BLD: Jul 20 2023 18:19:32
+ Now: 2024/12/27 at 19:14:14
+ if64 2021
+ Ref: *
+ Win: 1.6.2.9200
+ Mem: 1 16222 (4669) MB (free) physical memory
+ Process ID, MemMB : 28388 6
+ EXE: C:\Program Files\Seequent\PLAXIS 3D 2023.2\kernel\
+ BLD: Jul 20 2023 19:06:25
+ CWD: C:\Users\LENOVO\Desktop 476.2 (284.8) GB (free)
+ WRK: C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\INITIA~1\ 476.2 (284.8) GB (free)
+ initialize showmode 23
+ Skipping ZMS1 $$SOILBHSI##            8  bytes
+ Skipping ZMS1 $$SOILBHPR##           16  bytes
+ Skipping ZMS1 $$SOILBHLR##           32  bytes
+ Skipping ZMS1 $$NODECOOR##      1326048  bytes
+ Skipping ZMS1 $$FSCLUSTI##       135076  bytes
+ Skipping ZMS1 $$CLUSTELI##          204  bytes
+ Skipping ZMS1 $$FSSOILCI##      1350720  bytes
+ Skipping ZMS1 $$FSPLATCI##        78960  bytes
+ Skipping ZMS1 $$LOCALCPR##       236592  bytes
+ Skipping ZMS1 $$FSDLOACI##       118736  bytes
+ Skipping ZMS1 $$CONTRACI##        78960  bytes
+ Skipping ZMS1 $$LOCALCCR##       236592  bytes
+ Skipping ZMS1 $$FSINTFAI##       157728  bytes
+ Skipping ZMS1 $$FSINTFNI##        13144  bytes
+ Skipping ZMS1 $$LOCALCIR##       236592  bytes
+ Skipping ZMS1 $$_APPINFT##          220  bytes
+ Skipping ZMS2 $$SOILBHSI##            8  bytes
+ Skipping ZMS2 $$SOILBHPR##           16  bytes
+ Skipping ZMS2 $$SOILBHLR##           32  bytes
+ Skipping ZMS2 $$CLUSTELI##          204  bytes
+ Skipping ZMS2 $$FSPLATCI##        78960  bytes
+ Skipping ZMS2 $$LOCALCPR##       236592  bytes
+ Skipping ZMS2 $$FSDLOACI##       118736  bytes
+ Skipping ZMS2 $$CONTRACI##        78960  bytes
+ Skipping ZMS2 $$LOCALCCR##       236592  bytes
+ Skipping ZMS2 $$FSINTFNI##        13144  bytes
+ Skipping ZMS2 $$_APPINFT##          220  bytes
+ $$PROLAYSI##          16
+ Skipping MAT $$PROLAYSI##           16  bytes
+ $$PROLAYDI##          16
+ Skipping MAT $$PROLAYDI##           16  bytes
+ $$PROLAYSR##        6400
+ Skipping MAT $$PROLAYSR##         6400  bytes
+ $$SOILXIDT##         172
+ Skipping MAT $$SOILXIDT##          172  bytes
+ $$SOILXVLR##        1600
+ Skipping MAT $$SOILXVLR##         1600  bytes
+ $$HTUWCT_R##         128
+ Skipping MAT $$HTUWCT_R##          128  bytes
+ $$SOILXVLI##         160
+ Skipping MAT $$SOILXVLI##          160  bytes
+ $$SOILNAMT##          54
+ Skipping MAT $$SOILNAMT##           54  bytes
+ $$SOILNAMB##          38
+ Skipping MAT $$SOILNAMB##           38  bytes
+ $$ANCHXIDT##           4
+ Skipping MAT $$ANCHXIDT##            4  bytes
+ $$ANCHNAMT##           4
+ Skipping MAT $$ANCHNAMT##            4  bytes
+ $$ANCHNAMB##           0
+ $$BEAMXIDT##           4
+ Skipping MAT $$BEAMXIDT##            4  bytes
+ $$FSBEAMPI##           8
+ Skipping MAT $$FSBEAMPI##            8  bytes
+ $$FSBEAMNT##           4
+ Skipping MAT $$FSBEAMNT##            4  bytes
+ $$FSBEAMNB##           0
+ $$EMBEXIDT##           4
+ Skipping MAT $$EMBEXIDT##            4  bytes
+ $$FSEPILNT##           4
+ Skipping MAT $$FSEPILNT##            4  bytes
+ $$FSEPILNB##           0
+ $$FSEPXIDT##           4
+ Skipping MAT $$FSEPXIDT##            4  bytes
+ $$EBEANAMT##           4
+ Skipping MAT $$EBEANAMT##            4  bytes
+ $$EBEANAMB##           0
+ $$SKINRESR##           0
+ $$LATRES_R##           0
+ $$PILE_MKR##           0
+ $$BONDSTRR##           0
+ $$GEOTXIDT##           4
+ Skipping MAT $$GEOTXIDT##            4  bytes
+ $$GEO_NE1R##           0
+ $$GEO_NE2R##           0
+ $$GEOTNAMT##           4
+ Skipping MAT $$GEOTNAMT##            4  bytes
+ $$GEOTNAMB##           0
+ $$PLATXIDT##          46
+ Skipping MAT $$PLATXIDT##           46  bytes
+ $$FSPLATPI##          48
+ Skipping MAT $$FSPLATPI##           48  bytes
+ $$FSPLATPR##         112
+ Skipping MAT $$FSPLATPR##          112  bytes
+ $$PLATXVLR##         400
+ Skipping MAT $$PLATXVLR##          400  bytes
+ $$PLAT_MKR##           0
+ $$BEAMNAMT##           4
+ Skipping MAT $$BEAMNAMT##            4  bytes
+ $$BEAMNAMB##           0
+ $$FSPLATNT##          11
+ Skipping MAT $$FSPLATNT##           11  bytes
+ $$FSPLATNB##           4
+ Skipping MAT $$FSPLATNB##            4  bytes
+ $$DBASEIDI##          20
+ Skipping MAT $$DBASEIDI##           20  bytes
+ $$COLOURSI##          20
+ Skipping MAT $$COLOURSI##           20  bytes
+ $$METADATT##          24
+ Skipping MAT $$METADATT##           24  bytes
+ $$COMMENTT##          24
+ Skipping MAT $$COMMENTT##           24  bytes
+ $$GUIDS__T##         214
+ Skipping MAT $$GUIDS__T##          214  bytes
+ $$MATINDXT##         214
+ Skipping MAT $$MATINDXT##          214  bytes
+ $$NAMES__T##          61
+ Skipping MAT $$NAMES__T##           61  bytes
+ $$NAMES__B##          42
+ Skipping MAT $$NAMES__B##           42  bytes
+ $$UNITS__T##          44
+ Skipping MAT $$UNITS__T##           44  bytes
+ $$GRAVTDII##           4
+ Skipping MAT $$GRAVTDII##            4  bytes
+ $$_APPINFT##         220
+ Skipping MAT $$_APPINFT##          220  bytes
+ $$ENDOFFII##           0
+ End Of RdMat1
+ nSoilProps :            4
+ $$PROLAYSI##          16
+ $$PROLAYDI##          16
+ $$PROLAYSR##        6400
+ $$SOILXIDT##         172
+ Skipping MAT $$SOILXIDT##          172  bytes
+ $$SOILXVLR##        1600
+ Skipping MAT $$SOILXVLR##         1600  bytes
+ $$HTUWCT_R##         128
+ Skipping MAT $$HTUWCT_R##          128  bytes
+ $$SOILXVLI##         160
+ Skipping MAT $$SOILXVLI##          160  bytes
+ $$SOILNAMT##          54
+ Skipping MAT $$SOILNAMT##           54  bytes
+ $$SOILNAMB##          38
+ Skipping MAT $$SOILNAMB##           38  bytes
+ $$ANCHXIDT##           4
+ Skipping MAT $$ANCHXIDT##            4  bytes
+ $$ANCHNAMT##           4
+ Skipping MAT $$ANCHNAMT##            4  bytes
+ $$ANCHNAMB##           0
+ $$BEAMXIDT##           4
+ Skipping MAT $$BEAMXIDT##            4  bytes
+ $$FSBEAMPI##           8
+ Skipping MAT $$FSBEAMPI##            8  bytes
+ $$FSBEAMNT##           4
+ Skipping MAT $$FSBEAMNT##            4  bytes
+ $$FSBEAMNB##           0
+ $$EMBEXIDT##           4
+ Skipping MAT $$EMBEXIDT##            4  bytes
+ $$FSEPILNT##           4
+ Skipping MAT $$FSEPILNT##            4  bytes
+ $$FSEPILNB##           0
+ $$FSEPXIDT##           4
+ Skipping MAT $$FSEPXIDT##            4  bytes
+ $$EBEANAMT##           4
+ Skipping MAT $$EBEANAMT##            4  bytes
+ $$EBEANAMB##           0
+ $$SKINRESR##           0
+ $$LATRES_R##           0
+ $$PILE_MKR##           0
+ $$BONDSTRR##           0
+ $$GEOTXIDT##           4
+ Skipping MAT $$GEOTXIDT##            4  bytes
+ $$GEO_NE1R##           0
+ $$GEO_NE2R##           0
+ $$GEOTNAMT##           4
+ Skipping MAT $$GEOTNAMT##            4  bytes
+ $$GEOTNAMB##           0
+ $$PLATXIDT##          46
+ Skipping MAT $$PLATXIDT##           46  bytes
+ $$FSPLATPI##          48
+ Skipping MAT $$FSPLATPI##           48  bytes
+ $$FSPLATPR##         112
+ Skipping MAT $$FSPLATPR##          112  bytes
+ $$PLATXVLR##         400
+ Skipping MAT $$PLATXVLR##          400  bytes
+ $$PLAT_MKR##           0
+ $$BEAMNAMT##           4
+ Skipping MAT $$BEAMNAMT##            4  bytes
+ $$BEAMNAMB##           0
+ $$FSPLATNT##          11
+ Skipping MAT $$FSPLATNT##           11  bytes
+ $$FSPLATNB##           4
+ Skipping MAT $$FSPLATNB##            4  bytes
+ $$DBASEIDI##          20
+ Skipping MAT $$DBASEIDI##           20  bytes
+ $$COLOURSI##          20
+ Skipping MAT $$COLOURSI##           20  bytes
+ $$METADATT##          24
+ Skipping MAT $$METADATT##           24  bytes
+ $$COMMENTT##          24
+ Skipping MAT $$COMMENTT##           24  bytes
+ $$GUIDS__T##         214
+ Skipping MAT $$GUIDS__T##          214  bytes
+ $$MATINDXT##         214
+ Skipping MAT $$MATINDXT##          214  bytes
+ $$NAMES__T##          61
+ Skipping MAT $$NAMES__T##           61  bytes
+ $$NAMES__B##          42
+ Skipping MAT $$NAMES__B##           42  bytes
+ $$UNITS__T##          44
+ nUnits:           7
+ Unit L: m
+ Unit F: kN
+ Unit T: day
+ OneAtm:   100.000000000000       [F/L2]
+ $$GRAVTDII##           4
+ Skipping MAT $$GRAVTDII##            4  bytes
+ $$_APPINFT##         220
+ Skipping MAT $$_APPINFT##          220  bytes
+ $$ENDOFFII##           0
+ End Of RdMat
+ Skipping Lxx           1 $$FSDLOADR##       708768  bytes
+ Skipping Lxx           1 $$DYDLOADR##       826896  bytes
+ Skipping Lxx           1 $$DISPLA2R##       202496  bytes
+ Skipping Lxx           1 $$CONTRAAI##           96  bytes
+ Skipping Lxx           1 $$CONTRAVR##          960  bytes
+ Skipping Lxx           1 $$BCDYNMCI##           24  bytes
+ Skipping Lxx           1 $$BCDYNMCR##           96  bytes
+ Skipping Lxx           1 $$BCDYNFXI##           12  bytes
+ Skipping Lxx           1 $$BCFIELDR##           96  bytes
+ Skipping Lxx           1 $$BCFIELDI##          204  bytes
+ Skipping Lxx           1 $$SLPRECOR##           72  bytes
+ Skipping Lxx           1 $$_APPINFT##          220  bytes
+ Skipping Lxx           2 $$PHASNAMT##           63  bytes
+ Skipping Lxx           2 $$FSDLOADR##       708768  bytes
+ Skipping Lxx           2 $$DYDLOADR##       826896  bytes
+ Skipping Lxx           2 $$DISPLA2R##       202496  bytes
+ Skipping Lxx           2 $$CONTRAAI##           96  bytes
+ Skipping Lxx           2 $$CONTRAVR##          960  bytes
+ Skipping Lxx           2 $$BCDYNMCI##           24  bytes
+ Skipping Lxx           2 $$BCDYNMCR##           96  bytes
+ Skipping Lxx           2 $$BCDYNFXI##           12  bytes
+ rBCField
+   0.000E+00  0.000E+00  0.000E+00   0.000E+00  0.000E+00  1.000E+00
+   1.000E+00  0.000E+00  0.000E+00   0.000E+00  1.000E+00  0.000E+00
+   0.000E+00  0.000E+00  0.000E+00   0.000E+00  0.000E+00  0.000E+00
+ iBCField
+       1      1      1      1      1       1      1      1      1      1
+       1      1      1      1      1       1      1      1      1      1
+       1      1      1      1      1       1      1      1      1      1
+       1      1      1      1      1       1      1      1      1      1
+       1      1      1      1      1       1      1      1      1      1
+       1
+ Skipping Lxx           2 $$SLPRECOR##           72  bytes
+ Skipping Lxx           2 $$_APPINFT##          220  bytes
+ Active soil elements:       33768  of        33768
+ NintEl:        3286
+ Get_CalcType...
+ nHand:           1           1
+ nDof:           0
+ nHand,iUpd,iUnd,iFlo,iPhC:           1           0           0           0
+           0
+ iCalcType:           10           1
+ nel,nintel:       33768        3286
+ Fill_IH, Is3DX :            1
+ Nel,Nintel:       33768        3286
+ filling iH :           2
+ sorting iH :          31
+ MaxSame :           28  nUnique:       50252  of       135072 and         6572
+ filter  iH :          52
+ Nel     :       33768
+ nVisible:        3186  planes
+ Total time :           85  ms
+ Total CPU  :   7.812500000000000E-002
+ Allocated  :       592864   2.26159667968750       Mb
+ Update active neigh:           1  ms
+ Skipping Zin $$GENERALI##           16  bytes
+ Skipping Zin $$COUNTERI##           28  bytes
+ Skipping Zin $$GRAVITYR##            8  bytes
+ Skipping Zin $$FSINTFAR##        26288  bytes
+ Skipping Zin $$_APPINFT##          220  bytes
+ Skipping Wxx1 $$PHASNAMT##           63  bytes
+ Skipping Wxx1 $$FSWPRESR##      2701440  bytes
+ Skipping Wxx1 $$CLUSDRYI##          204  bytes
+ Skipping Wxx1 $$FSEWPRCI##        76472  bytes
+ Skipping Wxx1 $$FSEWPRSR##       458784  bytes
+ Skipping Wxx1 $$BCGFLOWI##           24  bytes
+ Skipping Wxx1 $$INTPERMI##        13144  bytes
+ Skipping Wxx1 $$BCPRECII##           12  bytes
+ Skipping Wxx1 $$BCPRECIR##           24  bytes
+ Skipping Wxx1 $$WLGEOM_I##            4  bytes
+ Skipping Wxx1 $$WLGEOM_R##          144  bytes
+ Skipping Wxx1 $$WLTIME_I##           12  bytes
+ Skipping Wxx1 $$SOILWL_I##          412  bytes
+ Skipping Wxx1 $$SLPRECOR##           72  bytes
+ Skipping Wxx1 $$_APPINFT##          436  bytes
+ Skipping Wxx2 $$PHASNAMT##           63  bytes
+ Skipping Wxx2 $$CLUSDRYI##          204  bytes
+ Skipping Wxx2 $$BCGFLOWI##           24  bytes
+ Skipping Wxx2 $$INTPERMI##        13144  bytes
+ Skipping Wxx2 $$BCPRECII##           12  bytes
+ Skipping Wxx2 $$BCPRECIR##           24  bytes
+ Skipping Wxx2 $$WLGEOM_I##            4  bytes
+ Skipping Wxx2 $$WLGEOM_R##          144  bytes
+ Skipping Wxx2 $$WLTIME_I##           12  bytes
+ Skipping Wxx2 $$SOILWL_I##          412  bytes
+ Skipping Wxx2 $$SLPRECOR##           72  bytes
+ Skipping Wxx2 $$_APPINFT##          436  bytes
+ nDryEl,nWetEl:         694       32359         715
+ iElTypI:          12
+ K0_Alt; cpu0:  0.234375000000000     
+ WL: fill & sort           1  ms        3186
+ create_idx           1
+ top nodes            2  ms
+ nTopNodes1:         485  0.000000000000000E+000
+ nTopEl   :         218
+ nTopNodes2:         485  0.000000000000000E+000
+ 10->4n:      236376  0.000000000000000E+000
+ Determine N:  1.562500000000000E-002
+ Process ID, MemMB : 28388 55
+ PASSMBMEM 55
+ nDry/mixed/wet:        4858        3201      228317
+ nSig(0)     1      485     1053    55252     0.016      898        0     1466
+ nSig(0)     2     1053     1527    55252     0.016     2334     1466     3376
+ nSig(0)     3     1527     1932    55252     0.016     3887     3376     5334
+ nSig(0)     4     1932     2235    55252     0.016     5140     5334     6890
+ nSig(0)     5     2235     2591    55252     0.016     6372     6890     8478
+ nSig(0)     6     2591     2985    55252     0.016     7676     8478    10176
+ nSig(0)     7     2985     3390    55252     0.016     8894    10176    11799
+ nSig(0)     8     3390     3865    55252     0.016    10150    11799    13529
+ nSig(0)     9     3865     4413    55252     0.016    11539    13529    15456
+ nSig(0)    10     4413     5063    55252     0.016    13166    15456    17717
+ nSig(0)    11     5063     5798    55252     0.031    14924    17717    20155
+ nSig(0)    12     5798     6561    55252     0.031    16900    20155    22809
+ nSig(0)    13     6561     7439    55252     0.031    18887    22809    25548
+ nSig(0)    14     7439     8441    55252     0.031    21228    25548    28718
+ nSig(0)    15     8441     9578    55252     0.031    23828    28718    32204
+ nSig(0)    16     9578    10774    55252     0.047    26661    32204    35993
+ nSig(0)    17    10774    11931    55252     0.047    29735    35993    40016
+ nSig(0)    18    11931    13076    55252     0.047    32847    40016    44053
+ nSig(0)    19    13076    14276    55252     0.047    36294    44053    48501
+ nSig(0)    20    14276    15444    55252     0.047    39943    48501    53138
+ nSig(0)    21    15444    16512    55252     0.062    43532    53138    57648
+ nSig(0)    22    16512    17587    55252     0.078    47339    57648    62401
+ nSig(0)    23    17587    18503    55252     0.078    50898    62401    66769
+ nSig(0)    24    18503    19428    55252     0.078    54466    66769    71155
+ nSig(0)    25    19428    20313    55252     0.078    57730    71155    75199
+ nSig(0)    26    20313    21262    55252     0.078    61376    75199    79690
+ nSig(0)    27    21262    22099    55252     0.078    64835    79690    83899
+ nSig(0)    28    22099    22950    55252     0.078    68157    83899    87969
+ nSig(0)    29    22950    23725    55252     0.078    71249    87969    91751
+ nSig(0)    30    23725    24503    55252     0.094    74142    91751    95331
+ nSig(0)    31    24503    25256    55252     0.094    77120    95331    98971
+ nSig(0)    32    25256    25994    55252     0.094    80004    98971   102526
+ nSig(0)    33    25994    26694    55252     0.094    82678   102526   105837
+ nSig(0)    34    26694    27353    55252     0.094    85251   105837   109008
+ nSig(0)    35    27353    28025    55252     0.094    87840   109008   112210
+ nSig(0)    36    28025    28791    55252     0.094    90367   112210   115437
+ nSig(0)    37    28791    29513    55252     0.094    93149   115437   118888
+ nSig(0)    38    29513    30139    55252     0.094    95478   118888   121799
+ nSig(0)    39    30139    30809    55252     0.094    97867   121799   124811
+ nSig(0)    40    30809    31503    55252     0.094   100320   124811   127905
+ nSig(0)    41    31503    32276    55252     0.094   102716   127905   131021
+ nSig(0)    42    32276    33145    55252     0.109   105387   131021   134498
+ nSig(0)    43    33145    34087    55252     0.109   108362   134498   138337
+ nSig(0)    44    34087    35136    55252     0.109   111684   138337   142611
+ nSig(0)    45    35136    36214    55252     0.109   115122   142611   147002
+ nSig(0)    46    36214    37416    55252     0.109   118863   147002   151800
+ nSig(0)    47    37416    38726    55252     0.125   123026   151800   157097
+ nSig(0)    48    38726    40050    55252     0.125   127422   157097   162635
+ nSig(0)    49    40050    41429    55252     0.125   131907   162635   168293
+ nSig(0)    50    41429    42805    55252     0.125   136457   168293   173984
+ nSig(0)    51    42805    44171    55252     0.125   141014   173984   179670
+ nSig(0)    52    44171    45413    55252     0.125   145531   179670   185225
+ nSig(0)    53    45413    46634    55252     0.125   149785   185225   190519
+ nSig(0)    54    46634    47805    55252     0.125   154139   190519   195850
+ nSig(0)    55    47805    48883    55252     0.141   158336   195850   200925
+ nSig(0)    56    48883    49814    55252     0.141   162208   200925   205554
+ nSig(0)    57    49814    50620    55252     0.141   165491   205554   209485
+ nSig(0)    58    50620    51283    55252     0.141   168506   209485   213034
+ nSig(0)    59    51283    51941    55252     0.141   171319   213034   216396
+ nSig(0)    60    51941    52507    55252     0.141   173954   216396   219510
+ nSig(0)    61    52507    52936    55252     0.141   176118   219510   222034
+ nSig(0)    62    52936    53252    55252     0.141   177928   222034   224126
+ nSig(0)    63    53252    53562    55252     0.141   179468   224126   225946
+ nSig(0)    64    53562    53851    55252     0.141   180900   225946   227643
+ nSig(0)    65    53851    54078    55252     0.141   182259   227643   229213
+ nSig(0)    66    54078    54277    55252     0.141   183343   229213   230488
+ nSig(0)    67    54277    54483    55252     0.141   184310   230488   231641
+ nSig(0)    68    54483    54677    55252     0.156   185259   231641   232759
+ nSig(0)    69    54677    54807    55252     0.156   185963   232759   233570
+ nSig(0)    70    54807    54901    55252     0.156   186440   233570   234137
+ nSig(0)    71    54901    54961    55252     0.156   186822   234137   234576
+ nSig(0)    72    54961    55024    55252     0.156   187161   234576   234978
+ nSig(0)    73    55024    55067    55252     0.156   187421   234978   235281
+ nSig(0)    74    55067    55111    55252     0.156   187659   235281   235563
+ nSig(0)    75    55111    55152    55252     0.156   187846   235563   235791
+ nSig(0)    76    55152    55177    55252     0.156   188000   235791   235970
+ nSig(0)    77    55177    55203    55252     0.156   188109   235970   236105
+ nSig(0)    78    55203    55227    55252     0.156   188205   236105   236225
+ nSig(0)    79    55227    55237    55252     0.156   188256   236225   236286
+ nSig(0)    80    55237    55243    55252     0.156   188279   236286   236315
+ nSig(0)    81    55243    55246    55252     0.156   188290   236315   236329
+ nSig(0)    82    55246    55251    55252     0.156   188316   236329   236360
+ nSig(0)    83    55251    55252    55252     0.156   188330   236360   236375
+ nMissed :            0  of       236376           0  %
+ Total CPU:   0.390625000000000       0.156250000000000     
+ write_SIG1MAXR
+ calc SigI:           4  ms
+ Write_Step: DoneLead, ULTLEV   : F T
+ Write_Step: nStepDef, nStepFlow:           1          -1
+ iRes:            1
+ WrtLog:  T
+ CPU_Time:   0.250000000000000     
+ AddCxx
+ nNod, nGP :            0           0
+ NinTmp:           0
+ NodTmp:           0
+ bkhead:$$S000000H##         232
+ BkHead : $$S000000H##         232
+ bkhead:$$S000001H##         232
+ BkHead : $$S000001H##         232
+ Total time:           78
+ Done  0.484375000000000     
+ Total cpu  :   0.484375000100000     
+ Total wall :   0.778000000000000     
+ 
+ +------+--------+-------------+--------+-------------+--------+----------+
+ | Task |  Count |       CPU   |    %   |  Wall clock |    %   | Name     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    0 |      1 |        0.48 | 100.00 |        0.78 | 100.00 | Total    |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    1 |      2 |        0.11 |  22.58 |        0.14 |  17.61 | Read     |
+ |    2 |      1 |        0.00 |   0.00 |        0.00 |   0.00 | Inloc    |
+ |    3 |      1 |        0.08 |  16.13 |        0.09 |  11.05 | Neigh    |
+ |    4 |      1 |        0.02 |   3.23 |        0.10 |  12.60 | Sig_Top  |
+ |    5 |      1 |        0.14 |  29.03 |        0.20 |  26.35 | Sweeps   |
+ |    6 |      1 |        0.00 |   0.00 |        0.04 |   5.53 | K0_Etc   |
+ |    7 |      1 |        0.05 |   9.68 |        0.05 |   6.04 | Write    |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |  100 |      1 |        0.09 |  19.35 |        0.16 |  20.82 | Rest     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ MyStop           0
+ Total cpu  :   0.484375000100000     
+ Total wall :   0.778000000000000     
+ 
+ +------+--------+-------------+--------+-------------+--------+----------+
+ | Task |  Count |       CPU   |    %   |  Wall clock |    %   | Name     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    0 |      1 |        0.48 | 100.00 |        0.78 | 100.00 | Total    |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    1 |      2 |        0.11 |  22.58 |        0.14 |  17.61 | Read     |
+ |    2 |      1 |        0.00 |   0.00 |        0.00 |   0.00 | Inloc    |
+ |    3 |      1 |        0.08 |  16.13 |        0.09 |  11.05 | Neigh    |
+ |    4 |      1 |        0.02 |   3.23 |        0.10 |  12.60 | Sig_Top  |
+ |    5 |      1 |        0.14 |  29.03 |        0.20 |  26.35 | Sweeps   |
+ |    6 |      1 |        0.00 |   0.00 |        0.04 |   5.53 | K0_Etc   |
+ |    7 |      1 |        0.05 |   9.68 |        0.05 |   6.04 | Write    |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |  100 |      1 |        0.09 |  19.35 |        0.16 |  20.82 | Rest     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ OK

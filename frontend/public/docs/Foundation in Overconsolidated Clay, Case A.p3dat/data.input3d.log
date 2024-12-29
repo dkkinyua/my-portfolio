@@ -1,0 +1,26 @@
+[Actions]
+Set global coarseness to 8.502
+[AddGeometry]
+Name="BoreholeVolume_1_Volume_1_1"
+Name="BoreholeVolume_1_1"
+[AddFeature]
+ConstructingFeature(Name="BoreholeVolume_1_Volume_1_1", Geometry="BoreholeVolume_1_Volume_1_1", Shape="fesTetrahedron", PolynomialOrder=2, Family="fefUndefined"
+ConstructingFeature(Name="BoreholeVolume_1_1", Geometry="BoreholeVolume_1_1", Shape="fesTetrahedron", PolynomialOrder=2, Family="fefUndefined"
+=====================================================
+==================== Geometries =====================
+=====================================================
+Name="BoreholeVolume_1_Volume_1_1"
+Name="BoreholeVolume_1_1"
+
+
+=====================================================
+===================== Features ======================
+=====================================================
+ConstructingFeature(Name="BoreholeVolume_1_Volume_1_1", Geometry="BoreholeVolume_1_Volume_1_1", Shape="fesTetrahedron", PolynomialOrder=2, Family="fefUndefined"
+ConstructingFeature(Name="BoreholeVolume_1_1", Geometry="BoreholeVolume_1_1", Shape="fesTetrahedron", PolynomialOrder=2, Family="fefUndefined"
+
+
+=====================================================
+[Actions]
+Creating mesh to output file "C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\data.IMProOutput"
+Mesh result written to output file "C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\data.IMProOutput"

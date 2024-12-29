@@ -1,0 +1,230 @@
+﻿##~ running Plaxis3DInput.exe 2023.2.0.1059
+_setproperties "Title" "Phased Excavation of a Shield Tunnel" "Company" "only @::LAVteam::®" "Comments" "" "UnitForce" "kN" "UnitLength" "m" "UnitTime" "day" "WaterWeight" 10 "ReferenceTemperature" 293.15 "LiquidSpecificHeatCapacity" 4181.3 "LiquidThermalConductivity" 0.0006 "LiquidLatentHeat" 334000 "LiquidThermalExpansion" 0.00021 "LiquidTemperature" 293.15 "IceSpecificHeatCapacity" 2108 "IceThermalConductivity" 0.00222 "IceThermalExpansion" 5E-5 "VapourSpecificHeatCapacity" 1930 "VapourThermalConductivity" 2.5E-5 "VapourSpecificGasConstant" 461.5 "UseTemperatureDepWaterPropsTable" False "ModelType" "Full" "ElementType" "10-Noded"
+_initializerectangular SoilContour -20 0 0 80
+_borehole 0 0
+_soillayer 0
+_soillayer 0
+_soillayer 0
+_set Soillayer_1.Zones[0].Top 2
+_set Soillayer_2.Zones[0].Bottom -12
+_set Soillayer_3.Zones[0].Bottom -18
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set Soillayer_1.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "Upper Sand"
+_set UpperSand.gammaUnsat 17
+_set UpperSand.gammaSat 20
+_set UpperSand.ERef 13000
+_set UpperSand.nu 0.3
+_set UpperSand.cRef 10
+_set UpperSand.phi 30
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set Soillayer_2.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "Clay"
+_set Clay.gammaUnsat 16
+_set Clay.gammaSat 18
+_set Clay.ERef 10000
+_set Clay.nu 0.35
+_set Clay.cRef 5
+_set Clay.phi 25
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set Soillayer_3.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "Stiff Sand"
+_set StiffSand.gammaUnsat 17
+_set StiffSand.gammaSat 20
+_set StiffSand.ERef 75000
+_set StiffSand.nu 0.3
+_set StiffSand.cRef 1
+_set StiffSand.phi 31
+_delete Soillayer_1
+_soillayer 0
+_delete Soillayer_2
+_delete Soillayer_3
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set Soillayer_1.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "Upper Sand"
+_set UpperSand_1.gammaUnsat 17
+_set UpperSand_1.gammaSat 20
+_set UpperSand_1.ERef 10000
+_set UpperSand_1.nu 0.3
+_set UpperSand_1.cRef 10
+_set UpperSand_1.phi 31
+_set UpperSand_1.ERef 13000
+_soillayer 0
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set Soillayer_2.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "Clay"
+_set Clay_1.gammaUnsat 16
+_set Clay_1.gammaSat 18
+_set Clay_1.ERef 10000
+_set Clay_1.nu 0.35
+_set Clay_1.cRef 5
+_set Clay_1.phi 25
+_soillayer 0
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set Soillayer_3.Soil.Material SoilMat_1
+_set SoilMat_1.Identification "Stiff Sand"
+_set StiffSand_1.gammaUnsat 17
+_set StiffSand_1.gammaSat 20
+_set StiffSand_1.ERef 75000
+_set StiffSand_1.nu 0.3
+_set StiffSand_1.cRef 1
+_set StiffSand_1.phi 31
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set Soillayer_2.Soil.Material SoilMat_1
+_set Soillayer_2.Soil.Material Clay
+_set Soillayer_3.Soil.Material StiffSand
+_set Soillayer_1.Soil.Material UpperSand
+_delete Soillayer_1
+_delete Soillayer_2
+_delete Soillayer_3
+_delete Borehole_1
+_borehole 0 0
+_soillayer 0
+_soillayer 0
+_soillayer 0
+_set Soillayer_1.Zones[0].Top 2
+_set Soillayer_2.Zones[0].Bottom -1
+_set Soillayer_2.Zones[0].Bottom -12
+_set Soillayer_3.Zones[0].Bottom -18
+_set Soillayer_1.Soil.Material UpperSand
+_set Soillayer_2.Soil.Material Clay
+_set Soillayer_3.Soil.Material StiffSand
+_delete UpperSand
+_delete Clay
+_delete Clay_1
+_delete StiffSand
+_set UpperSand_1.cRef 1
+_delete SoilMat_1
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set SoilMat_1.Colour 10610853
+_set SoilMat_1.Identification "Clay"
+_set Clay.gammaUnsat 16
+_set Clay.gammaSat 18
+_set Clay.ERef 10000
+_set Clay.nu 0.35
+_set Clay.cRef 5
+_set Clay.phi 25
+_set Soillayer_1.Soil.Material UpperSand_1
+_set Soillayer_2.Soil.Material Clay
+_set Soillayer_3.Soil.Material StiffSand_1
+_soilmat "SoilModel" "Mohr-Coulomb"
+_set SoilMat_1.Identification "Concrete"
+_set Concrete.SoilModel "Linear Elastic"
+_set Concrete.DrainageType "Non-porous"
+_set Concrete.gammaUnsat 27
+_set Concrete.ERef 31000000
+_set Concrete.nu 0.1
+_set Concrete.Colour 10723816
+_gotostructures
+_tunnel 3 -13 0 1 0 0 0 0 1
+_set Tunnel_1.x 0
+_set Tunnel_1.y 0
+_set Tunnel_1.z -13.25
+_set Tunnel_1.CrossSection.ShapeType "Circular"
+_set Tunnel_1.CrossSection.WholeHalfMode "Left"
+_set Tunnel_1.CrossSection.Segments[0].ArcProperties.Radius 4
+_generatethicklining Tunnel_1.CrossSection 0.25
+_plate Tunnel_1.SliceSurfaces[1]
+_platemat "MaterialType" "Elastic"
+_set Tunnel_1.SliceSurfaces[1].Plate.Material PlateMat_1
+_set PlateMat_1.Identification "TB,"
+_set TB.Identification "TBM"
+_set TBM.Gamma 247
+_set TBM.E1 200000000
+_set TBM.d 0.17
+_neginterface Tunnel_1.SliceSurfaces[1]
+_contraction Tunnel_1.SliceSurfaces[1]
+_set Tunnel_1.SliceSurfaces[1].SurfaceContraction.Behaviour "Planar contraction"
+_set Tunnel_1.SliceSurfaces[1].SurfaceContraction.Behaviour "Tunnel contraction"
+_set Tunnel_1.SliceSurfaces[1].SurfaceContraction.Distribution "Axial increment"
+_set Tunnel_1.SliceSurfaces[1].SurfaceContraction.C 0.5
+_set Tunnel_1.SliceSurfaces[1].SurfaceContraction.C_inc_axial -0.0067
+_set Tunnel_1.SliceSurfaces[1].SurfaceContraction.C_inc_axial -0.0667
+_surfload Tunnel_1.SliceSurfaces[1]
+_set Tunnel_1.SliceSurfaces[1].SurfaceLoad.Distribution "Perpendicular, vertical increment"
+_set Tunnel_1.SliceSurfaces[1].SurfaceLoad.sign_ref -100
+_set Tunnel_1.SliceSurfaces[1].SurfaceLoad.sign_inc -20
+_set Tunnel_1.SliceSurfaces[1].SurfaceLoad.Zref -4.75
+_surfload (Tunnel_1.PlaneSurfaces[0] Tunnel_1.PlaneSurfaces[1])
+_set (Tunnel_1.PlaneSurfaces[0].SurfaceLoad.Distribution Tunnel_1.PlaneSurfaces[1].SurfaceLoad.Distribution) "Perpendicular, vertical increment"
+_set (Tunnel_1.PlaneSurfaces[0].SurfaceLoad.sign_ref Tunnel_1.PlaneSurfaces[1].SurfaceLoad.sign_ref) -90
+_set (Tunnel_1.PlaneSurfaces[0].SurfaceLoad.sign_inc Tunnel_1.PlaneSurfaces[1].SurfaceLoad.sign_inc) -14
+_set (Tunnel_1.PlaneSurfaces[0].SurfaceLoad.Zref Tunnel_1.PlaneSurfaces[1].SurfaceLoad.Zref) -4.75
+_add Tunnel_1.Trajectory
+_set Tunnel_1.Trajectory.Segments[0].LineProperties.Length 25
+_add Tunnel_1.Trajectory
+_set Tunnel_1.Trajectory.Segments[1].LineProperties.Length 16.5
+_set Tunnel_1.Slicing[1].SlicingMethod "Length"
+_set Tunnel_1.Slicing[1].SliceLength 1.5
+_regeneratetunnelphases Tunnel_1
+_deactivate (TCS_1_Volume_2_1 TCS_1_Surface_1_1 TCS_1_Volume_1_1) Phase_2
+_set (TCS_1_WaterConditions_1_1.Conditions TCS_1_WaterConditions_2_1.Conditions) Phase_2 "Dry"
+_activate (TCS_1_Volume_2_1 TCS_1_Surface_1_1 TCS_1_Volume_1_1) Phase_2
+_deactivate (TCS_1_Volume_2_1 TCS_1_Surface_1_1 TCS_1_Volume_1_1) Phase_2
+_activate (TCS_1_NegativeInterface_1_1) Phase_2
+_activate (TCS_1_Plate_1_1) Phase_2
+_activate (TCS_1_SurfaceContraction_1_1) Phase_2
+_set TCS_1_SurfaceContraction_1_1.C Phase_2 0
+_activate (TCS_2_SurfaceLoad_2_1 TCS_2_SurfaceLoad_1_1) Phase_1
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_set TCS_1_SurfaceContraction_1_1.C Phase_4 0.1
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_set TCS_1_SurfaceContraction_1_1.C Phase_6 0.2
+_set TCS_1_SurfaceContraction_1_1.C Phase_8 0
+_set TCS_1_SurfaceContraction_1_1.C Phase_8 0.3
+_set TCS_1_SurfaceContraction_1_1.C Phase_10 0.4
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_set TCS_1_SurfaceContraction_1_1.Distribution Phase_12 "Uniform"
+_set TCS_1_SurfaceContraction_1_1.C Phase_12 0.5
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_deactivate TCS_1_NegativeInterface_1_1 Phase_14
+_deactivate (TCS_1_Plate_1_1) Phase_14
+_deactivate (TCS_1_SurfaceContraction_1_1) Phase_14
+_activate (TCS_1_SurfaceLoad_1_1) Phase_14
+_activate (TCS_2_SurfaceLoad_1_1) Phase_15
+_set TCS_2_SurfaceLoad_1_1.Distribution Phase_15 "Perpendicular"
+_set TCS_2_SurfaceLoad_1_1.sign_ref Phase_15 635.4
+_addtunnelphasestep Tunnel_1.PhasesDefinition
+_activate (TCS_1_NegativeInterface_1_1) Phase_16
+_activate (TCS_1_Plate_1_1) Phase_16
+_deactivate (TCS_1_NegativeInterface_1_1) Phase_16
+_deactivate (TCS_1_Plate_1_1) Phase_16
+_activate (TCS_1_NegativeInterface_1_1) Phase_16
+_deactivate (TCS_1_SurfaceLoad_1_1) Phase_16
+_activate TCS_1_Volume_1_1 Phase_16
+_set TCS_1_Soil_2_1.Material Phase_16 Concrete
+_deactivate (TCS_2_SurfaceLoad_1_1) Phase_17
+_generatetunnel Tunnel_1
+_generatetunnel Tunnel_1
+_gotomesh
+_mesh "Coarseness" 0.05 "UseEnhancedRefinements" True "EMRGlobalScale" 1.2 "EMRMinElementSize" 0.005 "UseSweptMeshing" False
+_viewmesh
+_gotostages
+_phase InitialPhase
+_set Model.CurrentPhase Phase_1
+_set Phase_1.ShouldCalculate False
+_set Phase_1.ShouldCalculate True
+_set Tunnel_1_PhasesDefinition_1_TunnelAdvanceInfo_1_1.AdvancementStep Phase_1 7
+_deactivate (BoreholeVolume_3_Volume_1_1 BoreholeVolume_3_Volume_2_1 BoreholeVolume_2_Volume_2_1 BoreholeVolume_2_Volume_1_1) Phase_1
+_deactivate (Preconsolidation_3_13 Preconsolidation_3_1 Preconsolidation_2_14 Preconsolidation_2_2) Phase_1
+_activate (SurfaceContraction_1_2 SurfaceContraction_1_1) Phase_1
+_activate (Plate_1_2 Plate_1_1) Phase_1
+_deactivate (Surface_15_2 Surface_15_1) Phase_1
+_phase Phase_1
+_set Model.CurrentPhase Phase_2
+_set Tunnel_1_PhasesDefinition_1_TunnelAdvanceInfo_1_1.AdvancementStep Phase_2 8
+_phase Phase_2
+_set Model.CurrentPhase Phase_3
+_advance Tunnel_1 Phase_3
+_advance Tunnel_1 Phase_3
+_undo
+_phase Phase_3
+_set Model.CurrentPhase Phase_4
+_advance Tunnel_1 Phase_4
+_phase Phase_4
+_set Model.CurrentPhase Phase_5
+_advance Tunnel_1 Phase_5
+_calculate
+_view Phase_5

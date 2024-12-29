@@ -1,0 +1,117 @@
+{
+ "uid": "{88D792BE-7596-47B3-9BA5-A251C6F799F9}",
+ "ref": "0",
+ "description": "Model",
+ "objects": [
+  {
+   "uid": "{5BB29027-D426-4706-A00D-68606A28CC97}",
+   "description": "Geometry",
+   "objects": [
+    {
+     "uid": "{5D9F3186-CF25-4C1C-B90C-A8D3E7999108}",
+     "description": "Volumes",
+     "objects": [
+      {
+       "uid": "{8AED8FD6-A706-4DED-AEAC-F7421ABE305F}",
+       "description": "Volume_1",
+       "objects": [
+        {
+         "uid": "{161ABEFF-D04B-4A18-8F26-102FBE44EE6E}",
+         "description": "BoreholeVolume_1_Volume_1_1",
+         "objects": [
+          {
+           "uid": "{DE821F3A-06CF-46B2-BA13-811391009EDC}",
+           "ref": "1",
+           "description": "Soil_1_Soil_2_1",
+           "objects": [],
+           "type": "Soil",
+           "caption": "Soil_1_Soil_2_1"
+          }],
+         "caption": "BoreholeVolume_1_Volume_1_1"
+        }],
+       "caption": "Volume_1"
+      }],
+     "caption": "Volumes"
+    },{
+     "uid": "{CD099301-2E64-44D7-B49C-331E89226015}",
+     "description": "SoilVolumes",
+     "objects": [
+      {
+       "uid": "{BE7FC5FC-4BE2-43E3-AA04-72AA5E750867}",
+       "description": "BoreholeVolume_1",
+       "objects": [
+        {
+         "uid": "{3BF024E1-B40E-42E1-BF26-3D810668EBFC}",
+         "description": "BoreholeVolume_1_1",
+         "objects": [
+          {
+           "uid": "{B462BC1E-2ABB-4C60-8620-B7EB15862458}",
+           "ref": "2",
+           "description": "Soil_1_1",
+           "objects": [],
+           "type": "Soil",
+           "caption": "Soil_1_1"
+          }],
+         "caption": "BoreholeVolume_1_1"
+        },{
+         "ref": "{161ABEFF-D04B-4A18-8F26-102FBE44EE6E}",
+         "objects": [
+          {
+           "ref": "{DE821F3A-06CF-46B2-BA13-811391009EDC}",
+           "objects": []
+          }]
+        }],
+       "caption": "BoreholeVolume_1"
+      }],
+     "caption": "Soil volumes"
+    }],
+   "caption": "Geometry"
+  },{
+   "uid": "{0D83D94F-9D45-4C62-9627-373571CF7DF8}",
+   "description": "BoreholeWaterLevels",
+   "objects": [
+    {
+     "uid": "{A6825259-3143-41DE-8C48-BA70169BB6F0}",
+     "description": "BoreholeWaterLevel_1",
+     "objects": [
+      {
+       "ref": "{B462BC1E-2ABB-4C60-8620-B7EB15862458}",
+       "objects": []
+      },{
+       "ref": "{DE821F3A-06CF-46B2-BA13-811391009EDC}",
+       "objects": []
+      }],
+     "caption": "BoreholeWaterLevel_1"
+    }],
+   "caption": "Borehole water levels"
+  },{
+   "uid": "{CF271DF8-54D6-4A37-BA8C-0DDFD883CC23}",
+   "description": "Soils",
+   "objects": [
+    {
+     "uid": "{8F7CE900-22CA-4622-B526-471C4B9FA836}",
+     "description": "Soil_1",
+     "objects": [
+      {
+       "ref": "{B462BC1E-2ABB-4C60-8620-B7EB15862458}",
+       "objects": []
+      },{
+       "ref": "{DE821F3A-06CF-46B2-BA13-811391009EDC}",
+       "objects": []
+      }],
+     "caption": "Soil_1"
+    },{
+     "uid": "{70B0D7AC-6EED-4EC0-B4F2-C5D97556537F}",
+     "description": "Soil_2",
+     "objects": [
+      {
+       "ref": "{DE821F3A-06CF-46B2-BA13-811391009EDC}",
+       "objects": []
+      }],
+     "caption": "Soil_2"
+    }],
+   "caption": "Soils"
+  }],
+ "type": "Phase",
+ "caption": "Model"
+}

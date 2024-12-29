@@ -1,0 +1,53 @@
+[General]
+Version=0
+CalcMode=Classic
+CalcType=Plastic Drained
+ErrorCode=0
+ErrorMsg=OK
+DateTime=27-12-2024 20:19
+StepsCount=11
+ErrorParams=
+[Step001]
+DateTime=27-12-2024 19:58
+LeadNumber=-1
+LeadFinished=False
+[Step002]
+DateTime=27-12-2024 20:00
+LeadNumber=-1
+LeadFinished=False
+[Step003]
+DateTime=27-12-2024 20:02
+LeadNumber=-1
+LeadFinished=False
+[Step004]
+DateTime=27-12-2024 20:03
+LeadNumber=-1
+LeadFinished=False
+[Step005]
+DateTime=27-12-2024 20:04
+LeadNumber=-1
+LeadFinished=False
+[Step006]
+DateTime=27-12-2024 20:06
+LeadNumber=-1
+LeadFinished=False
+[Step007]
+DateTime=27-12-2024 20:09
+LeadNumber=-1
+LeadFinished=False
+[Step008]
+DateTime=27-12-2024 20:13
+LeadNumber=-1
+LeadFinished=False
+[Step009]
+DateTime=27-12-2024 20:15
+LeadNumber=-1
+LeadFinished=False
+[Step010]
+DateTime=27-12-2024 20:17
+LeadNumber=-1
+LeadFinished=False
+[Step011]
+DateTime=27-12-2024 20:19
+LeadNumber=-1
+LeadFinished=False

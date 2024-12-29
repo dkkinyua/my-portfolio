@@ -1,0 +1,354 @@
+ BLD: Jul 20 2023 18:19:32
+ Now: 2024/12/27 at 9:4:51
+ if64 2021
+ Ref: *
+ Win: 1.6.2.9200
+ Mem: 1 16222 (4915) MB (free) physical memory
+ Process ID, MemMB : 25568 6
+ EXE: C:\Program Files\Seequent\PLAXIS 3D 2023.2\kernel\
+ BLD: Jul 20 2023 19:06:25
+ CWD: C:\Users\LENOVO\Desktop 476.2 (284.8) GB (free)
+ WRK: C:\Users\LENOVO\AppData\Local\Temp\PLAXIS~1\3DCALC~1\INITIA~1\ 476.2 (284.8) GB (free)
+ initialize showmode 23
+ Skipping ZMS1 $$SOILBHSI##            8  bytes
+ Skipping ZMS1 $$SOILBHPR##           16  bytes
+ Skipping ZMS1 $$SOILBHLR##           16  bytes
+ Skipping ZMS1 $$NODECOOR##        93744  bytes
+ Skipping ZMS1 $$FSCLUSTI##         8792  bytes
+ Skipping ZMS1 $$CLUSTELI##            8  bytes
+ Skipping ZMS1 $$FSSOILCI##        87880  bytes
+ Skipping ZMS1 $$_APPINFT##          220  bytes
+ Skipping ZMS2 $$SOILBHSI##            8  bytes
+ Skipping ZMS2 $$SOILBHPR##           16  bytes
+ Skipping ZMS2 $$SOILBHLR##           16  bytes
+ Skipping ZMS2 $$CLUSTELI##            8  bytes
+ Skipping ZMS2 $$_APPINFT##          220  bytes
+ $$PROLAYSI##           8
+ Skipping MAT $$PROLAYSI##            8  bytes
+ $$PROLAYDI##           8
+ Skipping MAT $$PROLAYDI##            8  bytes
+ $$PROLAYSR##        3200
+ Skipping MAT $$PROLAYSR##         3200  bytes
+ $$SOILXIDT##          88
+ Skipping MAT $$SOILXIDT##           88  bytes
+ $$SOILXVLR##         800
+ Skipping MAT $$SOILXVLR##          800  bytes
+ $$HTUWCT_R##          64
+ Skipping MAT $$HTUWCT_R##           64  bytes
+ $$SOILXVLI##          80
+ Skipping MAT $$SOILXVLI##           80  bytes
+ $$SOILNAMT##          34
+ Skipping MAT $$SOILNAMT##           34  bytes
+ $$SOILNAMB##          24
+ Skipping MAT $$SOILNAMB##           24  bytes
+ $$ANCHXIDT##           4
+ Skipping MAT $$ANCHXIDT##            4  bytes
+ $$ANCHNAMT##           4
+ Skipping MAT $$ANCHNAMT##            4  bytes
+ $$ANCHNAMB##           0
+ $$BEAMXIDT##           4
+ Skipping MAT $$BEAMXIDT##            4  bytes
+ $$FSBEAMPI##           8
+ Skipping MAT $$FSBEAMPI##            8  bytes
+ $$FSBEAMNT##           4
+ Skipping MAT $$FSBEAMNT##            4  bytes
+ $$FSBEAMNB##           0
+ $$EMBEXIDT##           4
+ Skipping MAT $$EMBEXIDT##            4  bytes
+ $$FSEPILNT##           4
+ Skipping MAT $$FSEPILNT##            4  bytes
+ $$FSEPILNB##           0
+ $$FSEPXIDT##           4
+ Skipping MAT $$FSEPXIDT##            4  bytes
+ $$EBEANAMT##           4
+ Skipping MAT $$EBEANAMT##            4  bytes
+ $$EBEANAMB##           0
+ $$SKINRESR##           0
+ $$LATRES_R##           0
+ $$PILE_MKR##           0
+ $$BONDSTRR##           0
+ $$GEOTXIDT##           4
+ Skipping MAT $$GEOTXIDT##            4  bytes
+ $$GEO_NE1R##           0
+ $$GEO_NE2R##           0
+ $$GEOTNAMT##           4
+ Skipping MAT $$GEOTNAMT##            4  bytes
+ $$GEOTNAMB##           0
+ $$PLATXIDT##           4
+ Skipping MAT $$PLATXIDT##            4  bytes
+ $$PLAT_MKR##           0
+ $$BEAMNAMT##           4
+ Skipping MAT $$BEAMNAMT##            4  bytes
+ $$BEAMNAMB##           0
+ $$FSPLATNT##           4
+ Skipping MAT $$FSPLATNT##            4  bytes
+ $$FSPLATNB##           0
+ $$DBASEIDI##           8
+ Skipping MAT $$DBASEIDI##            8  bytes
+ $$COLOURSI##           8
+ Skipping MAT $$COLOURSI##            8  bytes
+ $$METADATT##          12
+ Skipping MAT $$METADATT##           12  bytes
+ $$COMMENTT##          12
+ Skipping MAT $$COMMENTT##           12  bytes
+ $$GUIDS__T##          88
+ Skipping MAT $$GUIDS__T##           88  bytes
+ $$MATINDXT##          88
+ Skipping MAT $$MATINDXT##           88  bytes
+ $$NAMES__T##          34
+ Skipping MAT $$NAMES__T##           34  bytes
+ $$NAMES__B##          24
+ Skipping MAT $$NAMES__B##           24  bytes
+ $$UNITS__T##          44
+ Skipping MAT $$UNITS__T##           44  bytes
+ $$GRAVTDII##           4
+ Skipping MAT $$GRAVTDII##            4  bytes
+ $$_APPINFT##         220
+ Skipping MAT $$_APPINFT##          220  bytes
+ $$ENDOFFII##           0
+ End Of RdMat1
+ nSoilProps :            2
+ $$PROLAYSI##           8
+ $$PROLAYDI##           8
+ $$PROLAYSR##        3200
+ $$SOILXIDT##          88
+ Skipping MAT $$SOILXIDT##           88  bytes
+ $$SOILXVLR##         800
+ Skipping MAT $$SOILXVLR##          800  bytes
+ $$HTUWCT_R##          64
+ Skipping MAT $$HTUWCT_R##           64  bytes
+ $$SOILXVLI##          80
+ Skipping MAT $$SOILXVLI##           80  bytes
+ $$SOILNAMT##          34
+ Skipping MAT $$SOILNAMT##           34  bytes
+ $$SOILNAMB##          24
+ Skipping MAT $$SOILNAMB##           24  bytes
+ $$ANCHXIDT##           4
+ Skipping MAT $$ANCHXIDT##            4  bytes
+ $$ANCHNAMT##           4
+ Skipping MAT $$ANCHNAMT##            4  bytes
+ $$ANCHNAMB##           0
+ $$BEAMXIDT##           4
+ Skipping MAT $$BEAMXIDT##            4  bytes
+ $$FSBEAMPI##           8
+ Skipping MAT $$FSBEAMPI##            8  bytes
+ $$FSBEAMNT##           4
+ Skipping MAT $$FSBEAMNT##            4  bytes
+ $$FSBEAMNB##           0
+ $$EMBEXIDT##           4
+ Skipping MAT $$EMBEXIDT##            4  bytes
+ $$FSEPILNT##           4
+ Skipping MAT $$FSEPILNT##            4  bytes
+ $$FSEPILNB##           0
+ $$FSEPXIDT##           4
+ Skipping MAT $$FSEPXIDT##            4  bytes
+ $$EBEANAMT##           4
+ Skipping MAT $$EBEANAMT##            4  bytes
+ $$EBEANAMB##           0
+ $$SKINRESR##           0
+ $$LATRES_R##           0
+ $$PILE_MKR##           0
+ $$BONDSTRR##           0
+ $$GEOTXIDT##           4
+ Skipping MAT $$GEOTXIDT##            4  bytes
+ $$GEO_NE1R##           0
+ $$GEO_NE2R##           0
+ $$GEOTNAMT##           4
+ Skipping MAT $$GEOTNAMT##            4  bytes
+ $$GEOTNAMB##           0
+ $$PLATXIDT##           4
+ Skipping MAT $$PLATXIDT##            4  bytes
+ $$PLAT_MKR##           0
+ $$BEAMNAMT##           4
+ Skipping MAT $$BEAMNAMT##            4  bytes
+ $$BEAMNAMB##           0
+ $$FSPLATNT##           4
+ Skipping MAT $$FSPLATNT##            4  bytes
+ $$FSPLATNB##           0
+ $$DBASEIDI##           8
+ Skipping MAT $$DBASEIDI##            8  bytes
+ $$COLOURSI##           8
+ Skipping MAT $$COLOURSI##            8  bytes
+ $$METADATT##          12
+ Skipping MAT $$METADATT##           12  bytes
+ $$COMMENTT##          12
+ Skipping MAT $$COMMENTT##           12  bytes
+ $$GUIDS__T##          88
+ Skipping MAT $$GUIDS__T##           88  bytes
+ $$MATINDXT##          88
+ Skipping MAT $$MATINDXT##           88  bytes
+ $$NAMES__T##          34
+ Skipping MAT $$NAMES__T##           34  bytes
+ $$NAMES__B##          24
+ Skipping MAT $$NAMES__B##           24  bytes
+ $$UNITS__T##          44
+ nUnits:           7
+ Unit L: m
+ Unit F: kN
+ Unit T: day
+ OneAtm:   100.000000000000       [F/L2]
+ $$GRAVTDII##           4
+ Skipping MAT $$GRAVTDII##            4  bytes
+ $$_APPINFT##         220
+ Skipping MAT $$_APPINFT##          220  bytes
+ $$ENDOFFII##           0
+ End Of RdMat
+ Skipping Lxx           1 $$DISPLA2R##        44128  bytes
+ Skipping Lxx           1 $$BCDYNMCI##           24  bytes
+ Skipping Lxx           1 $$BCDYNMCR##           96  bytes
+ Skipping Lxx           1 $$BCDYNFXI##           12  bytes
+ Skipping Lxx           1 $$BCFIELDR##           96  bytes
+ Skipping Lxx           1 $$BCFIELDI##            8  bytes
+ Skipping Lxx           1 $$SLPRECOR##           24  bytes
+ Skipping Lxx           1 $$_APPINFT##          220  bytes
+ Skipping Lxx           2 $$PHASNAMT##           63  bytes
+ Skipping Lxx           2 $$DISPLA2R##        44128  bytes
+ Skipping Lxx           2 $$BCDYNMCI##           24  bytes
+ Skipping Lxx           2 $$BCDYNMCR##           96  bytes
+ Skipping Lxx           2 $$BCDYNFXI##           12  bytes
+ rBCField
+   0.000E+00  0.000E+00  0.000E+00   0.000E+00  0.000E+00  1.000E+00
+   1.000E+00  0.000E+00  0.000E+00   0.000E+00  1.000E+00  0.000E+00
+   0.000E+00  0.000E+00  0.000E+00   0.000E+00  0.000E+00  0.000E+00
+ iBCField
+       1      1
+ Skipping Lxx           2 $$SLPRECOR##           24  bytes
+ Skipping Lxx           2 $$_APPINFT##          220  bytes
+ Active soil elements:        2197  of         2197
+ Get_CalcType...
+ nHand:           1           1
+ nDof:           0
+ nHand,iUpd,iUnd,iFlo,iPhC:           1           0           0           0
+           0
+ iCalcType:           10           1
+ nel,nintel:        2197           0
+ Fill_IH, Is3DX :            1
+ Nel,Nintel:        2197           0
+ filling iH :           1
+ sorting iH :           0
+ MaxSame :           12  nUnique:        3519  of         8788 and            0
+ filter  iH :           2
+ Nel     :        2197
+ nVisible:         920  planes
+ Total time :            3  ms
+ Total CPU  :   0.000000000000000E+000
+ Allocated  :        35152  0.134094238281250       Mb
+ Skipping Zin $$GENERALI##           16  bytes
+ Skipping Zin $$COUNTERI##           28  bytes
+ Skipping Zin $$GRAVITYR##            8  bytes
+ Skipping Zin $$_APPINFT##          220  bytes
+ Skipping Wxx1 $$PHASNAMT##           63  bytes
+ Skipping Wxx1 $$FSWPRESR##       175760  bytes
+ Skipping Wxx1 $$CLUSDRYI##            8  bytes
+ Skipping Wxx1 $$FSEWPRCI##        22088  bytes
+ Skipping Wxx1 $$FSEWPRSR##       132480  bytes
+ Skipping Wxx1 $$BCGFLOWI##           24  bytes
+ Skipping Wxx1 $$BCPRECII##           12  bytes
+ Skipping Wxx1 $$BCPRECIR##           24  bytes
+ Skipping Wxx1 $$WLGEOM_I##            4  bytes
+ Skipping Wxx1 $$WLGEOM_R##          144  bytes
+ Skipping Wxx1 $$WLTIME_I##           12  bytes
+ Skipping Wxx1 $$SOILWL_I##           20  bytes
+ Skipping Wxx1 $$SLPRECOR##           24  bytes
+ Skipping Wxx1 $$_APPINFT##          868  bytes
+ Skipping Wxx2 $$PHASNAMT##           63  bytes
+ Skipping Wxx2 $$CLUSDRYI##            8  bytes
+ Skipping Wxx2 $$BCGFLOWI##           24  bytes
+ Skipping Wxx2 $$BCPRECII##           12  bytes
+ Skipping Wxx2 $$BCPRECIR##           24  bytes
+ Skipping Wxx2 $$WLGEOM_I##            4  bytes
+ Skipping Wxx2 $$WLGEOM_R##          144  bytes
+ Skipping Wxx2 $$WLTIME_I##           12  bytes
+ Skipping Wxx2 $$SOILWL_I##           20  bytes
+ Skipping Wxx2 $$SLPRECOR##           24  bytes
+ Skipping Wxx2 $$_APPINFT##          868  bytes
+ nDryEl,nWetEl:         157        1445         595
+ iElTypI:          12
+ K0_Alt; cpu0:  4.687500000000000E-002
+ WL: fill & sort           0  ms         920
+ create_idx           0
+ top nodes            1  ms
+ nTopNodes1:         547  0.000000000000000E+000
+ nTopEl   :         252
+ nTopNodes2:         547  0.000000000000000E+000
+ 10->4n:       15379  0.000000000000000E+000
+ Determine N:  0.000000000000000E+000
+ Process ID, MemMB : 25568 10
+ PASSMBMEM 10
+ nDry/mixed/wet:        1099        2875       11405
+ nSig(0)     1      547      955     3906     0.000      648        0     1056
+ nSig(0)     2      955     1275     3906     0.000     1765     1056     2493
+ nSig(0)     3     1275     1532     3906     0.000     3050     2493     4035
+ nSig(0)     4     1532     1741     3906     0.000     4058     4035     5252
+ nSig(0)     5     1741     1907     3906     0.000     4820     5252     6180
+ nSig(0)     6     1907     2087     3906     0.000     5494     6180     7034
+ nSig(0)     7     2087     2258     3906     0.000     6133     7034     7844
+ nSig(0)     8     2258     2409     3906     0.000     6669     7844     8531
+ nSig(0)     9     2409     2604     3906     0.000     7313     8531     9370
+ nSig(0)    10     2604     2787     3906     0.000     7970     9370    10210
+ nSig(0)    11     2787     3004     3906     0.000     8683    10210    11140
+ nSig(0)    12     3004     3235     3906     0.000     9453    11140    12141
+ nSig(0)    13     3235     3384     3906     0.000    10018    12141    12855
+ nSig(0)    14     3384     3521     3906     0.000    10513    12855    13487
+ nSig(0)    15     3521     3633     3906     0.000    10944    13487    14030
+ nSig(0)    16     3633     3721     3906     0.000    11299    14030    14473
+ nSig(0)    17     3721     3784     3906     0.000    11528    14473    14765
+ nSig(0)    18     3784     3834     3906     0.000    11701    14765    14988
+ nSig(0)    19     3834     3870     3906     0.000    11859    14988    15182
+ nSig(0)    20     3870     3890     3906     0.000    11947    15182    15290
+ nSig(0)    21     3890     3902     3906     0.000    11990    15290    15345
+ nSig(0)    22     3902     3906     3906     0.000    12011    15345    15370
+ nMissed :            0  of        15379           0  %
+ Total CPU:   4.687500000000000E-002  0.000000000000000E+000
+ write_SIG1MAXR
+ Write_Step: DoneLead, ULTLEV   : F T
+ Write_Step: nStepDef, nStepFlow:           1          -1
+ iRes:            1
+ WrtLog:  T
+ CPU_Time:   1.562500000000000E-002
+ AddCxx
+ nNod, nGP :            0           0
+ NinTmp:           0
+ NodTmp:           0
+ bkhead:$$S000000H##         232
+ BkHead : $$S000000H##         232
+ bkhead:$$S000001H##         232
+ BkHead : $$S000001H##         232
+ Total time:           22
+ Done  7.812500000000000E-002
+ Total cpu  :   6.250000009999999E-002
+ Total wall :   0.210000000000000     
+ 
+ +------+--------+-------------+--------+-------------+--------+----------+
+ | Task |  Count |       CPU   |    %   |  Wall clock |    %   | Name     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    0 |      1 |        0.06 | 100.00 |        0.21 | 100.00 | Total    |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    1 |      2 |        0.00 |   0.00 |        0.01 |   3.81 | Read     |
+ |    3 |      1 |        0.00 |   0.00 |        0.00 |   1.43 | Neigh    |
+ |    4 |      1 |        0.00 |   0.00 |        0.01 |   3.33 | Sig_Top  |
+ |    5 |      1 |        0.00 |   0.00 |        0.01 |   2.38 | Sweeps   |
+ |    6 |      1 |        0.02 |  25.00 |        0.00 |   1.43 | K0_Etc   |
+ |    7 |      1 |        0.00 |   0.00 |        0.01 |   2.38 | Write    |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |  100 |      1 |        0.05 |  75.00 |        0.18 |  85.24 | Rest     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ MyStop           0
+ Total cpu  :   6.250000009999999E-002
+ Total wall :   0.210000000000000     
+ 
+ +------+--------+-------------+--------+-------------+--------+----------+
+ | Task |  Count |       CPU   |    %   |  Wall clock |    %   | Name     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    0 |      1 |        0.06 | 100.00 |        0.21 | 100.00 | Total    |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |    1 |      2 |        0.00 |   0.00 |        0.01 |   3.81 | Read     |
+ |    3 |      1 |        0.00 |   0.00 |        0.00 |   1.43 | Neigh    |
+ |    4 |      1 |        0.00 |   0.00 |        0.01 |   3.33 | Sig_Top  |
+ |    5 |      1 |        0.00 |   0.00 |        0.01 |   2.38 | Sweeps   |
+ |    6 |      1 |        0.02 |  25.00 |        0.00 |   1.43 | K0_Etc   |
+ |    7 |      1 |        0.00 |   0.00 |        0.01 |   2.38 | Write    |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ |  100 |      1 |        0.05 |  75.00 |        0.18 |  85.24 | Rest     |
+ +------+--------+-------------+--------+-------------+--------+----------+
+ OK

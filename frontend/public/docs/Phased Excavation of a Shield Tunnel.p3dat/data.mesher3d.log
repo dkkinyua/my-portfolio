@@ -1,0 +1,2850 @@
+Info:  Option EMR has been enabled.
+Info:  Option GmshOptimization3D has been enabled.
+Info:  Option PlaxisHigherOrderOptimization3D has been enabled.
+Info:  Option FlushLogImmediately has been enabled.
+Info:  Option NewCoarsenessImplementation has been enabled.
+Info:  Option UseFullEmbeddedFeaturesInCoarseness has been enabled.
+Info:  Option OptimizeMeshIntersectingEmbeddedFeatures has been enabled.
+Info:  Going to check directory C:\Program Files\Seequent\PLAXIS 3D 2023.2\toggles for toggles.
+Info:  Setting EMRFactor_MinimumElementSize has been set to the value 0.005
+Info:  Setting EMRParameter_GlobalScale has been set to the value 1.2
+Info:  Setting EMRWeight_Proximity has been set to the value 2
+Info:  Setting EMRFactor_MinimumElementSize has been set to the value 0.005
+Info:  Setting EMRParameter_GlobalScale has been set to the value 1.2
+Info:  Setting EMRWeight_Proximity has been set to the value 2
+Info:  Option IntegrateWithFortranKernel has been enabled.
+Info:  Element dimension set to 4.24315
+Info:  Option EMR has been enabled.
+Info:  Setting EMRParameter_GlobalScale has been set to the value 1.2
+Info:  Setting EMRFactor_MinimumElementSize has been set to the value 0.005
+Info:  Setting EMRWeight_Proximity has been set to the value 2
+Info:  Option TrySweepableMeshes has been disabled.
+Info:  Option WriteToNDMDatabase has been disabled.
+Info:  Timer IMPRO.model_setup ran 0.404 seconds.
+Info:  ####################################################################################################
+Info:  ###                                      CreateConnections                                       ###
+Info:  ####################################################################################################
+Info:  Creating all possible connections around interfaces.
+Info:  Skip the creation of connections, WriteToNDMDatabase option is disabled.
+Info:  Timer IMPRO.task_CreateConnections ran 0 seconds.
+Info:  Finished task CreateConnections
+
+Info:  ####################################################################################################
+Info:  ###                                       CombineGeometry                                        ###
+Info:  ####################################################################################################
+Info:  Combines geometry with respect to the geometry of the features, kind of feature and mesh settings.
+Info:  Timer IMPRO.task_CombineGeometry ran 0.109 seconds.
+Info:  Finished task CombineGeometry
+
+Info:  ####################################################################################################
+Info:  ###                                    GetSweepingInformation                                    ###
+Info:  ####################################################################################################
+Info:  Gets the information regarding sweepable geometries to be used during mesh generation.
+Info:  Sweepable meshes has been disabled.
+'Info:  Timer IMPRO.task_GetSweepingInformation ran 0 seconds.
+Info:  Finished task GetSweepingInformation
+
+Info:  ####################################################################################################
+Info:  ###                                    AddMissingFaceFeatures                                    ###
+Info:  ####################################################################################################
+Info:  Adds face features to support water loads. This is only needed in case of using legacy PLAXIS Fortran kernel.
+Info:  Timer IMPRO.task_AddMissingFaceFeatures ran 0.039 seconds.
+Info:  Finished task AddMissingFaceFeatures
+
+Info:  ####################################################################################################
+Info:  ###                                           ApplyEMR                                           ###
+Info:  ####################################################################################################
+Info:  Performs Enhanced Mesh Refinement (EMR) on incoming Geometry and Coarseness objects.
+Info:  EMR parameters used are: 
+1.2  # global scaling factor
+2  # 3d proximity
+2  # in-surface proximity
+1  # surface curvature for open surfaces
+2  # curve length
+1  # curve curvature
+1  # curve angle (PLAXIS 2D only)
+0.005  # global minimum size factor
+1  # global EMR deactivation factor
+0.5  # global EMR smoothing factor
+
+Info:  Calculating mesh sizing source points for a FusedGenericShape
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for curve length ran 0.002 seconds.
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for curve curvature ran 0.005 seconds.
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for curve angle ran 0 seconds.
+Info:  Calculating 2D proximity source points
+Debug:  Calling createLatticePointLinks() with 54 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.001 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.001 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.003 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.013 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.015 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.006 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.03 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.041 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.01 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.015 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.031 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.04 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.022 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.035 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.046 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.012 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.015 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.029 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.037 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.02 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.026 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.034 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.017 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.02 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.005 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.027 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.039 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.015 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.017 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.03 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.039 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.013 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.034 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.043 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.019 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.032 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.042 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.02 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.037 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.047 seconds.
+Debug:  Calling createLatticePointLinks() with 39 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.017 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.037 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.046 seconds.
+Debug:  Calling createLatticePointLinks() with 174 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.009 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.014 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.017 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.001 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.023 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.02 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.027 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.024 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.142 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.011 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.194 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.014 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.017 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.014 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.13 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.012 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.183 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.012 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.128 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.013 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.166 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.015 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.014 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.122 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.011 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.16 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.024 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.014 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.122 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.01 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.16 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.024 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.149 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.014 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.201 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.019 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.026 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.148 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.016 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.203 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.024 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.116 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.008 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.174 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.019 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.133 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.016 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.181 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.02 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.024 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.02 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.154 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.014 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.205 seconds.
+Debug:  Calling createLatticePointLinks() with 105 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.02 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.026 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.126 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.011 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.174 seconds.
+Debug:  Calling createLatticePointLinks() with 196 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.014 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.017 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.001 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.017 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.001 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.021 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.023 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.028 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.019 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.162 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.014 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.211 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.02 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.028 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.023 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.159 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.013 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.213 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.019 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.022 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.023 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.159 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.013 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.21 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.025 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.135 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.014 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.182 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.014 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.02 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.13 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.013 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.169 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.157 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.016 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.203 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.022 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.027 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.149 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.017 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.206 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.022 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.027 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.013 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.127 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.014 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.168 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.017 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.128 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.011 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.167 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.021 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.026 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.017 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.127 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.012 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.166 seconds.
+Debug:  Calling createLatticePointLinks() with 107 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.018 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.022 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.015 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.13 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.011 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.166 seconds.
+Debug:  Calling createLatticePointLinks() with 63 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.001 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.004 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.006 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.009 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.03 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.038 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.009 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.011 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.028 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.041 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.009 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.012 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.03 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.041 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.015 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.019 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.005 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.035 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.046 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.012 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.015 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.037 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.048 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.012 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.015 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.005 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.037 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.05 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.013 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.049 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.062 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.013 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.027 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.038 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.01 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.012 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.004 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.03 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.001 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.038 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.013 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.016 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.028 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.002 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.04 seconds.
+Debug:  Calling createLatticePointLinks() with 37 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.009 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.011 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.003 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.028 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.001 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.034 seconds.
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for in-surface proximity ran 9.731 seconds.
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for open surface curvature ran 0.003 seconds.
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for closed surface curvature ran 0.005 seconds.
+Info:  Calculating 3D proximity source points
+Info:  Created 3d proximity analysis octree with 41203 leaves and 68623 nodes
+Info:  Generated 1725 3d proximity source points based on fronts meeting at a single, shared lattice node
+Info:  Generated 75 3d proximity source points based on fronts meeting within a lattice edge, of which 0 non-trivial.
+Info:  Generated 5893 3d proximity source points based on fronts meeting during propagation, of which 1572 because of diametrically opposing fronts meeting
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for 3D proximity ran 4.136 seconds.
+Debug:  Calling createLatticePointLinks() with 7693 3D proximity source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for 3D proximity ran 10.123 seconds.
+Debug:  Calling createLatticePointLinks() with 8209 in-surface proximity source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for in-surface proximity ran 9.261 seconds.
+Debug:  Calling createLatticePointLinks() with 0 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.079 seconds.
+Debug:  Calling createLatticePointLinks() with 1260 closed surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for closed surface curvature ran 0.454 seconds.
+Debug:  Calling createLatticePointLinks() with 242 curve length source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for curve length ran 0.117 seconds.
+Debug:  Calling createLatticePointLinks() with 442 curve curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for curve curvature ran 0.167 seconds.
+Debug:  Calling createLatticePointLinks() with 0 curve angle source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for curve angle ran 0.103 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 23.786 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.688 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 7.511 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.627 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 9.241 seconds.
+Info:  Timer IMPRO.task_ApplyEMR ran 48.157 seconds.
+Info:  Finished task ApplyEMR
+
+Info:  ####################################################################################################
+Info:  ###                                          CreateMesh                                          ###
+Info:  ####################################################################################################
+Info:  Creates meshes from geometry
+Info:  User-defined coarseness settings used are: 
+0.5  # user-defined coarseness smoothing factor
+Info:  Timer IMPRO.createMesh().SetupUserDefinedCoarsenesses ran 0.01 seconds.
+Info:  ********** Creating mesh for a combined geometry.**********
+Info:  Option Use2DAlgorithmMeshAdapt has not been set. Falling back to the default behaviour, which is disabled.
+Info:  Option Use2DAlgorithmDelaunay has not been set. Falling back to the default behaviour, which is disabled.
+Info:  Gmsh 2D algorithm is set to Frontal
+Info:  Gmsh 3D mesh optimization has been enabled.
+Info:  Option NetgenOptimization3D has not been set. Falling back to the default behaviour, which is disabled.
+Debug:  Calling createLatticePointLinks() with 5806 user-defined coarseness source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for user-defined coarseness ran 1.228 seconds.
+Debug:  Timer IMPRO.UserDefinedSizes.calculateSourceTypeSizes() ran 1.482 seconds.
+Debug:  Timer IMPRO.UserDefinedSizes.SourcePointsCoarseningVolumes ran 0 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.179 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.456 seconds.
+Info:  Timer IMPRO.createMesh().ApplyUserDefinedCoarsenesses ran 2.426 seconds.
+Info:  Meshing 1D...
+Info:  Meshing curve 1 (Line)
+Info:  Meshing curve 2 (Circle)
+Info:  Meshing curve 3 (Line)
+Info:  Meshing curve 4 (Line)
+Info:  Meshing curve 5 (Line)
+Info:  Meshing curve 6 (Line)
+Info:  Meshing curve 7 (Line)
+Info:  Meshing curve 8 (Line)
+Info:  Meshing curve 9 (Line)
+Info:  Meshing curve 10 (Line)
+Info:  Meshing curve 11 (Line)
+Info:  Meshing curve 12 (Line)
+Info:  Meshing curve 13 (Line)
+Info:  Meshing curve 14 (Line)
+Info:  Meshing curve 15 (Line)
+Info:  Meshing curve 16 (Line)
+Info:  Meshing curve 17 (Line)
+Info:  Meshing curve 18 (Line)
+Info:  Meshing curve 19 (Line)
+Info:  Meshing curve 20 (Line)
+Info:  Meshing curve 21 (Line)
+Info:  Meshing curve 22 (Line)
+Info:  Meshing curve 23 (Circle)
+Info:  Meshing curve 24 (Line)
+Info:  Meshing curve 25 (Line)
+Info:  Meshing curve 26 (Line)
+Info:  Meshing curve 27 (Line)
+Info:  Meshing curve 28 (Line)
+Info:  Meshing curve 29 (Line)
+Info:  Meshing curve 30 (Line)
+Info:  Meshing curve 31 (Line)
+Info:  Meshing curve 32 (Line)
+Info:  Meshing curve 33 (Line)
+Info:  Meshing curve 34 (Line)
+Info:  Meshing curve 35 (Line)
+Info:  Meshing curve 36 (Line)
+Info:  Meshing curve 37 (Line)
+Info:  Meshing curve 38 (Line)
+Info:  Meshing curve 39 (Line)
+Info:  Meshing curve 40 (Line)
+Info:  Meshing curve 41 (Line)
+Info:  Meshing curve 42 (Line)
+Info:  Meshing curve 43 (Circle)
+Info:  Meshing curve 44 (Circle)
+Info:  Meshing curve 45 (Circle)
+Info:  Meshing curve 46 (Circle)
+Info:  Meshing curve 47 (Circle)
+Info:  Meshing curve 48 (Circle)
+Info:  Meshing curve 49 (Circle)
+Info:  Meshing curve 50 (Circle)
+Info:  Meshing curve 51 (Circle)
+Info:  Meshing curve 52 (Circle)
+Info:  Meshing curve 53 (Circle)
+Info:  Meshing curve 54 (Circle)
+Info:  Meshing curve 55 (Circle)
+Info:  Meshing curve 56 (Line)
+Info:  Meshing curve 57 (Line)
+Info:  Meshing curve 58 (Line)
+Info:  Meshing curve 59 (Circle)
+Info:  Meshing curve 60 (Line)
+Info:  Meshing curve 61 (Line)
+Info:  Meshing curve 62 (Line)
+Info:  Meshing curve 63 (Line)
+Info:  Meshing curve 64 (Line)
+Info:  Meshing curve 65 (Line)
+Info:  Meshing curve 66 (Line)
+Info:  Meshing curve 67 (Line)
+Info:  Meshing curve 68 (Line)
+Info:  Meshing curve 69 (Line)
+Info:  Meshing curve 70 (Line)
+Info:  Meshing curve 71 (Line)
+Info:  Meshing curve 72 (Line)
+Info:  Meshing curve 73 (Line)
+Info:  Meshing curve 74 (Line)
+Info:  Meshing curve 75 (Line)
+Info:  Meshing curve 76 (Line)
+Info:  Meshing curve 77 (Line)
+Info:  Meshing curve 78 (Line)
+Info:  Meshing curve 79 (Circle)
+Info:  Meshing curve 80 (Circle)
+Info:  Meshing curve 81 (Circle)
+Info:  Meshing curve 82 (Circle)
+Info:  Meshing curve 83 (Circle)
+Info:  Meshing curve 84 (Circle)
+Info:  Meshing curve 85 (Circle)
+Info:  Meshing curve 86 (Circle)
+Info:  Meshing curve 87 (Circle)
+Info:  Meshing curve 88 (Circle)
+Info:  Meshing curve 89 (Circle)
+Info:  Meshing curve 90 (Circle)
+Info:  Meshing curve 91 (Line)
+Info:  Meshing curve 92 (Line)
+Info:  Meshing curve 93 (Line)
+Info:  Meshing curve 94 (Line)
+Info:  Meshing curve 95 (Line)
+Info:  Meshing curve 96 (Line)
+Info:  Meshing curve 97 (Line)
+Info:  Meshing curve 98 (Line)
+Info:  Meshing curve 99 (Line)
+Info:  Meshing curve 100 (Circle)
+Info:  Meshing curve 101 (Line)
+Info:  Meshing curve 102 (Line)
+Info:  Meshing curve 103 (Line)
+Info:  Meshing curve 104 (Line)
+Info:  Meshing curve 105 (Circle)
+Info:  Meshing curve 106 (Line)
+Info:  Meshing curve 107 (Line)
+Info:  Meshing curve 108 (Line)
+Info:  Meshing curve 109 (Line)
+Info:  Meshing curve 110 (Circle)
+Info:  Meshing curve 111 (Line)
+Info:  Meshing curve 112 (Line)
+Info:  Meshing curve 113 (Line)
+Info:  Meshing curve 114 (Line)
+Info:  Meshing curve 115 (Circle)
+Info:  Meshing curve 116 (Line)
+Info:  Meshing curve 117 (Line)
+Info:  Meshing curve 118 (Line)
+Info:  Meshing curve 119 (Line)
+Info:  Meshing curve 120 (Circle)
+Info:  Meshing curve 121 (Line)
+Info:  Meshing curve 122 (Line)
+Info:  Meshing curve 123 (Line)
+Info:  Meshing curve 124 (Line)
+Info:  Meshing curve 125 (Circle)
+Info:  Meshing curve 126 (Line)
+Info:  Meshing curve 127 (Line)
+Info:  Meshing curve 128 (Line)
+Info:  Meshing curve 129 (Line)
+Info:  Meshing curve 130 (Circle)
+Info:  Meshing curve 131 (Line)
+Info:  Meshing curve 132 (Line)
+Info:  Meshing curve 133 (Line)
+Info:  Meshing curve 134 (Line)
+Info:  Meshing curve 135 (Circle)
+Info:  Meshing curve 136 (Line)
+Info:  Meshing curve 137 (Line)
+Info:  Meshing curve 138 (Line)
+Info:  Meshing curve 139 (Line)
+Info:  Meshing curve 140 (Circle)
+Info:  Meshing curve 141 (Line)
+Info:  Meshing curve 142 (Line)
+Info:  Meshing curve 143 (Line)
+Info:  Meshing curve 144 (Line)
+Info:  Meshing curve 145 (Circle)
+Info:  Meshing curve 146 (Line)
+Info:  Meshing curve 147 (Line)
+Info:  Meshing curve 148 (Line)
+Info:  Meshing curve 149 (Line)
+Info:  Meshing curve 150 (Circle)
+Info:  Meshing curve 151 (Line)
+Info:  Meshing curve 152 (Line)
+Info:  Meshing curve 153 (Line)
+Info:  Meshing curve 154 (Line)
+Info:  Meshing curve 155 (Circle)
+Info:  Meshing curve 156 (Line)
+Info:  Meshing curve 157 (Line)
+Info:  Meshing curve 158 (Line)
+Info:  Meshing curve 159 (Line)
+Info:  Meshing curve 160 (Line)
+Info:  Meshing curve 161 (Line)
+Info:  Meshing curve 162 (Line)
+Info:  Meshing curve 163 (Line)
+Info:  Meshing curve 164 (Line)
+Info:  Meshing curve 165 (Line)
+Info:  Meshing curve 166 (Line)
+Info:  Meshing curve 167 (Line)
+Info:  Meshing curve 168 (Line)
+Info:  Meshing curve 169 (Line)
+Info:  Meshing curve 170 (Line)
+Info:  Meshing curve 171 (Line)
+Info:  Meshing curve 172 (Line)
+Info:  Meshing curve 173 (Line)
+Info:  Meshing curve 174 (Line)
+Info:  Meshing curve 175 (Line)
+Info:  Meshing curve 176 (Line)
+Info:  Meshing curve 177 (Line)
+Info:  Meshing curve 178 (Line)
+Info:  Meshing curve 179 (Line)
+Info:  Meshing curve 180 (Line)
+Info:  Meshing curve 181 (Line)
+Info:  Meshing curve 182 (Line)
+Info:  Meshing curve 183 (Line)
+Info:  Meshing curve 184 (Line)
+Info:  Meshing curve 185 (Line)
+Info:  Meshing curve 186 (Line)
+Info:  Meshing curve 187 (Line)
+Info:  Meshing curve 188 (Line)
+Info:  Meshing curve 189 (Line)
+Info:  Meshing curve 190 (Line)
+Info:  Meshing curve 191 (Line)
+Info:  Meshing curve 192 (Line)
+Info:  Meshing curve 193 (Line)
+Info:  Meshing curve 194 (Line)
+Info:  Meshing curve 195 (Line)
+Info:  Meshing curve 196 (Line)
+Info:  Meshing curve 197 (Line)
+Info:  Meshing curve 198 (Circle)
+Info:  Meshing curve 199 (Circle)
+Info:  Meshing curve 200 (Line)
+Info:  Meshing curve 201 (Line)
+Info:  Meshing curve 202 (Circle)
+Info:  Meshing curve 203 (Line)
+Info:  Meshing curve 204 (Line)
+Info:  Meshing curve 205 (Circle)
+Info:  Meshing curve 206 (Line)
+Info:  Meshing curve 207 (Line)
+Info:  Meshing curve 208 (Circle)
+Info:  Meshing curve 209 (Line)
+Info:  Meshing curve 210 (Line)
+Info:  Meshing curve 211 (Circle)
+Info:  Meshing curve 212 (Line)
+Info:  Meshing curve 213 (Line)
+Info:  Meshing curve 214 (Circle)
+Info:  Meshing curve 215 (Line)
+Info:  Meshing curve 216 (Line)
+Info:  Meshing curve 217 (Circle)
+Info:  Meshing curve 218 (Line)
+Info:  Meshing curve 219 (Line)
+Info:  Meshing curve 220 (Circle)
+Info:  Meshing curve 221 (Line)
+Info:  Meshing curve 222 (Line)
+Info:  Meshing curve 223 (Circle)
+Info:  Meshing curve 224 (Line)
+Info:  Meshing curve 225 (Line)
+Info:  Meshing curve 226 (Circle)
+Info:  Meshing curve 227 (Line)
+Info:  Meshing curve 228 (Line)
+Info:  Meshing curve 229 (Circle)
+Info:  Meshing curve 230 (Line)
+Info:  Meshing curve 231 (Line)
+Info:  Meshing curve 232 (Line)
+Info:  Meshing curve 233 (Line)
+Info:  Meshing curve 234 (Line)
+Info:  Meshing curve 235 (Line)
+Info:  Meshing curve 236 (Line)
+Info:  Meshing curve 237 (Line)
+Info:  Meshing curve 238 (Line)
+Info:  Meshing curve 239 (Line)
+Info:  Meshing curve 240 (Line)
+Info:  Meshing curve 241 (Line)
+Info:  Meshing curve 242 (Line)
+Info:  Done meshing 1D (2.51562 s)
+Info:  Meshing 2D...
+Info:  Meshing surface 1 (Plane, Frontal)
+Info:  Meshing surface 2 (Plane, Frontal)
+Info:  Meshing surface 3 (Unknown, Frontal)
+Info:  Meshing surface 4 (Plane, Frontal)
+Info:  Meshing surface 5 (Plane, Frontal)
+Info:  Meshing surface 6 (Plane, Frontal)
+Info:  Meshing surface 7 (Plane, Frontal)
+Info:  Meshing surface 8 (Plane, Frontal)
+Info:  Meshing surface 9 (Plane, Frontal)
+Info:  Meshing surface 10 (Unknown, Frontal)
+Info:  Meshing surface 11 (Unknown, Frontal)
+Info:  Meshing surface 12 (Unknown, Frontal)
+Info:  Meshing surface 13 (Unknown, Frontal)
+Info:  Meshing surface 14 (Unknown, Frontal)
+Info:  Meshing surface 15 (Unknown, Frontal)
+Info:  Meshing surface 16 (Unknown, Frontal)
+Info:  Meshing surface 17 (Unknown, Frontal)
+Info:  Meshing surface 18 (Unknown, Frontal)
+Info:  Meshing surface 19 (Unknown, Frontal)
+Info:  Meshing surface 20 (Unknown, Frontal)
+Info:  Meshing surface 21 (Plane, Frontal)
+Info:  Meshing surface 22 (Unknown, Frontal)
+Info:  Meshing surface 23 (Plane, Frontal)
+Info:  Meshing surface 24 (Plane, Frontal)
+Info:  Meshing surface 25 (Plane, Frontal)
+Info:  Meshing surface 26 (Unknown, Frontal)
+Info:  Meshing surface 27 (Plane, Frontal)
+Info:  Meshing surface 28 (Unknown, Frontal)
+Info:  Meshing surface 29 (Unknown, Frontal)
+Info:  Meshing surface 30 (Unknown, Frontal)
+Info:  Meshing surface 31 (Unknown, Frontal)
+Info:  Meshing surface 32 (Unknown, Frontal)
+Info:  Meshing surface 33 (Unknown, Frontal)
+Info:  Meshing surface 34 (Unknown, Frontal)
+Info:  Meshing surface 35 (Unknown, Frontal)
+Info:  Meshing surface 36 (Unknown, Frontal)
+Info:  Meshing surface 37 (Unknown, Frontal)
+Info:  Meshing surface 38 (Plane, Frontal)
+Info:  Meshing surface 39 (Plane, Frontal)
+Info:  Meshing surface 40 (Plane, Frontal)
+Info:  Meshing surface 41 (Plane, Frontal)
+Info:  Meshing surface 42 (Plane, Frontal)
+Info:  Meshing surface 43 (Plane, Frontal)
+Info:  Meshing surface 44 (Plane, Frontal)
+Info:  Meshing surface 45 (Plane, Frontal)
+Info:  Meshing surface 46 (Plane, Frontal)
+Info:  Meshing surface 47 (Plane, Frontal)
+Info:  Meshing surface 48 (Plane, Frontal)
+Info:  Meshing surface 49 (Unknown, Frontal)
+Info:  Meshing surface 50 (Plane, Frontal)
+Info:  Meshing surface 51 (Plane, Frontal)
+Info:  Meshing surface 52 (Plane, Frontal)
+Info:  Meshing surface 53 (Unknown, Frontal)
+Info:  Meshing surface 54 (Plane, Frontal)
+Info:  Meshing surface 55 (Plane, Frontal)
+Info:  Meshing surface 56 (Plane, Frontal)
+Info:  Meshing surface 57 (Unknown, Frontal)
+Info:  Meshing surface 58 (Plane, Frontal)
+Info:  Meshing surface 59 (Plane, Frontal)
+Info:  Meshing surface 60 (Plane, Frontal)
+Info:  Meshing surface 61 (Unknown, Frontal)
+Info:  Meshing surface 62 (Plane, Frontal)
+Info:  Meshing surface 63 (Plane, Frontal)
+Info:  Meshing surface 64 (Plane, Frontal)
+Info:  Meshing surface 65 (Unknown, Frontal)
+Info:  Meshing surface 66 (Plane, Frontal)
+Info:  Meshing surface 67 (Plane, Frontal)
+Info:  Meshing surface 68 (Plane, Frontal)
+Info:  Meshing surface 69 (Unknown, Frontal)
+Info:  Meshing surface 70 (Plane, Frontal)
+Info:  Meshing surface 71 (Plane, Frontal)
+Info:  Meshing surface 72 (Plane, Frontal)
+Info:  Meshing surface 73 (Unknown, Frontal)
+Info:  Meshing surface 74 (Plane, Frontal)
+Info:  Meshing surface 75 (Plane, Frontal)
+Info:  Meshing surface 76 (Plane, Frontal)
+Info:  Meshing surface 77 (Unknown, Frontal)
+Info:  Meshing surface 78 (Plane, Frontal)
+Info:  Meshing surface 79 (Plane, Frontal)
+Info:  Meshing surface 80 (Plane, Frontal)
+Info:  Meshing surface 81 (Unknown, Frontal)
+Info:  Meshing surface 82 (Plane, Frontal)
+Info:  Meshing surface 83 (Plane, Frontal)
+Info:  Meshing surface 84 (Plane, Frontal)
+Info:  Meshing surface 85 (Unknown, Frontal)
+Info:  Meshing surface 86 (Plane, Frontal)
+Info:  Meshing surface 87 (Plane, Frontal)
+Info:  Meshing surface 88 (Plane, Frontal)
+Info:  Meshing surface 89 (Unknown, Frontal)
+Info:  Meshing surface 90 (Plane, Frontal)
+Info:  Meshing surface 91 (Plane, Frontal)
+Info:  Meshing surface 92 (Unknown, Frontal)
+Info:  Meshing surface 93 (Plane, Frontal)
+Info:  Meshing surface 94 (Plane, Frontal)
+Info:  Meshing surface 95 (Plane, Frontal)
+Info:  Meshing surface 96 (Plane, Frontal)
+Info:  Meshing surface 97 (Plane, Frontal)
+Info:  Meshing surface 98 (Plane, Frontal)
+Info:  Meshing surface 99 (Plane, Frontal)
+Info:  Meshing surface 100 (Plane, Frontal)
+Info:  Meshing surface 101 (Plane, Frontal)
+Info:  Meshing surface 102 (Plane, Frontal)
+Info:  Meshing surface 103 (Plane, Frontal)
+Info:  Meshing surface 104 (Plane, Frontal)
+Info:  Meshing surface 105 (Plane, Frontal)
+Info:  Meshing surface 106 (Plane, Frontal)
+Info:  Meshing surface 107 (Plane, Frontal)
+Info:  Meshing surface 108 (Plane, Frontal)
+Info:  Meshing surface 109 (Plane, Frontal)
+Info:  Meshing surface 110 (Plane, Frontal)
+Info:  Meshing surface 111 (Plane, Frontal)
+Info:  Meshing surface 112 (Plane, Frontal)
+Info:  Meshing surface 113 (Plane, Frontal)
+Info:  Meshing surface 114 (Plane, Frontal)
+Info:  Meshing surface 115 (Plane, Frontal)
+Info:  Meshing surface 116 (Plane, Frontal)
+Info:  Meshing surface 117 (Plane, Frontal)
+Info:  Meshing surface 118 (Plane, Frontal)
+Info:  Meshing surface 119 (Plane, Frontal)
+Info:  Meshing surface 120 (Plane, Frontal)
+Info:  Meshing surface 121 (Plane, Frontal)
+Info:  Meshing surface 122 (Plane, Frontal)
+Info:  Meshing surface 123 (Plane, Frontal)
+Info:  Meshing surface 124 (Plane, Frontal)
+Info:  Meshing surface 125 (Plane, Frontal)
+Info:  Meshing surface 126 (Plane, Frontal)
+Info:  Meshing surface 127 (Plane, Frontal)
+Info:  Meshing surface 128 (Plane, Frontal)
+Info:  Meshing surface 129 (Plane, Frontal)
+Info:  Meshing surface 130 (Plane, Frontal)
+Info:  Meshing surface 131 (Unknown, Frontal)
+Info:  Meshing surface 132 (Plane, Frontal)
+Info:  Meshing surface 133 (Plane, Frontal)
+Info:  Meshing surface 134 (Unknown, Frontal)
+Info:  Meshing surface 135 (Plane, Frontal)
+Info:  Meshing surface 136 (Plane, Frontal)
+Info:  Meshing surface 137 (Unknown, Frontal)
+Info:  Meshing surface 138 (Plane, Frontal)
+Info:  Meshing surface 139 (Plane, Frontal)
+Info:  Meshing surface 140 (Unknown, Frontal)
+Info:  Meshing surface 141 (Plane, Frontal)
+Info:  Meshing surface 142 (Plane, Frontal)
+Info:  Meshing surface 143 (Unknown, Frontal)
+Info:  Meshing surface 144 (Plane, Frontal)
+Info:  Meshing surface 145 (Plane, Frontal)
+Info:  Meshing surface 146 (Unknown, Frontal)
+Info:  Meshing surface 147 (Plane, Frontal)
+Info:  Meshing surface 148 (Plane, Frontal)
+Info:  Meshing surface 149 (Unknown, Frontal)
+Info:  Meshing surface 150 (Plane, Frontal)
+Info:  Meshing surface 151 (Plane, Frontal)
+Info:  Meshing surface 152 (Unknown, Frontal)
+Info:  Meshing surface 153 (Plane, Frontal)
+Info:  Meshing surface 154 (Plane, Frontal)
+Info:  Meshing surface 155 (Unknown, Frontal)
+Info:  Meshing surface 156 (Plane, Frontal)
+Info:  Meshing surface 157 (Plane, Frontal)
+Info:  Meshing surface 158 (Unknown, Frontal)
+Info:  Meshing surface 159 (Plane, Frontal)
+Info:  Meshing surface 160 (Plane, Frontal)
+Info:  Meshing surface 161 (Unknown, Frontal)
+Info:  Meshing surface 162 (Plane, Frontal)
+Info:  Meshing surface 163 (Plane, Frontal)
+Info:  Meshing surface 164 (Unknown, Frontal)
+Info:  Meshing surface 165 (Plane, Frontal)
+Info:  Meshing surface 166 (Plane, Frontal)
+Info:  Meshing surface 167 (Plane, Frontal)
+Info:  Meshing surface 168 (Plane, Frontal)
+Info:  Meshing surface 169 (Plane, Frontal)
+Info:  Meshing surface 170 (Plane, Frontal)
+Info:  Meshing surface 171 (Plane, Frontal)
+Info:  Meshing surface 172 (Plane, Frontal)
+Info:  Meshing surface 173 (Plane, Frontal)
+Info:  Meshing surface 174 (Plane, Frontal)
+Info:  Meshing surface 175 (Plane, Frontal)
+Info:  Meshing surface 176 (Plane, Frontal)
+Info:  Meshing surface 177 (Plane, Frontal)
+Info:  Meshing surface 178 (Plane, Frontal)
+Info:  Meshing surface 179 (Plane, Frontal)
+Info:  Meshing surface 180 (Plane, Frontal)
+Info:  Meshing surface 181 (Plane, Frontal)
+Info:  Meshing surface 182 (Plane, Frontal)
+Info:  Meshing surface 183 (Plane, Frontal)
+Info:  Meshing surface 184 (Plane, Frontal)
+Info:  Meshing surface 185 (Plane, Frontal)
+Info:  Meshing surface 186 (Plane, Frontal)
+Info:  Meshing surface 187 (Plane, Frontal)
+Info:  Meshing surface 188 (Plane, Frontal)
+Info:  Done meshing 2D (1.09375 s)
+Info:  Meshing 3D...
+Info:  Delaunay Meshing 51 volumes with 1 connected components
+Info:  Tetrahedrization of 5450 points in 0.125 seconds
+Info:  Reconstructing mesh ...
+Info:  Creating surface mesh...
+Info:  Identifying boundary edges...
+Info:  Boundary Recovery...
+Info:  Writing to GRegion...
+Info:  Reconstruct time : 0.234375 sec
+Info:  Found region 2
+Info:  Found region 1
+Info:  Found region 16
+Info:  Found region 21
+Info:  Found region 25
+Info:  Found region 19
+Info:  Found region 26
+Info:  Found region 24
+Info:  Found region 17
+Info:  Found region 18
+Info:  Found region 23
+Info:  Found region 22
+Info:  Found region 20
+Info:  Found region 27
+Info:  Found region 42
+Info:  Found region 41
+Info:  Found region 45
+Info:  Found region 46
+Info:  Found region 49
+Info:  Found region 50
+Info:  Found region 40
+Info:  Found region 51
+Info:  Found region 48
+Info:  Found region 43
+Info:  Found region 47
+Info:  Found region 44
+Info:  Found region 4
+Info:  Found region 28
+Info:  Found region 3
+Info:  Found region 10
+Info:  Found region 5
+Info:  Found region 13
+Info:  Found region 8
+Info:  Found region 6
+Info:  Found region 11
+Info:  Found region 14
+Info:  Found region 9
+Info:  Found region 7
+Info:  Found region 15
+Info:  Found region 29
+Info:  Found region 37
+Info:  Found region 12
+Info:  Found region 36
+Info:  Found region 39
+Info:  Found region 31
+Info:  Found region 32
+Info:  Found region 30
+Info:  Found region 33
+Info:  Found region 34
+Info:  Found region 35
+Info:  Found region 38
+Info:  0 points created - Worst tet radius is 5.01152 (PTS removed 0 0)
+Info:  499 points created - Worst tet radius is 1.24693 (PTS removed 0 1)
+Info:  999 points created - Worst tet radius is 1.02337 (PTS removed 0 1)
+Info:  3D point insertion terminated (6527 points created):
+Info:   - 0 Delaunay cavities modified for star shapeness
+Info:   - 1 points could not be inserted
+Info:   - 35253 tetrahedra created in 0.171875 sec. (205108 tets/sec.)
+Info:  Done meshing 3D (0.796875 s)
+Info:  Optimizing 3D mesh...
+Info:  Optimizing volume 1
+Info:  Opti : STARTS with  9.46082E+03 QBAD  1.20354E-02 QAVG  6.62858E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :        33 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :        69 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :       101 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :       172 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :       373 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :       806 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :      1204 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :      1205 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       727 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :       330 elements
+Info:  Opti : (554,0,305) =  9.46082E+03 QBAD  3.37126E-02 QAVG  6.93311E-01 (   0.125 sec)
+Info:  Opti : (657,0,408) =  9.46082E+03 QBAD  3.37126E-02 QAVG  6.97952E-01 (   0.219 sec)
+Info:  Opti : 1 ill-shaped tets are still in the mesh
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         2 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :        21 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :       237 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :       695 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :      1238 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :      1226 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       670 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :       294 elements
+Info:  Optimizing volume 2
+Info:  Opti : STARTS with  1.81655E+04 QBAD  1.38153E-02 QAVG  6.90953E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :        65 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :        92 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :       153 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :       282 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :       583 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :      1237 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :      2037 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :      2557 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :      1870 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :       783 elements
+Info:  Opti : (917,0,668) =  1.81655E+04 QBAD  1.55356E-01 QAVG  7.23029E-01 (   0.219 sec)
+Info:  Opti : (1112,0,1053) =  1.81655E+04 QBAD  3.14941E-01 QAVG  7.27449E-01 (   0.422 sec)
+Info:  Opti : (1168,0,1311) =  1.81655E+04 QBAD  3.14941E-01 QAVG  7.28031E-01 (   0.625 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :        39 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :       271 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :      1131 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :      2197 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :      2565 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :      1937 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :       795 elements
+Info:  Optimizing volume 3
+Info:  Opti : STARTS with  3.20000E+03 QBAD  1.42225E-02 QAVG  7.22937E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :        16 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         6 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         6 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         3 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         6 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         7 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       112 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       392 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       155 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        11 elements
+Info:  Opti : (46,0,0) =  3.20000E+03 QBAD  5.19514E-02 QAVG  7.46561E-01 (   0.000 sec)
+Info:  Opti : (48,0,0) =  3.20000E+03 QBAD  5.19514E-02 QAVG  7.45352E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        12 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       116 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       392 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       151 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        10 elements
+Info:  Optimizing volume 4
+Info:  Opti : STARTS with  5.93268E+01 QBAD  1.13792E-02 QAVG  6.19427E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :        14 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :        19 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :        30 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :        95 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :       262 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :       740 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :      1332 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       737 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        65 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Opti : (203,0,0) =  5.93268E+01 QBAD  3.08014E-01 QAVG  6.34713E-01 (   0.047 sec)
+Info:  Opti : (205,0,0) =  5.93268E+01 QBAD  3.08014E-01 QAVG  6.34628E-01 (   0.094 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :        39 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :       224 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :       757 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :      1352 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       725 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        67 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Optimizing volume 5
+Info:  Opti : STARTS with  3.56587E+00 QBAD  5.26245E-02 QAVG  7.04887E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         3 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         4 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         3 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         6 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         5 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        14 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        73 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       184 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        41 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Opti : (27,0,0) =  3.56587E+00 QBAD  1.80161E-01 QAVG  7.28552E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        10 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        87 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       177 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        41 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Optimizing volume 6
+Info:  Opti : STARTS with  3.56574E+00 QBAD  3.53573E-02 QAVG  7.01641E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         4 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         2 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         6 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         9 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        22 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        72 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       178 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        41 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Opti : (27,0,0) =  3.56574E+00 QBAD  3.83382E-01 QAVG  7.24827E-01 (   0.000 sec)
+Info:  Opti : (28,0,0) =  3.56574E+00 QBAD  3.83382E-01 QAVG  7.23389E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        19 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        76 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       174 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        42 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Optimizing volume 7
+Info:  Opti : STARTS with  3.56325E+00 QBAD  1.90993E-02 QAVG  7.09766E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         5 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         2 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         6 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         2 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        18 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        75 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       174 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        48 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Opti : (20,0,0) =  3.56325E+00 QBAD  4.40215E-01 QAVG  7.29459E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        18 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        78 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       171 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        48 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Optimizing volume 8
+Info:  Opti : STARTS with  3.56570E+00 QBAD  4.39774E-02 QAVG  7.01899E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         5 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         8 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         8 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        20 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        75 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       181 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        37 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Opti : (25,0,0) =  3.56570E+00 QBAD  4.52771E-01 QAVG  7.27250E-01 (   0.000 sec)
+Info:  Opti : (26,0,0) =  3.56570E+00 QBAD  4.52771E-01 QAVG  7.25809E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        14 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        82 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       178 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        37 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Optimizing volume 9
+Info:  Opti : STARTS with  3.56518E+00 QBAD  1.13335E-02 QAVG  7.11878E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         2 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         2 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         6 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         7 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        16 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        65 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       186 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        46 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Opti : (24,0,0) =  3.56518E+00 QBAD  4.46342E-01 QAVG  7.31450E-01 (   0.000 sec)
+Info:  Opti : (25,0,0) =  3.56518E+00 QBAD  4.46342E-01 QAVG  7.29996E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        12 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        75 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       179 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        46 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Optimizing volume 10
+Info:  Opti : STARTS with  3.56586E+00 QBAD  5.30683E-02 QAVG  7.02922E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         3 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         4 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         3 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         6 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         5 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        17 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        73 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       185 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Opti : (26,0,0) =  3.56586E+00 QBAD  5.33166E-01 QAVG  7.29393E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        16 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        81 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       180 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Optimizing volume 11
+Info:  Opti : STARTS with  3.56572E+00 QBAD  3.69268E-02 QAVG  7.01987E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         4 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         2 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         6 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         9 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        20 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        72 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       181 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        39 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Opti : (25,0,0) =  3.56572E+00 QBAD  4.43376E-01 QAVG  7.27915E-01 (   0.000 sec)
+Info:  Opti : (26,0,0) =  3.56572E+00 QBAD  4.43376E-01 QAVG  7.26475E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        14 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        78 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       178 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        40 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Optimizing volume 12
+Info:  Opti : STARTS with  3.56290E+00 QBAD  1.96460E-02 QAVG  7.07326E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         4 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         3 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         8 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        20 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        76 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       174 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        46 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Opti : (24,0,0) =  3.56290E+00 QBAD  1.27206E-01 QAVG  7.26608E-01 (   0.000 sec)
+Info:  Opti : (26,0,0) =  3.56290E+00 QBAD  1.27206E-01 QAVG  7.26725E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        20 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        74 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       170 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        46 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Optimizing volume 13
+Info:  Opti : STARTS with  3.56498E+00 QBAD  1.88163E-02 QAVG  7.04229E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         4 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         6 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         9 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        17 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        69 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       190 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         0 elements
+Info:  Opti : (27,0,0) =  3.56498E+00 QBAD  4.51801E-01 QAVG  7.26433E-01 (   0.000 sec)
+Info:  Opti : (29,0,0) =  3.56498E+00 QBAD  4.51801E-01 QAVG  7.23325E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        11 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        82 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       180 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        39 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         0 elements
+Info:  Optimizing volume 14
+Info:  Opti : STARTS with  3.56490E+00 QBAD  8.79088E-02 QAVG  7.13367E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         3 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         3 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         8 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        14 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        64 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       193 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        43 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Opti : (21,0,0) =  3.56490E+00 QBAD  1.86899E-01 QAVG  7.30694E-01 (   0.000 sec)
+Info:  Opti : (22,0,0) =  3.56490E+00 QBAD  2.32644E-01 QAVG  7.32462E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         1 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        10 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        73 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       188 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        43 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         1 elements
+Info:  Optimizing volume 15
+Info:  Opti : STARTS with  3.56548E+00 QBAD  7.42380E-02 QAVG  7.10205E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         6 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         2 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         5 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        20 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        62 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       191 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        41 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Opti : (23,0,0) =  3.56548E+00 QBAD  4.68179E-01 QAVG  7.29360E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         1 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        16 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        78 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       179 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        41 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Optimizing volume 16
+Info:  Opti : STARTS with  5.63506E+02 QBAD  1.88692E-02 QAVG  6.87401E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :        21 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :        46 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :        50 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :        91 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :       154 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :       463 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       760 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       815 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       528 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :       315 elements
+Info:  Opti : (311,0,198) =  5.63506E+02 QBAD  2.21395E-01 QAVG  7.22507E-01 (   0.047 sec)
+Info:  Opti : (362,0,344) =  5.63506E+02 QBAD  3.23227E-01 QAVG  7.25266E-01 (   0.094 sec)
+Info:  Opti : (379,0,414) =  5.63506E+02 QBAD  3.23227E-01 QAVG  7.25411E-01 (   0.156 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :        10 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        78 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :       411 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       788 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       845 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       592 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :       284 elements
+Info:  Optimizing volume 17
+Info:  Opti : STARTS with  3.38584E+01 QBAD  4.41521E-02 QAVG  7.17460E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         8 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        11 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        44 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        90 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       109 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        73 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        42 elements
+Info:  Opti : (32,0,2) =  3.38584E+01 QBAD  4.04072E-01 QAVG  7.40317E-01 (   0.000 sec)
+Info:  Opti : (33,0,4) =  3.38584E+01 QBAD  4.04072E-01 QAVG  7.38850E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         6 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        32 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        98 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       125 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        65 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        39 elements
+Info:  Optimizing volume 18
+Info:  Opti : STARTS with  3.38586E+01 QBAD  4.79479E-02 QAVG  7.01170E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         8 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         8 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         4 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         6 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        17 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        30 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        91 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       123 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        71 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        38 elements
+Info:  Opti : (40,0,9) =  3.38586E+01 QBAD  1.09228E-01 QAVG  7.33631E-01 (   0.000 sec)
+Info:  Opti : (50,0,12) =  3.38586E+01 QBAD  1.61272E-01 QAVG  7.37515E-01 (   0.016 sec)
+Info:  Opti : (56,0,18) =  3.38586E+01 QBAD  3.88878E-01 QAVG  7.38105E-01 (   0.016 sec)
+Info:  Opti : (58,0,21) =  3.38586E+01 QBAD  3.88878E-01 QAVG  7.38936E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         8 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        30 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        95 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       126 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        71 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        33 elements
+Info:  Optimizing volume 19
+Info:  Opti : STARTS with  3.38593E+01 QBAD  3.92875E-02 QAVG  7.26741E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         3 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         2 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         3 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        13 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        25 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        89 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       126 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        70 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        40 elements
+Info:  Opti : (17,0,7) =  3.38593E+01 QBAD  4.03271E-01 QAVG  7.43095E-01 (   0.000 sec)
+Info:  Opti : (20,0,13) =  3.38593E+01 QBAD  4.03271E-01 QAVG  7.44289E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         9 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        24 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        89 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       123 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        69 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        41 elements
+Info:  Optimizing volume 20
+Info:  Opti : STARTS with  3.38586E+01 QBAD  4.84366E-02 QAVG  7.24872E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         3 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         5 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         3 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         5 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        11 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        25 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        87 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       126 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        80 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        38 elements
+Info:  Opti : (29,0,6) =  3.38586E+01 QBAD  3.74580E-01 QAVG  7.44524E-01 (   0.016 sec)
+Info:  Opti : (38,0,10) =  3.38586E+01 QBAD  4.23693E-01 QAVG  7.46806E-01 (   0.016 sec)
+Info:  Opti : (40,0,10) =  3.38586E+01 QBAD  4.23693E-01 QAVG  7.46376E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         7 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        28 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        88 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       130 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        70 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        41 elements
+Info:  Optimizing volume 21
+Info:  Opti : STARTS with  3.38592E+01 QBAD  1.10274E-01 QAVG  7.40699E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         3 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         6 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         3 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         9 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        23 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        84 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       116 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        96 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        46 elements
+Info:  Opti : (26,0,11) =  3.38592E+01 QBAD  2.84966E-01 QAVG  7.61082E-01 (   0.000 sec)
+Info:  Opti : (30,0,19) =  3.38592E+01 QBAD  3.62610E-01 QAVG  7.61500E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         2 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        14 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        92 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       132 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        87 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        45 elements
+Info:  Optimizing volume 22
+Info:  Opti : STARTS with  3.38584E+01 QBAD  6.93716E-02 QAVG  7.14802E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         4 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         2 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         4 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        13 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        40 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        92 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       118 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        55 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        39 elements
+Info:  Opti : (21,0,25) =  3.38584E+01 QBAD  3.19834E-01 QAVG  7.27652E-01 (   0.000 sec)
+Info:  Opti : (25,0,45) =  3.38584E+01 QBAD  3.28933E-01 QAVG  7.27947E-01 (   0.000 sec)
+Info:  Opti : (29,0,47) =  3.38584E+01 QBAD  3.70413E-01 QAVG  7.28981E-01 (   0.000 sec)
+Info:  Opti : (32,0,50) =  3.38584E+01 QBAD  3.83586E-01 QAVG  7.28984E-01 (   0.016 sec)
+Info:  Opti : (34,0,53) =  3.38584E+01 QBAD  3.93234E-01 QAVG  7.28660E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         8 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        41 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        98 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       118 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        59 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        33 elements
+Info:  Optimizing volume 23
+Info:  Opti : STARTS with  3.38586E+01 QBAD  4.79788E-02 QAVG  7.01503E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         5 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         8 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         5 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         5 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        21 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        35 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        91 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       117 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        72 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        39 elements
+Info:  Opti : (36,0,7) =  3.38586E+01 QBAD  1.09222E-01 QAVG  7.29181E-01 (   0.000 sec)
+Info:  Opti : (49,0,17) =  3.38586E+01 QBAD  1.60627E-01 QAVG  7.34437E-01 (   0.000 sec)
+Info:  Opti : (55,0,22) =  3.38586E+01 QBAD  3.89940E-01 QAVG  7.34990E-01 (   0.016 sec)
+Info:  Opti : (56,0,24) =  3.38586E+01 QBAD  3.89940E-01 QAVG  7.34789E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        13 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        30 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       100 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       126 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        69 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        35 elements
+Info:  Optimizing volume 24
+Info:  Opti : STARTS with  3.38596E+01 QBAD  1.08761E-02 QAVG  7.02758E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         3 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         5 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         5 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         7 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        16 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        32 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        89 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       124 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        62 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        33 elements
+Info:  Opti : (23,0,4) =  3.38596E+01 QBAD  3.45383E-02 QAVG  7.21803E-01 (   0.000 sec)
+Info:  Opti : (27,0,6) =  3.38596E+01 QBAD  3.47728E-01 QAVG  7.24704E-01 (   0.016 sec)
+Info:  Opti : (29,0,9) =  3.38596E+01 QBAD  3.47728E-01 QAVG  7.23735E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         4 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        14 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        28 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        95 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       125 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        59 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        32 elements
+Info:  Optimizing volume 25
+Info:  Opti : STARTS with  3.38593E+01 QBAD  3.96084E-02 QAVG  7.06313E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         4 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         6 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         2 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         8 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        16 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        31 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        79 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       130 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        67 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        32 elements
+Info:  Opti : (25,0,0) =  3.38593E+01 QBAD  1.28190E-01 QAVG  7.23369E-01 (   0.000 sec)
+Info:  Opti : (28,0,4) =  3.38593E+01 QBAD  1.65589E-01 QAVG  7.26554E-01 (   0.000 sec)
+Info:  Opti : (32,0,4) =  3.38593E+01 QBAD  3.85854E-01 QAVG  7.28615E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         4 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        13 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        31 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        89 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       128 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        63 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        32 elements
+Info:  Optimizing volume 26
+Info:  Opti : STARTS with  3.38594E+01 QBAD  1.34296E-02 QAVG  7.19593E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         4 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         3 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         3 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        11 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        40 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        93 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       105 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        77 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        43 elements
+Info:  Opti : (34,0,7) =  3.38594E+01 QBAD  4.07489E-01 QAVG  7.40910E-01 (   0.000 sec)
+Info:  Opti : (39,0,18) =  3.38594E+01 QBAD  4.07489E-01 QAVG  7.45080E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         5 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        30 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        85 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       125 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        66 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        39 elements
+Info:  Optimizing volume 27
+Info:  Opti : STARTS with  3.38589E+01 QBAD  2.85607E-02 QAVG  7.00480E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         6 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         9 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         8 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        12 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        40 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        79 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       108 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        67 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        35 elements
+Info:  Opti : (34,0,6) =  3.38589E+01 QBAD  1.30332E-01 QAVG  7.28248E-01 (   0.000 sec)
+Info:  Opti : (42,0,15) =  3.38589E+01 QBAD  3.27276E-01 QAVG  7.27720E-01 (   0.000 sec)
+Info:  Opti : (45,0,15) =  3.38589E+01 QBAD  3.27276E-01 QAVG  7.28325E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         9 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        42 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        85 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       103 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        66 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        32 elements
+Info:  Optimizing volume 28
+Info:  Opti : STARTS with  2.16263E+01 QBAD  2.62898E-02 QAVG  6.53087E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         8 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :        11 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :        13 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :        17 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        38 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :       184 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       768 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       383 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        56 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         0 elements
+Info:  Opti : (92,0,0) =  2.16263E+01 QBAD  2.24064E-01 QAVG  6.67722E-01 (   0.016 sec)
+Info:  Opti : (94,0,0) =  2.16263E+01 QBAD  2.24064E-01 QAVG  6.68111E-01 (   0.047 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        29 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :       183 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       772 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       387 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        53 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         0 elements
+Info:  Optimizing volume 29
+Info:  Opti : STARTS with  1.29664E+00 QBAD  9.30202E-02 QAVG  7.31916E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         1 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         3 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        28 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        69 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        34 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Opti : (5,0,0) =  1.29664E+00 QBAD  3.56930E-01 QAVG  7.51747E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         2 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        26 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        71 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        35 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Optimizing volume 30
+Info:  Opti : STARTS with  1.29918E+00 QBAD  8.41996E-02 QAVG  7.35972E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         2 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         4 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        23 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        73 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        37 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Opti : (6,0,0) =  1.29918E+00 QBAD  4.43632E-01 QAVG  7.55382E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         1 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         2 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        25 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        72 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         2 elements
+Info:  Optimizing volume 31
+Info:  Opti : STARTS with  1.30016E+00 QBAD  1.20396E-02 QAVG  7.35961E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         4 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         1 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         0 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        33 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        65 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         4 elements
+Info:  Opti : (8,0,0) =  1.30016E+00 QBAD  5.37455E-01 QAVG  7.59555E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         2 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        32 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        65 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         4 elements
+Info:  Optimizing volume 32
+Info:  Opti : STARTS with  1.30005E+00 QBAD  7.25212E-02 QAVG  7.46665E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         1 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         0 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        33 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        66 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        37 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         4 elements
+Info:  Opti : (5,0,0) =  1.30005E+00 QBAD  5.36778E-01 QAVG  7.59902E-01 (   0.000 sec)
+Info:  Opti : (6,0,0) =  1.30005E+00 QBAD  5.36778E-01 QAVG  7.59578E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         2 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        30 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        65 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        37 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         4 elements
+Info:  Optimizing volume 33
+Info:  Opti : STARTS with  1.30030E+00 QBAD  8.53662E-02 QAVG  7.45866E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         0 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        34 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        66 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        36 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         5 elements
+Info:  Opti : (4,0,0) =  1.30030E+00 QBAD  6.18362E-01 QAVG  7.59928E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         0 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        34 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        66 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        36 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         5 elements
+Info:  Optimizing volume 34
+Info:  Opti : STARTS with  1.30032E+00 QBAD  3.33002E-02 QAVG  7.47745E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         3 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         1 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        31 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        67 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        37 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         5 elements
+Info:  Opti : (5,0,0) =  1.30032E+00 QBAD  6.27371E-01 QAVG  7.62303E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         0 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        32 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        67 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        37 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         5 elements
+Info:  Optimizing volume 35
+Info:  Opti : STARTS with  1.30016E+00 QBAD  2.31249E-02 QAVG  7.46382E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         1 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        28 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        69 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         5 elements
+Info:  Opti : (3,0,0) =  1.30016E+00 QBAD  5.91151E-01 QAVG  7.60982E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         1 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        28 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        69 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         5 elements
+Info:  Optimizing volume 36
+Info:  Opti : STARTS with  1.30017E+00 QBAD  1.22137E-02 QAVG  7.35710E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         4 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         1 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        33 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        65 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         4 elements
+Info:  Opti : (7,0,0) =  1.30017E+00 QBAD  5.30980E-01 QAVG  7.59319E-01 (   0.000 sec)
+Info:  Opti : (8,0,0) =  1.30017E+00 QBAD  5.30980E-01 QAVG  7.58896E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         1 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        32 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        65 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         4 elements
+Info:  Optimizing volume 37
+Info:  Opti : STARTS with  1.30005E+00 QBAD  1.94591E-02 QAVG  7.30735E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         4 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         2 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         3 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        33 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        63 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         4 elements
+Info:  Opti : (7,0,0) =  1.30005E+00 QBAD  5.30823E-01 QAVG  7.59484E-01 (   0.000 sec)
+Info:  Opti : (8,0,0) =  1.30005E+00 QBAD  5.30823E-01 QAVG  7.59059E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         2 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        30 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        64 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        38 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         4 elements
+Info:  Optimizing volume 38
+Info:  Opti : STARTS with  1.30043E+00 QBAD  9.25645E-02 QAVG  7.56350E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         0 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        28 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        71 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        37 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         5 elements
+Info:  Opti : (2,0,0) =  1.30043E+00 QBAD  6.14322E-01 QAVG  7.65727E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         0 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        28 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        71 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        37 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         5 elements
+Info:  Optimizing volume 39
+Info:  Opti : STARTS with  1.29918E+00 QBAD  4.86825E-02 QAVG  7.35872E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         2 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         2 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         4 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        21 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        77 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        34 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         3 elements
+Info:  Opti : (6,0,0) =  1.29918E+00 QBAD  4.72579E-01 QAVG  7.55283E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         1 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         2 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        23 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        77 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        34 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         3 elements
+Info:  Optimizing volume 40
+Info:  Opti : STARTS with  3.74066E+00 QBAD  6.44323E-02 QAVG  7.26049E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         6 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        17 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        56 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        20 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Opti : (6,0,0) =  3.74066E+00 QBAD  4.73510E-01 QAVG  7.36223E-01 (   0.000 sec)
+Info:  Opti : (7,0,0) =  3.74066E+00 QBAD  4.73510E-01 QAVG  7.37685E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         7 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        17 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        54 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        18 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Optimizing volume 41
+Info:  Opti : STARTS with  3.74063E+00 QBAD  1.72207E-01 QAVG  6.98128E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         9 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         8 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        20 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        47 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        16 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         5 elements
+Info:  Opti : (8,0,0) =  3.74063E+00 QBAD  4.01551E-01 QAVG  7.23547E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         5 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        10 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        20 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        48 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        15 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Optimizing volume 42
+Info:  Opti : STARTS with  6.21110E+01 QBAD  3.76560E-02 QAVG  6.93196E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :        20 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :        24 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :        17 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :        30 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        58 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        98 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       231 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       321 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       253 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        97 elements
+Info:  Opti : (127,0,2) =  6.21110E+01 QBAD  8.67825E-02 QAVG  7.33587E-01 (   0.016 sec)
+Info:  Opti : (141,0,3) =  6.21110E+01 QBAD  3.39860E-01 QAVG  7.34969E-01 (   0.016 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         6 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        37 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        86 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       269 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       341 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       239 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :        89 elements
+Info:  Optimizing volume 43
+Info:  Opti : STARTS with  3.74066E+00 QBAD  1.27761E-01 QAVG  7.28492E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         4 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        22 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        54 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        22 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Opti : (5,0,0) =  3.74066E+00 QBAD  4.73114E-01 QAVG  7.38856E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         8 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        19 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        56 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        20 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Optimizing volume 44
+Info:  Opti : STARTS with  3.74064E+00 QBAD  3.19923E-01 QAVG  7.31123E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         5 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         8 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        21 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        53 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        19 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         7 elements
+Info:  Opti : (5,0,0) =  3.74064E+00 QBAD  4.72979E-01 QAVG  7.38657E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         2 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        11 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        20 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        55 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        16 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         8 elements
+Info:  Optimizing volume 45
+Info:  Opti : STARTS with  3.74063E+00 QBAD  2.56847E-02 QAVG  7.18833E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         9 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        18 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        54 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        20 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         7 elements
+Info:  Opti : (6,0,0) =  3.74063E+00 QBAD  4.76348E-01 QAVG  7.35244E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        12 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        17 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        54 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        19 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         7 elements
+Info:  Optimizing volume 46
+Info:  Opti : STARTS with  3.74066E+00 QBAD  1.00920E-01 QAVG  7.21121E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         2 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         8 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        16 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        55 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        21 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Opti : (6,0,0) =  3.74066E+00 QBAD  4.72831E-01 QAVG  7.40452E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         2 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         9 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        16 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        56 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        18 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         8 elements
+Info:  Optimizing volume 47
+Info:  Opti : STARTS with  3.74068E+00 QBAD  1.49543E-01 QAVG  7.26776E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         7 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        16 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        53 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        20 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Opti : (6,0,0) =  3.74068E+00 QBAD  4.73839E-01 QAVG  7.36311E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         9 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        16 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        54 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        18 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Optimizing volume 48
+Info:  Opti : STARTS with  3.74066E+00 QBAD  3.92351E-02 QAVG  7.27038E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         6 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        15 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        56 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        19 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Opti : (5,0,0) =  3.74066E+00 QBAD  4.73163E-01 QAVG  7.37023E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        10 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        13 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        57 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        17 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Optimizing volume 49
+Info:  Opti : STARTS with  3.74065E+00 QBAD  1.11430E-01 QAVG  7.22918E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         2 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         5 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        19 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        56 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        20 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         8 elements
+Info:  Opti : (6,0,0) =  3.74065E+00 QBAD  4.72565E-01 QAVG  7.42425E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         2 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         7 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        18 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        59 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        18 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         8 elements
+Info:  Optimizing volume 50
+Info:  Opti : STARTS with  3.74061E+00 QBAD  1.50626E-01 QAVG  7.26074E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         1 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         2 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         7 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        22 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        50 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        25 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         7 elements
+Info:  Opti : (5,0,0) =  3.74061E+00 QBAD  4.76429E-01 QAVG  7.38439E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         3 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         9 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        21 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        52 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        22 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         8 elements
+Info:  Optimizing volume 51
+Info:  Opti : STARTS with  3.74065E+00 QBAD  1.05885E-01 QAVG  7.27418E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         1 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         1 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         7 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        18 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        54 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        21 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         6 elements
+Info:  Opti : (5,0,0) =  3.74065E+00 QBAD  4.73420E-01 QAVG  7.40052E-01 (   0.000 sec)
+Info:  Opti : (6,0,0) =  3.74065E+00 QBAD  4.73420E-01 QAVG  7.40383E-01 (   0.000 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         2 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        10 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        15 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        54 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :        19 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         7 elements
+Info:  Done optimizing 3D mesh (1.375 s)
+Info:  Meshing order 2 (curvilinear on)...
+Info:  Meshing curve 1 order 2
+Info:  Meshing curve 2 order 2
+Info:  Meshing curve 3 order 2
+Info:  Meshing curve 4 order 2
+Info:  Meshing curve 5 order 2
+Info:  Meshing curve 6 order 2
+Info:  Meshing curve 7 order 2
+Info:  Meshing curve 8 order 2
+Info:  Meshing curve 9 order 2
+Info:  Meshing curve 10 order 2
+Info:  Meshing curve 11 order 2
+Info:  Meshing curve 12 order 2
+Info:  Meshing curve 13 order 2
+Info:  Meshing curve 14 order 2
+Info:  Meshing curve 15 order 2
+Info:  Meshing curve 16 order 2
+Info:  Meshing curve 17 order 2
+Info:  Meshing curve 18 order 2
+Info:  Meshing curve 19 order 2
+Info:  Meshing curve 20 order 2
+Info:  Meshing curve 21 order 2
+Info:  Meshing curve 22 order 2
+Info:  Meshing curve 23 order 2
+Info:  Meshing curve 24 order 2
+Info:  Meshing curve 25 order 2
+Info:  Meshing curve 26 order 2
+Info:  Meshing curve 27 order 2
+Info:  Meshing curve 28 order 2
+Info:  Meshing curve 29 order 2
+Info:  Meshing curve 30 order 2
+Info:  Meshing curve 31 order 2
+Info:  Meshing curve 32 order 2
+Info:  Meshing curve 33 order 2
+Info:  Meshing curve 34 order 2
+Info:  Meshing curve 35 order 2
+Info:  Meshing curve 36 order 2
+Info:  Meshing curve 37 order 2
+Info:  Meshing curve 38 order 2
+Info:  Meshing curve 39 order 2
+Info:  Meshing curve 40 order 2
+Info:  Meshing curve 41 order 2
+Info:  Meshing curve 42 order 2
+Info:  Meshing curve 43 order 2
+Info:  Meshing curve 44 order 2
+Info:  Meshing curve 45 order 2
+Info:  Meshing curve 46 order 2
+Info:  Meshing curve 47 order 2
+Info:  Meshing curve 48 order 2
+Info:  Meshing curve 49 order 2
+Info:  Meshing curve 50 order 2
+Info:  Meshing curve 51 order 2
+Info:  Meshing curve 52 order 2
+Info:  Meshing curve 53 order 2
+Info:  Meshing curve 54 order 2
+Info:  Meshing curve 55 order 2
+Info:  Meshing curve 56 order 2
+Info:  Meshing curve 57 order 2
+Info:  Meshing curve 58 order 2
+Info:  Meshing curve 59 order 2
+Info:  Meshing curve 60 order 2
+Info:  Meshing curve 61 order 2
+Info:  Meshing curve 62 order 2
+Info:  Meshing curve 63 order 2
+Info:  Meshing curve 64 order 2
+Info:  Meshing curve 65 order 2
+Info:  Meshing curve 66 order 2
+Info:  Meshing curve 67 order 2
+Info:  Meshing curve 68 order 2
+Info:  Meshing curve 69 order 2
+Info:  Meshing curve 70 order 2
+Info:  Meshing curve 71 order 2
+Info:  Meshing curve 72 order 2
+Info:  Meshing curve 73 order 2
+Info:  Meshing curve 74 order 2
+Info:  Meshing curve 75 order 2
+Info:  Meshing curve 76 order 2
+Info:  Meshing curve 77 order 2
+Info:  Meshing curve 78 order 2
+Info:  Meshing curve 79 order 2
+Info:  Meshing curve 80 order 2
+Info:  Meshing curve 81 order 2
+Info:  Meshing curve 82 order 2
+Info:  Meshing curve 83 order 2
+Info:  Meshing curve 84 order 2
+Info:  Meshing curve 85 order 2
+Info:  Meshing curve 86 order 2
+Info:  Meshing curve 87 order 2
+Info:  Meshing curve 88 order 2
+Info:  Meshing curve 89 order 2
+Info:  Meshing curve 90 order 2
+Info:  Meshing curve 91 order 2
+Info:  Meshing curve 92 order 2
+Info:  Meshing curve 93 order 2
+Info:  Meshing curve 94 order 2
+Info:  Meshing curve 95 order 2
+Info:  Meshing curve 96 order 2
+Info:  Meshing curve 97 order 2
+Info:  Meshing curve 98 order 2
+Info:  Meshing curve 99 order 2
+Info:  Meshing curve 100 order 2
+Info:  Meshing curve 101 order 2
+Info:  Meshing curve 102 order 2
+Info:  Meshing curve 103 order 2
+Info:  Meshing curve 104 order 2
+Info:  Meshing curve 105 order 2
+Info:  Meshing curve 106 order 2
+Info:  Meshing curve 107 order 2
+Info:  Meshing curve 108 order 2
+Info:  Meshing curve 109 order 2
+Info:  Meshing curve 110 order 2
+Info:  Meshing curve 111 order 2
+Info:  Meshing curve 112 order 2
+Info:  Meshing curve 113 order 2
+Info:  Meshing curve 114 order 2
+Info:  Meshing curve 115 order 2
+Info:  Meshing curve 116 order 2
+Info:  Meshing curve 117 order 2
+Info:  Meshing curve 118 order 2
+Info:  Meshing curve 119 order 2
+Info:  Meshing curve 120 order 2
+Info:  Meshing curve 121 order 2
+Info:  Meshing curve 122 order 2
+Info:  Meshing curve 123 order 2
+Info:  Meshing curve 124 order 2
+Info:  Meshing curve 125 order 2
+Info:  Meshing curve 126 order 2
+Info:  Meshing curve 127 order 2
+Info:  Meshing curve 128 order 2
+Info:  Meshing curve 129 order 2
+Info:  Meshing curve 130 order 2
+Info:  Meshing curve 131 order 2
+Info:  Meshing curve 132 order 2
+Info:  Meshing curve 133 order 2
+Info:  Meshing curve 134 order 2
+Info:  Meshing curve 135 order 2
+Info:  Meshing curve 136 order 2
+Info:  Meshing curve 137 order 2
+Info:  Meshing curve 138 order 2
+Info:  Meshing curve 139 order 2
+Info:  Meshing curve 140 order 2
+Info:  Meshing curve 141 order 2
+Info:  Meshing curve 142 order 2
+Info:  Meshing curve 143 order 2
+Info:  Meshing curve 144 order 2
+Info:  Meshing curve 145 order 2
+Info:  Meshing curve 146 order 2
+Info:  Meshing curve 147 order 2
+Info:  Meshing curve 148 order 2
+Info:  Meshing curve 149 order 2
+Info:  Meshing curve 150 order 2
+Info:  Meshing curve 151 order 2
+Info:  Meshing curve 152 order 2
+Info:  Meshing curve 153 order 2
+Info:  Meshing curve 154 order 2
+Info:  Meshing curve 155 order 2
+Info:  Meshing curve 156 order 2
+Info:  Meshing curve 157 order 2
+Info:  Meshing curve 158 order 2
+Info:  Meshing curve 159 order 2
+Info:  Meshing curve 160 order 2
+Info:  Meshing curve 161 order 2
+Info:  Meshing curve 162 order 2
+Info:  Meshing curve 163 order 2
+Info:  Meshing curve 164 order 2
+Info:  Meshing curve 165 order 2
+Info:  Meshing curve 166 order 2
+Info:  Meshing curve 167 order 2
+Info:  Meshing curve 168 order 2
+Info:  Meshing curve 169 order 2
+Info:  Meshing curve 170 order 2
+Info:  Meshing curve 171 order 2
+Info:  Meshing curve 172 order 2
+Info:  Meshing curve 173 order 2
+Info:  Meshing curve 174 order 2
+Info:  Meshing curve 175 order 2
+Info:  Meshing curve 176 order 2
+Info:  Meshing curve 177 order 2
+Info:  Meshing curve 178 order 2
+Info:  Meshing curve 179 order 2
+Info:  Meshing curve 180 order 2
+Info:  Meshing curve 181 order 2
+Info:  Meshing curve 182 order 2
+Info:  Meshing curve 183 order 2
+Info:  Meshing curve 184 order 2
+Info:  Meshing curve 185 order 2
+Info:  Meshing curve 186 order 2
+Info:  Meshing curve 187 order 2
+Info:  Meshing curve 188 order 2
+Info:  Meshing curve 189 order 2
+Info:  Meshing curve 190 order 2
+Info:  Meshing curve 191 order 2
+Info:  Meshing curve 192 order 2
+Info:  Meshing curve 193 order 2
+Info:  Meshing curve 194 order 2
+Info:  Meshing curve 195 order 2
+Info:  Meshing curve 196 order 2
+Info:  Meshing curve 197 order 2
+Info:  Meshing curve 198 order 2
+Info:  Meshing curve 199 order 2
+Info:  Meshing curve 200 order 2
+Info:  Meshing curve 201 order 2
+Info:  Meshing curve 202 order 2
+Info:  Meshing curve 203 order 2
+Info:  Meshing curve 204 order 2
+Info:  Meshing curve 205 order 2
+Info:  Meshing curve 206 order 2
+Info:  Meshing curve 207 order 2
+Info:  Meshing curve 208 order 2
+Info:  Meshing curve 209 order 2
+Info:  Meshing curve 210 order 2
+Info:  Meshing curve 211 order 2
+Info:  Meshing curve 212 order 2
+Info:  Meshing curve 213 order 2
+Info:  Meshing curve 214 order 2
+Info:  Meshing curve 215 order 2
+Info:  Meshing curve 216 order 2
+Info:  Meshing curve 217 order 2
+Info:  Meshing curve 218 order 2
+Info:  Meshing curve 219 order 2
+Info:  Meshing curve 220 order 2
+Info:  Meshing curve 221 order 2
+Info:  Meshing curve 222 order 2
+Info:  Meshing curve 223 order 2
+Info:  Meshing curve 224 order 2
+Info:  Meshing curve 225 order 2
+Info:  Meshing curve 226 order 2
+Info:  Meshing curve 227 order 2
+Info:  Meshing curve 228 order 2
+Info:  Meshing curve 229 order 2
+Info:  Meshing curve 230 order 2
+Info:  Meshing curve 231 order 2
+Info:  Meshing curve 232 order 2
+Info:  Meshing curve 233 order 2
+Info:  Meshing curve 234 order 2
+Info:  Meshing curve 235 order 2
+Info:  Meshing curve 236 order 2
+Info:  Meshing curve 237 order 2
+Info:  Meshing curve 238 order 2
+Info:  Meshing curve 239 order 2
+Info:  Meshing curve 240 order 2
+Info:  Meshing curve 241 order 2
+Info:  Meshing curve 242 order 2
+Info:  Meshing surface 1 order 2
+Info:  Meshing surface 2 order 2
+Info:  Meshing surface 3 order 2
+Info:  Meshing surface 4 order 2
+Info:  Meshing surface 5 order 2
+Info:  Meshing surface 6 order 2
+Info:  Meshing surface 7 order 2
+Info:  Meshing surface 8 order 2
+Info:  Meshing surface 9 order 2
+Info:  Meshing surface 10 order 2
+Info:  Meshing surface 11 order 2
+Info:  Meshing surface 12 order 2
+Info:  Meshing surface 13 order 2
+Info:  Meshing surface 14 order 2
+Info:  Meshing surface 15 order 2
+Info:  Meshing surface 16 order 2
+Info:  Meshing surface 17 order 2
+Info:  Meshing surface 18 order 2
+Info:  Meshing surface 19 order 2
+Info:  Meshing surface 20 order 2
+Info:  Meshing surface 21 order 2
+Info:  Meshing surface 22 order 2
+Info:  Meshing surface 23 order 2
+Info:  Meshing surface 24 order 2
+Info:  Meshing surface 25 order 2
+Info:  Meshing surface 26 order 2
+Info:  Meshing surface 27 order 2
+Info:  Meshing surface 28 order 2
+Info:  Meshing surface 29 order 2
+Info:  Meshing surface 30 order 2
+Info:  Meshing surface 31 order 2
+Info:  Meshing surface 32 order 2
+Info:  Meshing surface 33 order 2
+Info:  Meshing surface 34 order 2
+Info:  Meshing surface 35 order 2
+Info:  Meshing surface 36 order 2
+Info:  Meshing surface 37 order 2
+Info:  Meshing surface 38 order 2
+Info:  Meshing surface 39 order 2
+Info:  Meshing surface 40 order 2
+Info:  Meshing surface 41 order 2
+Info:  Meshing surface 42 order 2
+Info:  Meshing surface 43 order 2
+Info:  Meshing surface 44 order 2
+Info:  Meshing surface 45 order 2
+Info:  Meshing surface 46 order 2
+Info:  Meshing surface 47 order 2
+Info:  Meshing surface 48 order 2
+Info:  Meshing surface 49 order 2
+Info:  Meshing surface 50 order 2
+Info:  Meshing surface 51 order 2
+Info:  Meshing surface 52 order 2
+Info:  Meshing surface 53 order 2
+Info:  Meshing surface 54 order 2
+Info:  Meshing surface 55 order 2
+Info:  Meshing surface 56 order 2
+Info:  Meshing surface 57 order 2
+Info:  Meshing surface 58 order 2
+Info:  Meshing surface 59 order 2
+Info:  Meshing surface 60 order 2
+Info:  Meshing surface 61 order 2
+Info:  Meshing surface 62 order 2
+Info:  Meshing surface 63 order 2
+Info:  Meshing surface 64 order 2
+Info:  Meshing surface 65 order 2
+Info:  Meshing surface 66 order 2
+Info:  Meshing surface 67 order 2
+Info:  Meshing surface 68 order 2
+Info:  Meshing surface 69 order 2
+Info:  Meshing surface 70 order 2
+Info:  Meshing surface 71 order 2
+Info:  Meshing surface 72 order 2
+Info:  Meshing surface 73 order 2
+Info:  Meshing surface 74 order 2
+Info:  Meshing surface 75 order 2
+Info:  Meshing surface 76 order 2
+Info:  Meshing surface 77 order 2
+Info:  Meshing surface 78 order 2
+Info:  Meshing surface 79 order 2
+Info:  Meshing surface 80 order 2
+Info:  Meshing surface 81 order 2
+Info:  Meshing surface 82 order 2
+Info:  Meshing surface 83 order 2
+Info:  Meshing surface 84 order 2
+Info:  Meshing surface 85 order 2
+Info:  Meshing surface 86 order 2
+Info:  Meshing surface 87 order 2
+Info:  Meshing surface 88 order 2
+Info:  Meshing surface 89 order 2
+Info:  Meshing surface 90 order 2
+Info:  Meshing surface 91 order 2
+Info:  Meshing surface 92 order 2
+Info:  Meshing surface 93 order 2
+Info:  Meshing surface 94 order 2
+Info:  Meshing surface 95 order 2
+Info:  Meshing surface 96 order 2
+Info:  Meshing surface 97 order 2
+Info:  Meshing surface 98 order 2
+Info:  Meshing surface 99 order 2
+Info:  Meshing surface 100 order 2
+Info:  Meshing surface 101 order 2
+Info:  Meshing surface 102 order 2
+Info:  Meshing surface 103 order 2
+Info:  Meshing surface 104 order 2
+Info:  Meshing surface 105 order 2
+Info:  Meshing surface 106 order 2
+Info:  Meshing surface 107 order 2
+Info:  Meshing surface 108 order 2
+Info:  Meshing surface 109 order 2
+Info:  Meshing surface 110 order 2
+Info:  Meshing surface 111 order 2
+Info:  Meshing surface 112 order 2
+Info:  Meshing surface 113 order 2
+Info:  Meshing surface 114 order 2
+Info:  Meshing surface 115 order 2
+Info:  Meshing surface 116 order 2
+Info:  Meshing surface 117 order 2
+Info:  Meshing surface 118 order 2
+Info:  Meshing surface 119 order 2
+Info:  Meshing surface 120 order 2
+Info:  Meshing surface 121 order 2
+Info:  Meshing surface 122 order 2
+Info:  Meshing surface 123 order 2
+Info:  Meshing surface 124 order 2
+Info:  Meshing surface 125 order 2
+Info:  Meshing surface 126 order 2
+Info:  Meshing surface 127 order 2
+Info:  Meshing surface 128 order 2
+Info:  Meshing surface 129 order 2
+Info:  Meshing surface 130 order 2
+Info:  Meshing surface 131 order 2
+Info:  Meshing surface 132 order 2
+Info:  Meshing surface 133 order 2
+Info:  Meshing surface 134 order 2
+Info:  Meshing surface 135 order 2
+Info:  Meshing surface 136 order 2
+Info:  Meshing surface 137 order 2
+Info:  Meshing surface 138 order 2
+Info:  Meshing surface 139 order 2
+Info:  Meshing surface 140 order 2
+Info:  Meshing surface 141 order 2
+Info:  Meshing surface 142 order 2
+Info:  Meshing surface 143 order 2
+Info:  Meshing surface 144 order 2
+Info:  Meshing surface 145 order 2
+Info:  Meshing surface 146 order 2
+Info:  Meshing surface 147 order 2
+Info:  Meshing surface 148 order 2
+Info:  Meshing surface 149 order 2
+Info:  Meshing surface 150 order 2
+Info:  Meshing surface 151 order 2
+Info:  Meshing surface 152 order 2
+Info:  Meshing surface 153 order 2
+Info:  Meshing surface 154 order 2
+Info:  Meshing surface 155 order 2
+Info:  Meshing surface 156 order 2
+Info:  Meshing surface 157 order 2
+Info:  Meshing surface 158 order 2
+Info:  Meshing surface 159 order 2
+Info:  Meshing surface 160 order 2
+Info:  Meshing surface 161 order 2
+Info:  Meshing surface 162 order 2
+Info:  Meshing surface 163 order 2
+Info:  Meshing surface 164 order 2
+Info:  Meshing surface 165 order 2
+Info:  Meshing surface 166 order 2
+Info:  Meshing surface 167 order 2
+Info:  Meshing surface 168 order 2
+Info:  Meshing surface 169 order 2
+Info:  Meshing surface 170 order 2
+Info:  Meshing surface 171 order 2
+Info:  Meshing surface 172 order 2
+Info:  Meshing surface 173 order 2
+Info:  Meshing surface 174 order 2
+Info:  Meshing surface 175 order 2
+Info:  Meshing surface 176 order 2
+Info:  Meshing surface 177 order 2
+Info:  Meshing surface 178 order 2
+Info:  Meshing surface 179 order 2
+Info:  Meshing surface 180 order 2
+Info:  Meshing surface 181 order 2
+Info:  Meshing surface 182 order 2
+Info:  Meshing surface 183 order 2
+Info:  Meshing surface 184 order 2
+Info:  Meshing surface 185 order 2
+Info:  Meshing surface 186 order 2
+Info:  Meshing surface 187 order 2
+Info:  Meshing surface 188 order 2
+Info:  Meshing volume 1 order 2
+Info:  Meshing volume 2 order 2
+Info:  Meshing volume 3 order 2
+Info:  Meshing volume 4 order 2
+Info:  Meshing volume 5 order 2
+Info:  Meshing volume 6 order 2
+Info:  Meshing volume 7 order 2
+Info:  Meshing volume 8 order 2
+Info:  Meshing volume 9 order 2
+Info:  Meshing volume 10 order 2
+Info:  Meshing volume 11 order 2
+Info:  Meshing volume 12 order 2
+Info:  Meshing volume 13 order 2
+Info:  Meshing volume 14 order 2
+Info:  Meshing volume 15 order 2
+Info:  Meshing volume 16 order 2
+Info:  Meshing volume 17 order 2
+Info:  Meshing volume 18 order 2
+Info:  Meshing volume 19 order 2
+Info:  Meshing volume 20 order 2
+Info:  Meshing volume 21 order 2
+Info:  Meshing volume 22 order 2
+Info:  Meshing volume 23 order 2
+Info:  Meshing volume 24 order 2
+Info:  Meshing volume 25 order 2
+Info:  Meshing volume 26 order 2
+Info:  Meshing volume 27 order 2
+Info:  Meshing volume 28 order 2
+Info:  Meshing volume 29 order 2
+Info:  Meshing volume 30 order 2
+Info:  Meshing volume 31 order 2
+Info:  Meshing volume 32 order 2
+Info:  Meshing volume 33 order 2
+Info:  Meshing volume 34 order 2
+Info:  Meshing volume 35 order 2
+Info:  Meshing volume 36 order 2
+Info:  Meshing volume 37 order 2
+Info:  Meshing volume 38 order 2
+Info:  Meshing volume 39 order 2
+Info:  Meshing volume 40 order 2
+Info:  Meshing volume 41 order 2
+Info:  Meshing volume 42 order 2
+Info:  Meshing volume 43 order 2
+Info:  Meshing volume 44 order 2
+Info:  Meshing volume 45 order 2
+Info:  Meshing volume 46 order 2
+Info:  Meshing volume 47 order 2
+Info:  Meshing volume 48 order 2
+Info:  Meshing volume 49 order 2
+Info:  Meshing volume 50 order 2
+Info:  Meshing volume 51 order 2
+Info:  Surface mesh: worst distortion = 0.829701 (0 elements in ]0, 0.2]); worst gamma = 0.422145
+Info:  Volume Mesh: worst distortion = 0.43447 (0 elements in ]0, 0.2])
+Info:  Done meshing order 2 (0.3125 s)
+Info:  48154 vertices 47643 elements
+Info:  PLAXIS optimization for 3D will be used.
+Info:  Bad quality elements for Plaxis tetrahedral optimization have been found. Worst quality is 0.0340432 in element 14381
+Info:  worst quality after iteration 1 is 0.0345208 in 242 modifications:
+  -1.79769e+308 < quality < -0.5: 0
+  -0.5 < quality < 0: 0
+  0 < quality < 0.1: 702
+in Timer IMPRO.createMesh().PlaxisOptimization ran 5.643 seconds.
+
+Info:  worst quality after iteration 2 is 0.2308 in 53 modifications:
+  -1.79769e+308 < quality < -0.5: 0
+  -0.5 < quality < 0: 0
+  0 < quality < 0.1: 0
+  0.1 < quality < 0.2: 0
+  0.2 < quality < 0.3: 657
+in Timer IMPRO.createMesh().PlaxisOptimization ran 1.876 seconds.
+
+Info:  worst quality after iteration 3 is 0.2308 in 7 modifications:
+  -1.79769e+308 < quality < -0.5: 0
+  -0.5 < quality < 0: 0
+  0 < quality < 0.1: 0
+  0.1 < quality < 0.2: 0
+  0.2 < quality < 0.3: 653
+in Timer IMPRO.createMesh().PlaxisOptimization ran 0.616 seconds.
+
+Info:  Worst quality element is hardly improving and no change on any further improvements either. Stopped optimization
+Info:  Still bad quality elements. Worst quality is now 0.2308
+Info:  Timer IMPRO.createMesh().PlaxisOptimizationTotal ran 8.937 seconds.
+Info:  Optimizing high order mesh...
+Info:  Computing connectivity and bad elements for entity 1...
+Info:  Computing connectivity and bad elements for entity 2...
+Info:  Computing connectivity and bad elements for entity 3...
+Info:  Computing connectivity and bad elements for entity 4...
+Info:  Computing connectivity and bad elements for entity 5...
+Info:  Computing connectivity and bad elements for entity 6...
+Info:  Computing connectivity and bad elements for entity 7...
+Info:  Computing connectivity and bad elements for entity 8...
+Info:  Computing connectivity and bad elements for entity 9...
+Info:  Computing connectivity and bad elements for entity 10...
+Info:  Computing connectivity and bad elements for entity 11...
+Info:  Computing connectivity and bad elements for entity 12...
+Info:  Computing connectivity and bad elements for entity 13...
+Info:  Computing connectivity and bad elements for entity 14...
+Info:  Computing connectivity and bad elements for entity 15...
+Info:  Computing connectivity and bad elements for entity 16...
+Info:  Computing connectivity and bad elements for entity 17...
+Info:  Computing connectivity and bad elements for entity 18...
+Info:  Computing connectivity and bad elements for entity 19...
+Info:  Computing connectivity and bad elements for entity 20...
+Info:  Computing connectivity and bad elements for entity 21...
+Info:  Computing connectivity and bad elements for entity 22...
+Info:  Computing connectivity and bad elements for entity 23...
+Info:  Computing connectivity and bad elements for entity 24...
+Info:  Computing connectivity and bad elements for entity 25...
+Info:  Computing connectivity and bad elements for entity 26...
+Info:  Computing connectivity and bad elements for entity 27...
+Info:  Computing connectivity and bad elements for entity 28...
+Info:  Computing connectivity and bad elements for entity 29...
+Info:  Computing connectivity and bad elements for entity 30...
+Info:  Computing connectivity and bad elements for entity 31...
+Info:  Computing connectivity and bad elements for entity 32...
+Info:  Computing connectivity and bad elements for entity 33...
+Info:  Computing connectivity and bad elements for entity 34...
+Info:  Computing connectivity and bad elements for entity 35...
+Info:  Computing connectivity and bad elements for entity 36...
+Info:  Computing connectivity and bad elements for entity 37...
+Info:  Computing connectivity and bad elements for entity 38...
+Info:  Computing connectivity and bad elements for entity 39...
+Info:  Computing connectivity and bad elements for entity 40...
+Info:  Computing connectivity and bad elements for entity 41...
+Info:  Computing connectivity and bad elements for entity 42...
+Info:  Computing connectivity and bad elements for entity 43...
+Info:  Computing connectivity and bad elements for entity 44...
+Info:  Computing connectivity and bad elements for entity 45...
+Info:  Computing connectivity and bad elements for entity 46...
+Info:  Computing connectivity and bad elements for entity 47...
+Info:  Computing connectivity and bad elements for entity 48...
+Info:  Computing connectivity and bad elements for entity 49...
+Info:  Computing connectivity and bad elements for entity 50...
+Info:  Computing connectivity and bad elements for entity 51...
+Info:  maxdist = 0 badasses size = 0
+Info:  Starting blob generation from 0 bad elements...
+Info:  Constructing 0 primary blobs
+Info:  Computing blob connectivity...
+Info:  Identifying groups of primary blobs...
+Info:  Merging primary blobs into 0 blobs...
+Info:  Computing boundaries for 0 blobs...
+Info:  Generated 0 blobs
+Info:  Optimization succeeded
+Info:  Done optimizing high order mesh (0.546875 s)
+Info:  Option WriteGmshOutput has not been set. Falling back to the default behaviour, which is disabled.
+Info:  Worst element quality (SICN) after Gmsh meshing is 0.2308 in volume BoreholeVolume_2_Volume_1_1
+Debug:  5 elements with worst SICN quality (quality : #nodes on a vertex, edge, face, volume)
+  0.2308 : 0, 0, 7, 3
+  0.245763 : 0, 0, 7, 3
+  0.267192 : 0, 0, 7, 3
+  0.273114 : 0, 0, 6, 4
+  0.294713 : 0, 0, 7, 3
+Info:  Timer IMPRO.task_CreateMesh ran 20.101 seconds.
+Info:  Finished task CreateMesh
+
+Info:  ####################################################################################################
+Info:  ###                            CreateIntersectingEmbeddedEntitiesMesh                            ###
+Info:  ####################################################################################################
+Info:  Creates meshes for embedded entities as intersections with already existing meshes
+Info:  Timer IMPRO.task_CreateIntersectingEmbeddedEntitiesMesh ran 0 seconds.
+Info:  Finished task CreateIntersectingEmbeddedEntitiesMesh
+
+Info:  ####################################################################################################
+Info:  ###                                    CreateFaceDuplications                                    ###
+Info:  ####################################################################################################
+Info:  Creates face duplications
+Info:  Timer IMPRO.task_CreateFaceDuplications ran 3.085 seconds.
+Info:  Finished task CreateFaceDuplications
+
+Info:  ####################################################################################################
+Info:  ###                                        CombineResult                                         ###
+Info:  ####################################################################################################
+Info:  Combines the results of all the resulting meshes created by the mesher back ends.
+Info:  Timer IMPRO.task_CombineResult ran 0.012 seconds.
+Info:  Finished task CombineResult
+
+Info:  ####################################################################################################
+Info:  ###                                          OutputMesh                                          ###
+Info:  ####################################################################################################
+Info:  Writes Mesh Entities to file
+Info:  Option WriteGmshOutput has not been set. Falling back to the default behaviour, which is disabled.
+Info:  Timer IMPRO.task_OutputMesh ran 1.199 seconds.
+Info:  Finished task OutputMesh
+
+Info:  Timer IMPRO.meshing_total ran 72.703 seconds.

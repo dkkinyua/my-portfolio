@@ -1,0 +1,349 @@
+Info:  Option EMR has been enabled.
+Info:  Option GmshOptimization3D has been enabled.
+Info:  Option PlaxisHigherOrderOptimization3D has been enabled.
+Info:  Option FlushLogImmediately has been enabled.
+Info:  Option NewCoarsenessImplementation has been enabled.
+Info:  Option UseFullEmbeddedFeaturesInCoarseness has been enabled.
+Info:  Option OptimizeMeshIntersectingEmbeddedFeatures has been enabled.
+Info:  Going to check directory C:\Program Files\Seequent\PLAXIS 3D 2023.2\toggles for toggles.
+Info:  Setting EMRFactor_MinimumElementSize has been set to the value 0.005
+Info:  Setting EMRParameter_GlobalScale has been set to the value 1.2
+Info:  Setting EMRWeight_Proximity has been set to the value 2
+Info:  Setting EMRFactor_MinimumElementSize has been set to the value 0.005
+Info:  Setting EMRParameter_GlobalScale has been set to the value 1.2
+Info:  Setting EMRWeight_Proximity has been set to the value 2
+Info:  Option IntegrateWithFortranKernel has been enabled.
+Info:  Element dimension set to 8.50184
+Info:  Option EMR has been enabled.
+Info:  Setting EMRParameter_GlobalScale has been set to the value 1.2
+Info:  Setting EMRFactor_MinimumElementSize has been set to the value 0.005
+Info:  Setting EMRWeight_Proximity has been set to the value 2
+Info:  Option TrySweepableMeshes has been disabled.
+Info:  Option WriteToNDMDatabase has been disabled.
+Info:  Timer IMPRO.model_setup ran 0.011 seconds.
+Info:  ####################################################################################################
+Info:  ###                                      CreateConnections                                       ###
+Info:  ####################################################################################################
+Info:  Creating all possible connections around interfaces.
+Info:  Skip the creation of connections, WriteToNDMDatabase option is disabled.
+Info:  Timer IMPRO.task_CreateConnections ran 0 seconds.
+Info:  Finished task CreateConnections
+
+Info:  ####################################################################################################
+Info:  ###                                       CombineGeometry                                        ###
+Info:  ####################################################################################################
+Info:  Combines geometry with respect to the geometry of the features, kind of feature and mesh settings.
+Info:  Timer IMPRO.task_CombineGeometry ran 0.001 seconds.
+Info:  Finished task CombineGeometry
+
+Info:  ####################################################################################################
+Info:  ###                                    GetSweepingInformation                                    ###
+Info:  ####################################################################################################
+Info:  Gets the information regarding sweepable geometries to be used during mesh generation.
+Info:  Sweepable meshes has been disabled.
+'Info:  Timer IMPRO.task_GetSweepingInformation ran 0 seconds.
+Info:  Finished task GetSweepingInformation
+
+Info:  ####################################################################################################
+Info:  ###                                    AddMissingFaceFeatures                                    ###
+Info:  ####################################################################################################
+Info:  Adds face features to support water loads. This is only needed in case of using legacy PLAXIS Fortran kernel.
+Info:  Timer IMPRO.task_AddMissingFaceFeatures ran 0.001 seconds.
+Info:  Finished task AddMissingFaceFeatures
+
+Info:  ####################################################################################################
+Info:  ###                                           ApplyEMR                                           ###
+Info:  ####################################################################################################
+Info:  Performs Enhanced Mesh Refinement (EMR) on incoming Geometry and Coarseness objects.
+Info:  EMR parameters used are: 
+1.2  # global scaling factor
+2  # 3d proximity
+2  # in-surface proximity
+1  # surface curvature for open surfaces
+2  # curve length
+1  # curve curvature
+1  # curve angle (PLAXIS 2D only)
+0.005  # global minimum size factor
+1  # global EMR deactivation factor
+0.5  # global EMR smoothing factor
+
+Info:  Calculating mesh sizing source points for a FusedGenericShape
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for curve length ran 0 seconds.
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for curve curvature ran 0 seconds.
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for curve angle ran 0 seconds.
+Info:  Calculating 2D proximity source points
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for in-surface proximity ran 0.081 seconds.
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for open surface curvature ran 0.001 seconds.
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for closed surface curvature ran 0 seconds.
+Info:  Calculating 3D proximity source points
+Info:  Created 3d proximity analysis octree with 2073 leaves and 3790 nodes
+Info:  Generated 22 3d proximity source points based on fronts meeting at a single, shared lattice node
+Info:  Generated 0 3d proximity source points based on fronts meeting within a lattice edge, of which 0 non-trivial.
+Info:  Generated 99 3d proximity source points based on fronts meeting during propagation, of which 56 because of diametrically opposing fronts meeting
+Info:  Timer IMPRO.EMR.calculateSourcePoints() for 3D proximity ran 0.065 seconds.
+Debug:  Calling createLatticePointLinks() with 121 3D proximity source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for 3D proximity ran 0.053 seconds.
+Debug:  Calling createLatticePointLinks() with 169 in-surface proximity source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for in-surface proximity ran 0.106 seconds.
+Debug:  Calling createLatticePointLinks() with 0 open surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for open surface curvature ran 0.002 seconds.
+Debug:  Calling createLatticePointLinks() with 0 closed surface curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for closed surface curvature ran 0.003 seconds.
+Debug:  Calling createLatticePointLinks() with 24 curve length source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for curve length ran 0.007 seconds.
+Debug:  Calling createLatticePointLinks() with 0 curve curvature source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for curve curvature ran 0.002 seconds.
+Debug:  Calling createLatticePointLinks() with 0 curve angle source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for curve angle ran 0.002 seconds.
+Debug:  Timer IMPRO.EMR.calculateSourceTypeSizes() ran 0.215 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0.01 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0.108 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0.007 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0.137 seconds.
+Info:  Timer IMPRO.task_ApplyEMR ran 0.523 seconds.
+Info:  Finished task ApplyEMR
+
+Info:  ####################################################################################################
+Info:  ###                                          CreateMesh                                          ###
+Info:  ####################################################################################################
+Info:  Creates meshes from geometry
+Info:  User-defined coarseness settings used are: 
+0.5  # user-defined coarseness smoothing factor
+Info:  Timer IMPRO.createMesh().SetupUserDefinedCoarsenesses ran 0 seconds.
+Info:  ********** Creating mesh for a combined geometry.**********
+Info:  Option Use2DAlgorithmMeshAdapt has not been set. Falling back to the default behaviour, which is disabled.
+Info:  Option Use2DAlgorithmDelaunay has not been set. Falling back to the default behaviour, which is disabled.
+Info:  Gmsh 2D algorithm is set to Frontal
+Info:  Gmsh 3D mesh optimization has been enabled.
+Info:  Option NetgenOptimization3D has not been set. Falling back to the default behaviour, which is disabled.
+Debug:  Calling createLatticePointLinks() with 0 user-defined coarseness source points
+Debug:  Timer IMPRO.EMR.createLatticePointLinks() for user-defined coarseness ran 0 seconds.
+Debug:  Timer IMPRO.UserDefinedSizes.calculateSourceTypeSizes() ran 0 seconds.
+Debug:  Timer IMPRO.UserDefinedSizes.SourcePointsCoarseningVolumes ran 0 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.medianSmoothing ran 0 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.laplacianSmoothing ran 0 seconds.
+Debug:  Timer IMPRO.EMR.SmoothMeshSizingField.enforceLipschitzSmoothing ran 0 seconds.
+Debug:  Timer IMPRO.SmoothMeshSizingField ran 0 seconds.
+Info:  Timer IMPRO.createMesh().ApplyUserDefinedCoarsenesses ran 0 seconds.
+Info:  Meshing 1D...
+Info:  Meshing curve 1 (Line)
+Info:  Meshing curve 2 (Line)
+Info:  Meshing curve 3 (Line)
+Info:  Meshing curve 4 (Line)
+Info:  Meshing curve 5 (Line)
+Info:  Meshing curve 6 (Line)
+Info:  Meshing curve 7 (Line)
+Info:  Meshing curve 8 (Line)
+Info:  Meshing curve 9 (Line)
+Info:  Meshing curve 10 (Line)
+Info:  Meshing curve 11 (Line)
+Info:  Meshing curve 12 (Line)
+Info:  Meshing curve 13 (Line)
+Info:  Meshing curve 14 (Line)
+Info:  Meshing curve 15 (Line)
+Info:  Meshing curve 16 (Line)
+Info:  Meshing curve 17 (Line)
+Info:  Meshing curve 18 (Line)
+Info:  Meshing curve 19 (Line)
+Info:  Meshing curve 20 (Line)
+Info:  Meshing curve 21 (Line)
+Info:  Meshing curve 22 (Line)
+Info:  Meshing curve 23 (Line)
+Info:  Meshing curve 24 (Line)
+Info:  Done meshing 1D (0.015625 s)
+Info:  Meshing 2D...
+Info:  Meshing surface 1 (Plane, Frontal)
+Info:  Meshing surface 2 (Plane, Frontal)
+Info:  Meshing surface 3 (Plane, Frontal)
+Info:  Meshing surface 4 (Plane, Frontal)
+Info:  Meshing surface 5 (Plane, Frontal)
+Info:  Meshing surface 6 (Plane, Frontal)
+Info:  Meshing surface 7 (Plane, Frontal)
+Info:  Meshing surface 8 (Plane, Frontal)
+Info:  Meshing surface 9 (Plane, Frontal)
+Info:  Meshing surface 10 (Plane, Frontal)
+Info:  Meshing surface 11 (Plane, Frontal)
+Info:  Meshing surface 12 (Plane, Frontal)
+Info:  Done meshing 2D (0.03125 s)
+Info:  Meshing 3D...
+Info:  Delaunay Meshing 2 volumes with 1 connected components
+Info:  Tetrahedrization of 491 points in 0 seconds
+Info:  Reconstructing mesh ...
+Info:  Creating surface mesh...
+Info:  Identifying boundary edges...
+Info:  Boundary Recovery...
+Info:  Writing to GRegion...
+Info:  Reconstruct time : 0 sec
+Info:  Found region 1
+Info:  Found region 2
+Info:  0 points created - Worst tet radius is 2.80645 (PTS removed 0 0)
+Info:  3D point insertion terminated (624 points created):
+Info:   - 0 Delaunay cavities modified for star shapeness
+Info:   - 0 points could not be inserted
+Info:   - 2294 tetrahedra created in 0.015625 sec. (146816 tets/sec.)
+Info:  Done meshing 3D (0.03125 s)
+Info:  Optimizing 3D mesh...
+Info:  Optimizing volume 1
+Info:  Opti : STARTS with  2.24352E+05 QBAD  2.79643E-02 QAVG  7.61426E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :        10 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :        14 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :        15 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :        24 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :        49 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :       116 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       372 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       590 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       618 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :       348 elements
+Info:  Opti : (165,0,177) =  2.24352E+05 QBAD  3.37815E-01 QAVG  7.94577E-01 (   0.016 sec)
+Info:  Opti : (204,0,276) =  2.24352E+05 QBAD  4.59748E-01 QAVG  7.98304E-01 (   0.031 sec)
+Info:  Opti : (206,0,334) =  2.24352E+05 QBAD  4.59748E-01 QAVG  7.99178E-01 (   0.047 sec)
+Info:  Opti : no ill-shaped tets in the mesh ;-)
+Info:  Opti : 0.00 < QUAL < 0.10 :         0 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         4 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :        70 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :       310 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :       627 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :       636 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :       413 elements
+Info:  Optimizing volume 2
+Info:  Opti : STARTS with  6.48000E+02 QBAD  1.03811E-02 QAVG  6.27274E-01
+Info:  Opti : 0.00 < QUAL < 0.10 :        12 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         3 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        77 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        46 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :         0 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         0 elements
+Info:  Opti : (20,0,0) =  6.48000E+02 QBAD  1.89343E-02 QAVG  6.77137E-01 (   0.000 sec)
+Info:  Opti : (22,0,0) =  6.48000E+02 QBAD  1.89343E-02 QAVG  6.77007E-01 (   0.000 sec)
+Info:  Opti : 1 ill-shaped tets are still in the mesh
+Info:  Opti : 0.00 < QUAL < 0.10 :         1 elements
+Info:  Opti : 0.10 < QUAL < 0.20 :         0 elements
+Info:  Opti : 0.20 < QUAL < 0.30 :         0 elements
+Info:  Opti : 0.30 < QUAL < 0.40 :         0 elements
+Info:  Opti : 0.40 < QUAL < 0.50 :         0 elements
+Info:  Opti : 0.50 < QUAL < 0.60 :         0 elements
+Info:  Opti : 0.60 < QUAL < 0.70 :        78 elements
+Info:  Opti : 0.70 < QUAL < 0.80 :        41 elements
+Info:  Opti : 0.80 < QUAL < 0.90 :         0 elements
+Info:  Opti : 0.90 < QUAL < 1.00 :         0 elements
+Info:  Done optimizing 3D mesh (0.0625 s)
+Info:  Meshing order 2 (curvilinear on)...
+Info:  Meshing curve 1 order 2
+Info:  Meshing curve 2 order 2
+Info:  Meshing curve 3 order 2
+Info:  Meshing curve 4 order 2
+Info:  Meshing curve 5 order 2
+Info:  Meshing curve 6 order 2
+Info:  Meshing curve 7 order 2
+Info:  Meshing curve 8 order 2
+Info:  Meshing curve 9 order 2
+Info:  Meshing curve 10 order 2
+Info:  Meshing curve 11 order 2
+Info:  Meshing curve 12 order 2
+Info:  Meshing curve 13 order 2
+Info:  Meshing curve 14 order 2
+Info:  Meshing curve 15 order 2
+Info:  Meshing curve 16 order 2
+Info:  Meshing curve 17 order 2
+Info:  Meshing curve 18 order 2
+Info:  Meshing curve 19 order 2
+Info:  Meshing curve 20 order 2
+Info:  Meshing curve 21 order 2
+Info:  Meshing curve 22 order 2
+Info:  Meshing curve 23 order 2
+Info:  Meshing curve 24 order 2
+Info:  Meshing surface 1 order 2
+Info:  Meshing surface 2 order 2
+Info:  Meshing surface 3 order 2
+Info:  Meshing surface 4 order 2
+Info:  Meshing surface 5 order 2
+Info:  Meshing surface 6 order 2
+Info:  Meshing surface 7 order 2
+Info:  Meshing surface 8 order 2
+Info:  Meshing surface 9 order 2
+Info:  Meshing surface 10 order 2
+Info:  Meshing surface 11 order 2
+Info:  Meshing surface 12 order 2
+Info:  Meshing volume 1 order 2
+Info:  Meshing volume 2 order 2
+Info:  Surface mesh: worst distortion = 1 (0 elements in ]0, 0.2]); worst gamma = 0.618174
+Info:  Volume Mesh: worst distortion = 1 (0 elements in ]0, 0.2])
+Info:  Done meshing order 2 (0.03125 s)
+Info:  3899 vertices 3311 elements
+Info:  PLAXIS optimization for 3D will be used.
+Info:  Bad quality elements for Plaxis tetrahedral optimization have been found. Worst quality is 0.0189626 in element 3260
+Info:  worst quality after iteration 1 is 0.490398 in 1 modifications:
+  -1.79769e+308 < quality < -0.5: 0
+  -0.5 < quality < 0: 0
+  0 < quality < 0.1: 0
+  0.1 < quality < 0.2: 0
+  0.2 < quality < 0.3: 0
+  0.3 < quality < 0.4: 0
+  0.4 < quality < 0.5: 2
+in Timer IMPRO.createMesh().PlaxisOptimization ran 0.013 seconds.
+
+Info:  No more optimizations were made.
+Info:  Still bad quality elements. Worst quality is now 0.490398
+Info:  Timer IMPRO.createMesh().PlaxisOptimizationTotal ran 0.053 seconds.
+Info:  Optimizing high order mesh...
+Info:  Computing connectivity and bad elements for entity 1...
+Info:  Computing connectivity and bad elements for entity 2...
+Info:  maxdist = 0 badasses size = 0
+Info:  Starting blob generation from 0 bad elements...
+Info:  Constructing 0 primary blobs
+Info:  Computing blob connectivity...
+Info:  Identifying groups of primary blobs...
+Info:  Merging primary blobs into 0 blobs...
+Info:  Computing boundaries for 0 blobs...
+Info:  Generated 0 blobs
+Info:  Optimization succeeded
+Info:  Done optimizing high order mesh (0.03125 s)
+Info:  Option WriteGmshOutput has not been set. Falling back to the default behaviour, which is disabled.
+Info:  Worst element quality (SICN) after Gmsh meshing is 0.490398 in volume BoreholeVolume_1_1
+Debug:  5 elements with worst SICN quality (quality : #nodes on a vertex, edge, face, volume)
+  0.490398 : 0, 3, 5, 2
+  0.492066 : 0, 2, 6, 2
+  0.503142 : 0, 3, 3, 4
+  0.503432 : 0, 3, 3, 4
+  0.503503 : 0, 0, 3, 7
+Info:  Timer IMPRO.task_CreateMesh ran 0.365 seconds.
+Info:  Finished task CreateMesh
+
+Info:  ####################################################################################################
+Info:  ###                            CreateIntersectingEmbeddedEntitiesMesh                            ###
+Info:  ####################################################################################################
+Info:  Creates meshes for embedded entities as intersections with already existing meshes
+Info:  Timer IMPRO.task_CreateIntersectingEmbeddedEntitiesMesh ran 0 seconds.
+Info:  Finished task CreateIntersectingEmbeddedEntitiesMesh
+
+Info:  ####################################################################################################
+Info:  ###                                    CreateFaceDuplications                                    ###
+Info:  ####################################################################################################
+Info:  Creates face duplications
+Info:  Timer IMPRO.task_CreateFaceDuplications ran 0 seconds.
+Info:  Finished task CreateFaceDuplications
+
+Info:  ####################################################################################################
+Info:  ###                                        CombineResult                                         ###
+Info:  ####################################################################################################
+Info:  Combines the results of all the resulting meshes created by the mesher back ends.
+Info:  Timer IMPRO.task_CombineResult ran 0 seconds.
+Info:  Finished task CombineResult
+
+Info:  ####################################################################################################
+Info:  ###                                          OutputMesh                                          ###
+Info:  ####################################################################################################
+Info:  Writes Mesh Entities to file
+Info:  Option WriteGmshOutput has not been set. Falling back to the default behaviour, which is disabled.
+Info:  Timer IMPRO.task_OutputMesh ran 0.105 seconds.
+Info:  Finished task OutputMesh
+
+Info:  Timer IMPRO.meshing_total ran 0.997 seconds.
