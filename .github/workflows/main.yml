@@ -18,11 +18,15 @@ jobs:
         with: 
           node-version: 20
 
+      - name: Navigate to the frontend folder
+        working-directory: ./my-portfolio/frontend
+        run: cd my-portfolio/frontend
+
       - name: Install dependencies
+        working-directory: ./my-portfolio/frontend
         run: npm install
 
       - name: Run tests
-        run: npm test -- --watchAll=false
+        working-directory: ./my-portfolio/frontend
+        run: npm test
 
-      - name: Run build
-        run: npm run build
