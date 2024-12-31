@@ -18,10 +18,13 @@ jobs:
         with: 
           node-version: 20
 
+      - name: Go to frontend
+        run: cd frontend
+
       - name: Install dependencies and run tests
-        run: 
-          cd frontend
-          npm install
-          npm test
+        run: npm install
+      
+      - name: Run tests
+        run: npm test
 
 
