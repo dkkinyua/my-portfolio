@@ -18,10 +18,6 @@ jobs:
         with: 
           node-version: 20
 
-      - name: Navigate to the frontend folder
-        working-directory: ./my-portfolio/frontend
-        run: cd my-portfolio/frontend
-
       - name: Install dependencies
         working-directory: ./my-portfolio/frontend
         run: npm install
