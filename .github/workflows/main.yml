@@ -19,10 +19,10 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        working-directory: ./my-portfolio/frontend
+        working-directory: /frontend
         run: npm install
 
       - name: Run tests
-        working-directory: ./my-portfolio/frontend
+        working-directory: /frontend
         run: npm test
 
