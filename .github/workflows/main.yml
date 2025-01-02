@@ -18,6 +18,9 @@ jobs:
         with: 
           node-version: 20
 
+      - name: Go back one file
+        run: cd ../
+
       - name: Go to frontend
         run: cd frontend
 
