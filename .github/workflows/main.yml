@@ -18,16 +18,10 @@ jobs:
         with: 
           node-version: 20
 
-      - name: Go back one file
-        run: cd ../
-
-      - name: Go to frontend
-        run: cd frontend
-
-      - name: Install dependencies and run tests
+      - name: Install dependencies
+        working-directory: frontend
         run: npm install
-      
+
       - name: Run tests
+        working-directory: frontend
         run: npm test
-
-
