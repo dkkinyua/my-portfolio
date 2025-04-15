@@ -8,7 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
 import ContactScreen from './screens/ContactScreen';
-import BlogScreen from './screens/BlogScreen';
+// import BlogScreen from './screens/BlogScreen';
 import PostScreen from './screens/PostScreen';
 import ProjectScreen from './screens/ProjectScreen';
 import CivilProjectScreen from './screens/CivilProjectScreen';
@@ -44,7 +44,7 @@ function App() {
           <Routes>
             <Route path='/' element={<HomeScreen />} exact />
             <Route path='/contact-me' element={<ContactScreen />} />
-            <Route path='/posts' element={<BlogScreen />} />
+            <Route path='/posts' element={<PostScreen />} />
             <Route path='/projects' element={<ProjectScreen />} />
             <Route path='/civil-projects' element={<CivilProjectScreen />} />
             <Route path='/posts/:id' element={<PostScreen />} />
