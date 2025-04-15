@@ -34,14 +34,17 @@ function Main() {
                         <p>
                             I am well versed and skilled in the following areas
                             <ul>
-                                <li>Backend Development: Python. Frameworks: Django, Flask</li>
-                                <li>Frontend Development: React, Redux</li>
-                                <li>API Testing, Development</li>
+                                <li>Languages: Python (Django, Flask), SQL, JavaScript</li>
+                                <li>API Development and Consumption using requests</li>
+                                <li>Web Scraping using beautifulsoup</li>
+                                <li>Data Storage: mySQL, PostgreSQL, MongoDB, AWS</li>
+                                <li>Data Management Tools: Apache Airflow</li>
+                                <li>ETL and ELT Pipeline Development.</li>
+                                <li>Exploratory Data Analysis using pandas, Numpy, matplotlib, plotly</li>
+                                <li>Data Visualization: Tableau, Microsoft Excel, PowerBI</li>
                                 <li>Version Control: Git</li>
                                 <li>CI/CD: Github Actions</li>
-                                <li>Databases: mySQL, PostgreSQL</li>
                                 <li>Civil Engineering drawings through engineering software e.g. AutoCAD</li>
-                                <li>Structural Design through manual calculation and engineering software e.g. Etabs</li>
                             </ul>
                             Check my projects here or in my <a href='https://github.com/dkkinyua' style={linkStyle}>GitHub</a>!
                             <br />
@@ -69,8 +72,8 @@ function Main() {
                     <Card.Body>
                         <h3>Blog:</h3>
                         <p>
-                            I'll be writing blogs about software development, football, video games, engineering, and other topics on my portfolio.
-                            Keep up with the latest tech trends, football banter, gaming news, and engineering innovations.
+                            I'll be writing blogs about data analysis, data engineering, engineering, and other topics on my portfolio.
+                            Keep up with the latest tech trends, and innovations in the dataverse.
                             My blog will also keep me sharp in development, so feel free to follow along on this journey!
 
                             Subscribe to my blog to get the latest updates as soon as they come out by clicking the button below!
@@ -107,7 +110,7 @@ function Main() {
                         </p>
 
                         <div style={buttonContainerStyle}>
-                            <a href="\docs\Denzel Kinyua's CV.pdf" download><Button variant='dark'><i class="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
+                            <a href="docs\Denzel K K Tech CV.pdf" download><Button variant='dark'><i class="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
                         </div>
                     </Card.Body>
                 </Card>

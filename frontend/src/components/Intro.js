@@ -42,14 +42,15 @@ function Intro() {
           </div>
           <div className='mt-3 text-center'>
             <h3>Denzel Kanyeki Kinyua</h3>
-            <h5>Civil Engineer, Software Developer</h5>
+            <h5>Data Engineer | Data Analyst | Big Data Enthusiast</h5>
           </div>
           <div className='mt-3 text-center'>
             <p>
-              A highly motivated and skilled Civil Engineering student with a passion for combining engineering principles and software development. I have developed expertise in analyzing and designing structures to ensure stability and safety, utilizing tools like <strong>AutoCAD</strong> for creating detailed 2D and 3D designs of infrastructure projects such as buildings. My proficiency in generating precise drawings streamlines the design and planning phases of projects. Additionally, I am skilled in the design and detailing of structures using manual calculations and engineering software like <strong>Etabs.</strong>
+              I am a highly motivated and skilled Data Engineer and Analyst with a strong foundation in Python, SQL, and statistical analysis. I specialize in designing ETL and ELT pipelines, automating data collection through web scraping and APIs, cleaning large datasets, and transforming raw information into actionable insights. I’ve worked extensively with libraries like Pandas and NumPy, and visualized insights using Tableau, and Microsoft Excel to support data-driven decisions. I’m also proficient in PostgreSQL, MySQL, and AWS S3 for data storage and management, and have hands-on experience building data-centric applications using Django, and Flask
 
               <br />
-              Complementing my civil engineering knowledge, I bring extensive experience in web development. I excel in both backend and frontend technologies, including Python (Django, Flask) and React, with proficiency in database management using PostgreSQL and MySQL. My freelancing background has honed my ability to deliver high-quality, customized digital solutions, while internships in engineering and operations have strengthened my project management and problem-solving skills.
+
+              In addition to my data-focused skill set, I hold a solid academic background in Civil Engineering, where I’ve applied engineering principles to structural analysis and design. I am proficient in tools such as AutoCAD for creating detailed 2D and 3D infrastructure plans and Etabs for structural design and detailing. My civil engineering knowledge has shaped my precision, problem-solving, and project planning skills, which complement my passion for data-driven thinking and continuous learning.
 
               <br />
               Eager to learn and contribute to innovative projects, I am adaptable, a quick learner, and fluent in English, Kiswahili, and French (B1 - Conversational).
