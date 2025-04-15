@@ -15,7 +15,7 @@ function Footer({ darkMode }) {
 
     return (
         <footer style={footerStyles} className='justify-content-center text-center'>
-            <h6 style={textStyle}>Engineered with <i class="fa-solid fa-heart"></i> by dkkinyua. &copy; 2024, All Rights Reserved</h6>
+            <h6 style={textStyle}>Engineered with <i class="fa-solid fa-heart"></i> by dkkinyua. &copy; 2025, All Rights Reserved</h6>
         </footer>
     )
 }

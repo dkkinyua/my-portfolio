@@ -52,7 +52,7 @@ function PostScreen() {
                                 <Card.Text style={{ fontSize: "14px" }}>
                                     {post.description}
                                 </Card.Text>
-                                <a href={post.url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary btn-sm">
+                                <a href={post.url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
                                     Read Full Post
                                 </a>
                             </Card.Body>
