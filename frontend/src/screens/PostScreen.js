@@ -1,91 +1,74 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
-import { Image, Row, Col } from 'react-bootstrap'
-import { useParams } from 'react-router-dom'
-import toast, { Toaster } from 'react-hot-toast'
-import { JellyfishSpinner } from 'react-spinners-kit'
+import React, { useEffect, useState } from 'react';
+import { Row, Col, Card, Container } from 'react-bootstrap';
+import toast, { Toaster } from 'react-hot-toast';
+import { JellyfishSpinner } from 'react-spinners-kit';
 
 function PostScreen() {
-    const [post, setPost] = useState()
-    const [loading, setLoading] = useState(true)
-    const { id } = useParams()
-
-    const imageStyle = {
-        width: "100%",
-        height: "250px",
-    }
-
-    const outerDivStyle = {
-        minHeight: "100vh"
-    }
+    const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const textStyle = {
         fontFamily: "PT Mono, monospace",
-        fontStyle: 'italic'
-    }
-
-    const headerStyle = {
-        fontFamily: "PT Mono, monospace",
-        fontStyle: "italic",
-        fontSize: "33px"
+        fontStyle: 'normal'
     }
 
     useEffect(() => {
-        const baseURL = `https://myportfoliobackend-rirg.onrender.com/api/posts/${id}`
-
-        axios
-            .get(baseURL)
-            .then((response) => {
-                console.log(response.data);
-                setPost(response.data);
+        fetch(`https://dev.to/api/articles?username=dkkinyua`)
+            .then(response => response.json())
+            .then(data => {
+                setPosts(data);
                 setLoading(false);
             })
             .catch((error) => {
-                toast.error('Failed to load posts, try reloading page');
+                toast.error('Failed to load posts, try reloading the page');
                 console.error(error);
                 setLoading(false);
             });
-
-    }, [id])
+    }, []);
 
     if (loading) {
-        return <JellyfishSpinner size={150} color='#4b4c56' loading={loading} />;
+        return (
+            <div className='d-flex justify-content-center align-items-center' style={{ minHeight: "100vh" }}>
+                <JellyfishSpinner size={150} color='#4b4c56' loading={loading} />
+            </div>
+        );
     }
 
     return (
-        <div style={outerDivStyle}>
-            <div><Toaster /></div>
-
-            <div>
-                <Image src={post.image} alt={post.title} style={imageStyle} className='mb-2' fluid />
+        <Container className='my-4'>
+            <Toaster />
+            <div style={textStyle} className='text-center'>
+                <h2> BLOG </h2>
             </div>
-
-            <div className='mx-2 mb-2' style={textStyle}>
-                <h2 style={headerStyle}>{post.title}</h2>
-                <Row>
-                    <Col md={3}>
-                        <p>Authored by: Denzel Kanyeki</p>
+            <Row>
+                {posts.map((post) => (
+                    <Col md={6} lg={4} key={post.id} className="mb-4">
+                        <Card className='shadow-sm h-100'>
+                            <Card.Img variant="top" src={post.cover_image || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAREAAAC4CAMAAADzLiguAAAAPFBMVEX///+rq6unp6fMzMykpKTp6enx8fHU1NS0tLS6urr6+vqwsLDHx8fPz8/w8PD19fXa2trh4eHl5eXAwMAzrysnAAADpklEQVR4nO2c2ZKDIBAAE6KJmsPr//91c69yKKREHav7dctl6YVhGJTdDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZqE5LMU1XbrvVupELUe9dO9t5PsFyZfuvY1FjWRL994GRnQeRs5NOj+rNpIVCzSMER2M6GBEByM6GNHBiI4cI+mhbdtLE12SFCO3XKnH36ryJnLDQoxU/xm2usZtWIaRWu1nUyLCSNnfh6moE0eEkYvqK4lavpBgpNA368ktYsMSjKSJbqSK2LAEI7VuRB0iNizBSGUYuURsWIIRc4zEXH8lGDkacSTm6YEEI7tMX2zKiA2LMFL185HAMJJWdcj2UIQRfZCEDJEyT5JkH7BcyzBSnrujJORY9r0BSPzXaxlGHv/pz5TJQoQUn4Mw5T1KhBi5x5LseUadnYJKRlcVPLLEGNkVt7qq0rASWtOZa7nno3KM/EB5/mGF2rSRvLdqe+Z1WzZy0Moq6ujz1IaNNJoQz1CyXSO9IPIeJD5ZyXaN6KXIJx6hZLNGKpuQ/Xl8A7BVI6nNx+MAbPTJjRopjAKCdyjZqJHWOmeeSsay+W0asQcRv1CySSM3t4/7IGmHH96ikW8JwKHkNPj0Fo3o2bvBYCiRayRt84u1a/WYkOHfK9bISam92lvW0qOZvRvzZqgwINXI+5zP0rd8dIgMHxwLNdI4+zYaRF643y6QaaT4nxlaxtXo538O3LJlGmk7fetlXKW9/ybuUCLSSC8l7WZchTt7N5S4QolEI1pK2sm4Tt5C7mPLEUoEGjH3tZ++OUoAjkHiKAwINGIWx86vHxTjmUhPib0wIM+IZV/7DpOhn/bZjyvEGbHOjGffQoLIG1thQJoRV3HsFhZEXqjWolyaEUdKqvLyl89hbYUBYUbcKWlYVP1i7p5lGfFOSb05G9JlGfHZ14ZhZiWijFwnF2IJJZKM1NP7eKCFEkFGLEfbk5D1sxJBRvz3tWFohQE5Rk6etaAflPQKA2KMpJFGyJNuYUCKkdJ1tD0JXfVSjFjfj5mMbigRYmToaHsSJf+FARlGftjXhvJ9j1GEEef7MdOhvu8xijASN4i8lXy+dJNgxPhOLw7vL80FGDnO4uN7FCbAyGx3xb0KA+s3cpntysnkGUpWb6Q8zcjjP7B6I7ODEZ1VGznfjrNzW7WRfbIA6zayFBjRWeWtxhU3X+vUi92Ofoh9CR0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMA2+AN7/TZH3Ls1kQAAAABJRU5ErkJggg=="} alt={post.title} />
+                            <Card.Body>
+                                <Card.Title style={{ fontFamily: "PT Mono, monospace", fontSize: "18px" }}>
+                                    {post.title}
+                                </Card.Title>
+                                <Card.Text style={{ fontSize: "14px" }}>
+                                    {post.description}
+                                </Card.Text>
+                                <a href={post.url} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary btn-sm">
+                                    Read Full Post
+                                </a>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Row>
+                                    <Col xs={4}><small>❤️ {post.public_reactions_count}</small></Col>
+                                    <Col xs={4}><small>💬 {post.comments_count}</small></Col>
+                                    <Col xs={4}><small>🔖 {post.positive_reactions_count}</small></Col>
+                                </Row>
+                            </Card.Footer>
+                        </Card>
                     </Col>
-
-                    <Col md={3}>
-                        <p>Created on: {post.created_at.substring(0, 10)}</p>
-                    </Col>
-
-                    <Col md={3}>
-                        <p>Likes: {post.likes}</p>
-                    </Col>
-
-                    <Col md={3}>
-                        <p>Shared by: {post.shares}</p>
-                    </Col>
-                </Row>
-            </div>
-
-            <div className='mb-2'>
-                <p>{post.content}</p>
-            </div>
-        </div>
-    )
+                ))}
+            </Row>
+        </Container>
+    );
 }
 
-export default PostScreen
+export default PostScreen;
