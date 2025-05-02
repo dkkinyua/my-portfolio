@@ -110,7 +110,7 @@ function Main() {
                         </p>
 
                         <div style={buttonContainerStyle}>
-                            <a href="docs\Denzel K K Tech CV.pdf" download><Button variant='dark'><i class="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
+                            <a href="docs\Denzel DE Resume.pdf" download><Button variant='dark'><i class="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
                         </div>
                     </Card.Body>
                 </Card>
