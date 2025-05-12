@@ -42,7 +42,7 @@ function Intro() {
           </div>
           <div className='mt-3 text-center'>
             <h3>Denzel Kanyeki Kinyua</h3>
-            <h5>Data Engineer | Data Analyst | Big Data Enthusiast</h5>
+            <h5>Data Engineer | Big Data Enthusiast</h5>
           </div>
           <div className='mt-3 text-center'>
             <p>
