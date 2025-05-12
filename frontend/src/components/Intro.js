@@ -46,7 +46,7 @@ function Intro() {
           </div>
           <div className='mt-3 text-center'>
             <p>
-              I am a highly motivated and skilled Data Engineer and Analyst with a strong foundation in Python, SQL, and statistical analysis. I specialize in designing ETL and ELT pipelines, automating data collection through web scraping and APIs, cleaning large datasets, and transforming raw information into actionable insights. I’ve worked extensively with libraries like Pandas and NumPy, and visualized insights using Tableau, and Microsoft Excel to support data-driven decisions. I’m also proficient in PostgreSQL, MySQL, and AWS S3 for data storage and management, and have hands-on experience building data-centric applications using Django, and Flask
+              I am a highly motivated and skilled Data Engineer with a strong foundation in Python, SQL, and statistical analysis. I specialize in designing ETL and ELT pipelines, automating data collection through web scraping and APIs, cleaning large datasets, and transforming raw information into actionable insights. I’ve worked extensively with libraries like Pandas and NumPy, and visualized insights using Tableau, and Microsoft Excel to support data-driven decisions. I’m also proficient in PostgreSQL, MySQL, and AWS S3 for data storage and management, and have hands-on experience building data-centric applications using Django, and Flask
 
               <br />
 
