@@ -3,6 +3,8 @@ import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 
+import ProjectCarousel from './ProjectCarousel';
+
 function Main() {
     const outerDivStyle = {
         display: 'flex',
@@ -34,28 +36,23 @@ function Main() {
                         <p>
                             I am well versed and skilled in the following areas
                             <ul>
-                                <li>Languages: Python (Django, Flask), SQL, JavaScript</li>
+                                <li>Languages: Python (Django, Flask), SQL</li>
                                 <li>API Development and Consumption using requests</li>
-                                <li>Web Scraping using beautifulsoup</li>
+                                <li>Web Scraping using beautifulsoup, Selenium</li>
                                 <li>Data Storage: mySQL, PostgreSQL, MongoDB, AWS</li>
-                                <li>Data Management Tools: Apache Airflow</li>
+                                <li>Data Management Tools: Apache Airflow, Apache Spark, Apache Kafka</li>
+                                <li>Data Warehousing: Snowflake</li>
                                 <li>ETL and ELT Pipeline Development.</li>
-                                <li>Exploratory Data Analysis using pandas, Numpy, matplotlib, plotly</li>
-                                <li>Data Visualization: Tableau, Microsoft Excel, PowerBI</li>
+                                <li>Exploratory Data Analysis using pandas, Numpy,  plotly</li>
+                                <li>Data Visualization: Tableau, Grafana, PowerBI</li>
                                 <li>Version Control: Git</li>
                                 <li>CI/CD: Github Actions</li>
-                                <li>Civil Engineering drawings through engineering software e.g. AutoCAD</li>
                             </ul>
                             Check my projects here or in my <a href='https://github.com/dkkinyua' style={linkStyle}>GitHub</a>!
                             <br />
                             <strong>For my engineering projects, design, detailing and calculations, a page with all scanned documents will be added soon in our Projects page or I can send them to you via email.</strong>
                         </p>
                         <div style={{ display: 'flex', justifyContent: 'right', gap: '10px' }}>
-                            <Link to='/civil-projects'>
-                                <Button variant='dark'>
-                                    <i className="fa-solid fa-list-check"></i> Civil Projects
-                                </Button>
-                            </Link>
                             <Link to='/projects'>
                                 <Button variant='dark'>
                                     <i className="fa-solid fa-list-check"></i> Projects
@@ -66,6 +63,18 @@ function Main() {
                     </Card.Body>
                 </Card>
             </div>
+            {/* Project carousel */}
+            {/* Project Carousel Section */}
+            <div className='mt-4 mb-4' style={outerDivStyle}>
+                <Card style={cardStyle}>
+                    <Card.Body>
+                        <h3>Projects:</h3>
+                        <p>Explore a few highlighted projects showcasing my skills in data engineering, and automation.</p>
+                    </Card.Body>
+                    <ProjectCarousel className='mb-2'/>
+                </Card>
+            </div>
+
 
             <div className='mt-4 mb-4' style={outerDivStyle}>
                 <Card style={cardStyle}>
