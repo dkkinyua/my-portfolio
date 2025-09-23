@@ -71,7 +71,7 @@ function Main() {
                         <h3>Projects:</h3>
                         <p>Explore a few highlighted projects showcasing my skills in data engineering, and automation.</p>
                     </Card.Body>
-                    <ProjectCarousel className='mb-2'/>
+                    <ProjectCarousel/>
                 </Card>
             </div>
 
@@ -119,7 +119,7 @@ function Main() {
                         </p>
 
                         <div style={buttonContainerStyle}>
-                            <a href="docs\Denzel DE Resume.pdf" download><Button variant='dark'><i class="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
+                            <a href="docs\denzel-kinyua-de-resume.docx" download><Button variant='dark'><i class="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
                         </div>
                     </Card.Body>
                 </Card>
