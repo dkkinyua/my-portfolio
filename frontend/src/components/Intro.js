@@ -46,18 +46,12 @@ function Intro() {
           </div>
           <div className='mt-3 text-center'>
             <p>
-              I am a highly motivated and skilled Data Engineer with a strong foundation in Python, SQL, and statistical analysis. I specialize in designing ETL and ELT pipelines, automating data collection through web scraping and APIs, cleaning large datasets, and transforming raw information into actionable insights. I’ve worked extensively with libraries like Pandas and NumPy, and visualized insights using Tableau, and Microsoft Excel to support data-driven decisions. I’m also proficient in PostgreSQL, MySQL, and AWS S3 for data storage and management, and have hands-on experience building data-centric applications using Django, and Flask
-
-              <br />
-
-              In addition to my data-focused skill set, I hold a solid academic background in Civil Engineering, where I’ve applied engineering principles to structural analysis and design. I am proficient in tools such as AutoCAD for creating detailed 2D and 3D infrastructure plans and Etabs for structural design and detailing. My civil engineering knowledge has shaped my precision, problem-solving, and project planning skills, which complement my passion for data-driven thinking and continuous learning.
-
-              <br />
-              Eager to learn and contribute to innovative projects, I am adaptable, a quick learner, and fluent in English, Kiswahili, and French (B1 - Conversational).
-
-
+            I am a skilled Data Engineer specializing in ETL/ELT pipelines, web scraping, and data transformation. Proficient in Python, SQL, Pandas, and NumPy, I clean large datasets and create actionable insights using Tableau and Excel. I work with PostgreSQL, MySQL, and AWS S3 for data storage, and build applications with Django and Flask.
+            <br /><br />
+            With a Civil Engineering background, I bring precision and problem-solving skills honed through structural analysis using AutoCAD and Etabs. This engineering foundation complements my data-driven approach and continuous learning mindset.
+            <br /><br />
+            I'm adaptable, eager to contribute to innovative projects, and fluent in English, Kiswahili, and French (B1).
             </p>
-
           </div>
         </Card.Body>
       </Card>
