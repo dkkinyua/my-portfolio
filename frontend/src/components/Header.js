@@ -17,7 +17,7 @@ function Header({ darkMode, toggleDarkMode }) {
     return (
         <div className='mt-1'>
             <Navbar expand="lg" style={navBarStyles}>
-                <Navbar.Brand href="/home" className='mx-3'><i class="fa-solid fa-code fa-2x"></i></Navbar.Brand>
+                <Navbar.Brand href="/" className='mx-3'><i class="fa-solid fa-code fa-2x"></i></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" style={textStyle}>
                     <Nav className="ms-auto mx-5">
