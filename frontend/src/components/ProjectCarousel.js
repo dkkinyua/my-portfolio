@@ -80,10 +80,6 @@ function ProjectCarousel() {
         setCurrentSlide((prev) => (prev - 1 + projectData.length) % projectData.length);
     };
 
-    const goToSlide = (index) => {
-        setCurrentSlide(index);
-    };
-
     const handleLinkClick = (e, url) => {
         e.stopPropagation();
         window.open(url, '_blank', 'noopener,noreferrer');
@@ -96,11 +92,23 @@ function ProjectCarousel() {
             className="d-flex flex-column align-items-center"
         >
             <div className="position-relative w-75">
+                <h2>Projects:</h2>
+                <p>Explore some of the projects I've done</p>
                 <Carousel activeIndex={currentSlide} controls={false} indicators={false} interval={null}>
                     {projectData.map((project, idx) => (
                         <Carousel.Item key={idx}>
-                            <Card className="p-3">
-                                <Card.Img variant="top" src={project.image} alt={project.title} style={{ height: '300px', objectFit: 'cover' }} />
+                            <Card className="p-3 border-0">
+                                <Card.Img 
+                                    variant="top" 
+                                    src={project.image} 
+                                    alt={project.title} 
+                                    style={{ 
+                                        height: '300px', 
+                                        width: '100%',
+                                        objectFit: 'contain',
+                                        backgroundColor: '#f8f9fa'
+                                    }} 
+                                />
                                 <Card.Body>
                                     <Card.Title>{project.title}</Card.Title>
                                     {project.tech && (
@@ -125,17 +133,6 @@ function ProjectCarousel() {
                 <Button variant="dark" onClick={nextSlide} className="position-absolute top-50 end-0 translate-middle-y">
                     &#8594;
                 </Button>
-            </div>
-            <div className="d-flex justify-content-center mt-3 gap-2">
-                {projectData.map((_, index) => (
-                    <Button
-                        key={index}
-                        onClick={() => goToSlide(index)}
-                        variant={index === currentSlide ? 'dark' : 'secondary'}
-                        className="rounded-circle p-2"
-                        style={{ width: '10px', height: '10px' }}
-                    ></Button>
-                ))}
             </div>
         </div>
     );
