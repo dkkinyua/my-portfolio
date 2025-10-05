@@ -1,7 +1,6 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
 
 import ProjectCarousel from './ProjectCarousel';
 
@@ -27,8 +26,149 @@ function Main() {
         boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.7)',
     }
 
+    const experienceData = [
+        {
+            title: 'Data Engineer',
+            company: 'Data Science East Africa',
+            period: 'May 2024 - Present',
+            description: 'Built and maintained ETL pipelines, optimized database queries, and developed real-time data streaming solutions using Kafka and Spark.',
+            achievements: [
+                'Designed and implemented scalable ETL/ELT pipelines for data integration',
+                'Optimized PostgreSQL and MySQL queries for improved performance',
+                'Developed real-time data streaming solutions with Apache Kafka, Flink and Spark'
+            ]
+        },
+        {
+            title: 'Software Developer - Backend',
+            company: 'Individual Contractor',
+            period: 'Dec 2023 - Jan 2025',
+            description: 'Used Python to build scalable backend applications using Django and Flask for various client projects.',
+            achievements: [
+                'Developed RESTful APIs serving 1,000+ daily requests',
+                'Built custom Django and Flask applications tailored to client needs',
+                'Implemented authentication, authorization, and data validation systems'
+            ]
+        }
+    ];
+
     return (
         <div className='mt-2'>
+            <style>
+                {`
+                    /* Desktop: Horizontal Timeline */
+                    @media (min-width: 768px) {
+                        .timeline-container {
+                            display: flex;
+                            justify-content: space-between;
+                            position: relative;
+                            margin: 40px 0;
+                            padding: 20px 0;
+                        }
+                        
+                        .timeline-line {
+                            position: absolute;
+                            top: 40px;
+                            left: 10%;
+                            right: 10%;
+                            height: 2px;
+                            background-color: #dee2e6;
+                        }
+                        
+                        .timeline-item {
+                            flex: 1;
+                            position: relative;
+                            padding: 0 15px;
+                            text-align: center;
+                        }
+                        
+                        .timeline-dot {
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: #212529;
+                            border: 4px solid white;
+                            margin: 30px auto 20px;
+                            position: relative;
+                            z-index: 1;
+                            box-shadow: 0 0 0 3px #dee2e6;
+                        }
+                        
+                        .timeline-content {
+                            background: #f8f9fa;
+                            padding: 20px;
+                            border-radius: 8px;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                            text-align: left;
+                            min-height: 280px;
+                        }
+                    }
+                    
+                    /* Mobile: Vertical Timeline */
+                    @media (max-width: 767px) {
+                        .timeline-container {
+                            position: relative;
+                            padding-left: 30px;
+                            margin-top: 20px;
+                        }
+                        
+                        .timeline-item {
+                            position: relative;
+                            padding-bottom: 30px;
+                            border-left: 2px solid #dee2e6;
+                            padding-left: 25px;
+                        }
+                        
+                        .timeline-dot {
+                            position: absolute;
+                            left: -9px;
+                            top: 5px;
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            background-color: #212529;
+                            border: 3px solid white;
+                        }
+                        
+                        .timeline-content {
+                            background: #f8f9fa;
+                            padding: 15px;
+                            border-radius: 8px;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                        }
+                        
+                        .timeline-line {
+                            display: none;
+                        }
+                    }
+                    
+                    .timeline-content h5 {
+                        margin-bottom: 8px;
+                        font-weight: 600;
+                    }
+                    
+                    .timeline-content h6 {
+                        color: #6c757d;
+                        font-size: 0.9rem;
+                        margin-bottom: 12px;
+                    }
+                    
+                    .timeline-content p {
+                        font-size: 0.95rem;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .timeline-content ul {
+                        font-size: 0.9rem;
+                        padding-left: 20px;
+                        margin-bottom: 0;
+                    }
+                    
+                    .timeline-content ul li {
+                        margin-bottom: 5px;
+                    }
+                `}
+            </style>
+
             <div style={outerDivStyle}>
                 <Card style={cardStyle}>
                     <Card.Body>
@@ -43,7 +183,7 @@ function Main() {
                                 <li>Data Management Tools: Apache Airflow, Apache Spark, Apache Kafka</li>
                                 <li>Data Warehousing: Snowflake</li>
                                 <li>ETL and ELT Pipeline Development.</li>
-                                <li>Exploratory Data Analysis using pandas, Numpy,  plotly</li>
+                                <li>Exploratory Data Analysis using pandas, Numpy, plotly</li>
                                 <li>Data Visualization: Tableau, Grafana, PowerBI</li>
                                 <li>Version Control: Git</li>
                                 <li>CI/CD: Github Actions</li>
@@ -59,22 +199,41 @@ function Main() {
                                 </Button>
                             </Link>
                         </div>
-
                     </Card.Body>
                 </Card>
             </div>
-            {/* Project carousel */}
-            {/* Project Carousel Section */}
+
+            {/* Experience Section */}
             <div className='mt-4 mb-4' style={outerDivStyle}>
                 <Card style={cardStyle}>
                     <Card.Body>
-                        <h3>Projects:</h3>
-                        <p>Explore a few highlighted projects showcasing my skills in data engineering, and automation.</p>
+                        <h3>Experience:</h3>
+                        <div className="timeline-container">
+                            <div className="timeline-line"></div>
+                            {experienceData.map((exp, index) => (
+                                <div key={index} className="timeline-item">
+                                    <div className="timeline-dot"></div>
+                                    <div className="timeline-content">
+                                        <h5>{exp.title}</h5>
+                                        <h6>{exp.company} | {exp.period}</h6>
+                                        <p>{exp.description}</p>
+                                        <ul>
+                                            {exp.achievements.map((achievement, i) => (
+                                                <li key={i}>{achievement}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </Card.Body>
-                    <ProjectCarousel/>
                 </Card>
             </div>
 
+            {/* Project carousel */}
+            <div className='mt-4 mb-4' style={outerDivStyle}>
+                <ProjectCarousel/>
+            </div>
 
             <div className='mt-4 mb-4' style={outerDivStyle}>
                 <Card style={cardStyle}>
@@ -89,7 +248,7 @@ function Main() {
                         </p>
 
                         <div style={buttonContainerStyle}>
-                            <Link to='/posts'><Button variant='dark'><i class="fa-solid fa-book-open-reader"></i> Blog</Button></Link>
+                            <Link to='/posts'><Button variant='dark'><i className="fa-solid fa-book-open-reader"></i> Blog</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
@@ -104,7 +263,7 @@ function Main() {
                         </p>
 
                         <div style={buttonContainerStyle}>
-                            <Link to='/contact-me'><Button variant='dark'><i class="fa-regular fa-paper-plane"></i> Contact Me</Button></Link>
+                            <Link to='/contact-me'><Button variant='dark'><i className="fa-regular fa-paper-plane"></i> Contact Me</Button></Link>
                         </div>
                     </Card.Body>
                 </Card>
@@ -119,7 +278,7 @@ function Main() {
                         </p>
 
                         <div style={buttonContainerStyle}>
-                            <a href="docs\denzel-kinyua-de-resume.docx" download><Button variant='dark'><i class="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
+                            <a href="docs\denzel-kinyua-de-resume.docx" download><Button variant='dark'><i className="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
                         </div>
                     </Card.Body>
                 </Card>
