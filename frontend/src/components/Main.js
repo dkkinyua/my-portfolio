@@ -1,288 +1,165 @@
 import React from 'react';
-import { Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
 import ProjectCarousel from './ProjectCarousel';
 
+const skills = [
+    'Languages: Python (Django, Flask), SQL',
+    'API Development and Consumption using requests',
+    'Web Scraping using beautifulsoup, Selenium',
+    'Data Storage: mySQL, PostgreSQL, MongoDB, AWS',
+    'Data Management Tools: Apache Airflow, Apache Spark, Apache Kafka',
+    'Data Warehousing: Snowflake',
+    'ETL and ELT Pipeline Development.',
+    'Exploratory Data Analysis using pandas, Numpy, plotly',
+    'Data Visualization: Tableau, Grafana, PowerBI',
+    'Version Control: Git',
+    'CI/CD: Github Actions',
+];
+
+const experienceData = [
+    {
+        title: 'Data Engineer',
+        company: 'Stanbic Bank Kenya',
+        period: 'Apr 2026 - Present',
+        achievements: [
+            'Led migration from legacy SQL Stored Procedures in Oracle\'s Enterprise Data Warehouse to production-grade Airflow/Python pipelines, improving reliability and observability',
+            'Built real-time Kafka streaming pipelines from core banking systems to silver/gold layer targets; monitored via Grafana, maintaining 99% uptime across production pipelines',
+            'Implemented data reconciliation and audit frameworks supporting CBK regulatory reporting (GDI, Regtech); collaborated with cross-functional teams across Kenya and South Africa, earning commendation for delivery standards'
+        ]
+    },
+    {
+        title: 'Data Engineer',
+        company: 'Data Science East Africa',
+        period: 'May 2024 - Mar 2026',
+        description: 'Built and maintained ETL pipelines, optimized database queries, and developed real-time data streaming solutions using Kafka and Spark.',
+        achievements: [
+            'Designed and implemented scalable ETL/ELT pipelines for data integration',
+            'Optimized PostgreSQL and MySQL queries for improved performance',
+            'Developed real-time data streaming solutions with Apache Kafka, Flink and Spark'
+        ]
+    },
+    {
+        title: 'Software Developer - Backend',
+        company: 'Individual Contractor',
+        period: 'Dec 2023 - Jan 2025',
+        description: 'Used Python to build scalable backend applications using Django and Flask for various client projects.',
+        achievements: [
+            'Developed RESTful APIs serving 1,000+ daily requests',
+            'Built custom Django and Flask applications tailored to client needs',
+            'Implemented authentication, authorization, and data validation systems'
+        ]
+    }
+];
+
 function Main() {
-    const outerDivStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-    }
-
-    const linkStyle = {
-        color: 'inherit',
-        textDecoration: 'none',
-    };
-
-    const buttonContainerStyle = {
-        textAlign: 'right',
-    };
-
-    const cardStyle = {
-        width: '95%',
-        boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.7)',
-    }
-
-    const experienceData = [
-        {
-            title: 'Data Engineer',
-            company: 'Data Science East Africa',
-            period: 'May 2024 - Present',
-            description: 'Built and maintained ETL pipelines, optimized database queries, and developed real-time data streaming solutions using Kafka and Spark.',
-            achievements: [
-                'Designed and implemented scalable ETL/ELT pipelines for data integration',
-                'Optimized PostgreSQL and MySQL queries for improved performance',
-                'Developed real-time data streaming solutions with Apache Kafka, Flink and Spark'
-            ]
-        },
-        {
-            title: 'Software Developer - Backend',
-            company: 'Individual Contractor',
-            period: 'Dec 2023 - Jan 2025',
-            description: 'Used Python to build scalable backend applications using Django and Flask for various client projects.',
-            achievements: [
-                'Developed RESTful APIs serving 1,000+ daily requests',
-                'Built custom Django and Flask applications tailored to client needs',
-                'Implemented authentication, authorization, and data validation systems'
-            ]
-        }
-    ];
+    const linkClass = 'underline underline-offset-4 hover:text-primary';
 
     return (
-        <div className='mt-2'>
-            <style>
-                {`
-                    /* Desktop: Horizontal Timeline */
-                    @media (min-width: 768px) {
-                        .timeline-container {
-                            display: flex;
-                            justify-content: space-between;
-                            position: relative;
-                            margin: 40px 0;
-                            padding: 20px 0;
-                        }
-                        
-                        .timeline-line {
-                            position: absolute;
-                            top: 40px;
-                            left: 10%;
-                            right: 10%;
-                            height: 2px;
-                            background-color: #dee2e6;
-                        }
-                        
-                        .timeline-item {
-                            flex: 1;
-                            position: relative;
-                            padding: 0 15px;
-                            text-align: center;
-                        }
-                        
-                        .timeline-dot {
-                            width: 20px;
-                            height: 20px;
-                            border-radius: 50%;
-                            background-color: #212529;
-                            border: 4px solid white;
-                            margin: 30px auto 20px;
-                            position: relative;
-                            z-index: 1;
-                            box-shadow: 0 0 0 3px #dee2e6;
-                        }
-                        
-                        .timeline-content {
-                            background: #f8f9fa;
-                            padding: 20px;
-                            border-radius: 8px;
-                            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                            text-align: left;
-                            min-height: 280px;
-                        }
-                    }
-                    
-                    /* Mobile: Vertical Timeline */
-                    @media (max-width: 767px) {
-                        .timeline-container {
-                            position: relative;
-                            padding-left: 30px;
-                            margin-top: 20px;
-                        }
-                        
-                        .timeline-item {
-                            position: relative;
-                            padding-bottom: 30px;
-                            border-left: 2px solid #dee2e6;
-                            padding-left: 25px;
-                        }
-                        
-                        .timeline-dot {
-                            position: absolute;
-                            left: -9px;
-                            top: 5px;
-                            width: 15px;
-                            height: 15px;
-                            border-radius: 50%;
-                            background-color: #212529;
-                            border: 3px solid white;
-                        }
-                        
-                        .timeline-content {
-                            background: #f8f9fa;
-                            padding: 15px;
-                            border-radius: 8px;
-                            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-                        }
-                        
-                        .timeline-line {
-                            display: none;
-                        }
-                    }
-                    
-                    .timeline-content h5 {
-                        margin-bottom: 8px;
-                        font-weight: 600;
-                    }
-                    
-                    .timeline-content h6 {
-                        color: #6c757d;
-                        font-size: 0.9rem;
-                        margin-bottom: 12px;
-                    }
-                    
-                    .timeline-content p {
-                        font-size: 0.95rem;
-                        margin-bottom: 10px;
-                    }
-                    
-                    .timeline-content ul {
-                        font-size: 0.9rem;
-                        padding-left: 20px;
-                        margin-bottom: 0;
-                    }
-                    
-                    .timeline-content ul li {
-                        margin-bottom: 5px;
-                    }
-                `}
-            </style>
+        <div className='space-y-8'>
+            {/* Skills */}
+            <Card>
+                <CardHeader>
+                    <CardTitle className='text-2xl'>Skills</CardTitle>
+                    <CardDescription>I am well versed and skilled in the following areas</CardDescription>
+                </CardHeader>
+                <CardContent className='space-y-4'>
+                    <ul className='list-disc space-y-1 pl-5 text-sm sm:columns-2 sm:text-base'>
+                        {skills.map((skill) => (
+                            <li key={skill} className='break-inside-avoid'>{skill}</li>
+                        ))}
+                    </ul>
+                    <p className='text-sm text-muted-foreground'>
+                        Check my projects here or in my <a href='https://github.com/dkkinyua' className={linkClass}>GitHub</a>!
+                    </p>
+                </CardContent>
+                <CardFooter className='justify-end'>
+                    <Button asChild>
+                        <Link to='/projects'><i className='fa-solid fa-list-check'></i> Projects</Link>
+                    </Button>
+                </CardFooter>
+            </Card>
 
-            <div style={outerDivStyle}>
-                <Card style={cardStyle}>
-                    <Card.Body>
-                        <h3>Skills:</h3>
-                        <p>
-                            I am well versed and skilled in the following areas
-                            <ul>
-                                <li>Languages: Python (Django, Flask), SQL</li>
-                                <li>API Development and Consumption using requests</li>
-                                <li>Web Scraping using beautifulsoup, Selenium</li>
-                                <li>Data Storage: mySQL, PostgreSQL, MongoDB, AWS</li>
-                                <li>Data Management Tools: Apache Airflow, Apache Spark, Apache Kafka</li>
-                                <li>Data Warehousing: Snowflake</li>
-                                <li>ETL and ELT Pipeline Development.</li>
-                                <li>Exploratory Data Analysis using pandas, Numpy, plotly</li>
-                                <li>Data Visualization: Tableau, Grafana, PowerBI</li>
-                                <li>Version Control: Git</li>
-                                <li>CI/CD: Github Actions</li>
-                            </ul>
-                            Check my projects here or in my <a href='https://github.com/dkkinyua' style={linkStyle}>GitHub</a>!
-                            <br />
-                        </p>
-                        <div style={{ display: 'flex', justifyContent: 'right', gap: '10px' }}>
-                            <Link to='/projects'>
-                                <Button variant='dark'>
-                                    <i className="fa-solid fa-list-check"></i> Projects
-                                </Button>
-                            </Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-            </div>
-
-            {/* Experience Section */}
-            <div className='mt-4 mb-4' style={outerDivStyle}>
-                <Card style={cardStyle}>
-                    <Card.Body>
-                        <h3>Experience:</h3>
-                        <div className="timeline-container">
-                            <div className="timeline-line"></div>
-                            {experienceData.map((exp, index) => (
-                                <div key={index} className="timeline-item">
-                                    <div className="timeline-dot"></div>
-                                    <div className="timeline-content">
-                                        <h5>{exp.title}</h5>
-                                        <h6>{exp.company} | {exp.period}</h6>
-                                        <p>{exp.description}</p>
-                                        <ul>
-                                            {exp.achievements.map((achievement, i) => (
-                                                <li key={i}>{achievement}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
+            {/* Experience */}
+            <Card>
+                <CardHeader>
+                    <CardTitle className='text-2xl'>Experience</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <ol className='relative ml-2 border-l'>
+                        {experienceData.map((exp, index) => (
+                            <li key={index} className='ml-6 pb-8 last:pb-0'>
+                                <span className='absolute -left-[6px] mt-1.5 h-3 w-3 rounded-full border-2 border-background bg-primary ring-1 ring-border' />
+                                <div className='flex flex-wrap items-center gap-x-3 gap-y-1'>
+                                    <h3 className='text-lg font-semibold'>{exp.title}</h3>
+                                    <Badge variant='secondary' className='font-normal'>{exp.period}</Badge>
                                 </div>
-                            ))}
-                        </div>
-                    </Card.Body>
-                </Card>
-            </div>
+                                <p className='mb-3 text-sm text-muted-foreground'>{exp.company}</p>
+                                {exp.description && <p className='mb-2 text-sm'>{exp.description}</p>}
+                                <ul className='list-disc space-y-1.5 pl-5 text-sm'>
+                                    {exp.achievements.map((achievement, i) => (
+                                        <li key={i}>{achievement}</li>
+                                    ))}
+                                </ul>
+                            </li>
+                        ))}
+                    </ol>
+                </CardContent>
+            </Card>
 
             {/* Project carousel */}
-            <div className='mt-4 mb-4' style={outerDivStyle}>
-                <ProjectCarousel/>
-            </div>
+            <ProjectCarousel />
 
-            <div className='mt-4 mb-4' style={outerDivStyle}>
-                <Card style={cardStyle}>
-                    <Card.Body>
-                        <h3>Blog:</h3>
-                        <p>
-                            I'll be writing blogs about data analysis, data engineering, engineering, and other topics on my portfolio.
-                            Keep up with the latest tech trends, and innovations in the dataverse.
-                            My blog will also keep me sharp in development, so feel free to follow along on this journey!
+            <div className='grid gap-6 md:grid-cols-3'>
+                <Card className='flex flex-col'>
+                    <CardHeader>
+                        <CardTitle className='text-2xl'>Blog</CardTitle>
+                    </CardHeader>
+                    <CardContent className='flex-1 text-sm'>
+                        I'll be writing blogs about data analysis, data engineering, engineering, and other topics on my portfolio.
+                        Keep up with the latest tech trends, and innovations in the dataverse.
+                        My blog will also keep me sharp in development, so feel free to follow along on this journey!
+                        Subscribe to my blog to get the latest updates as soon as they come out by clicking the button below!
+                    </CardContent>
+                    <CardFooter className='justify-end'>
+                        <Button asChild>
+                            <Link to='/posts'><i className='fa-solid fa-book-open-reader'></i> Blog</Link>
+                        </Button>
+                    </CardFooter>
+                </Card>
 
-                            Subscribe to my blog to get the latest updates as soon as they come out by clicking the button below!
-                        </p>
+                <Card className='flex flex-col'>
+                    <CardHeader>
+                        <CardTitle className='text-2xl'>Contact Me</CardTitle>
+                    </CardHeader>
+                    <CardContent className='flex-1 text-sm'>
+                        If you have any queries, compliments, complaints (I hope you have none), or you would want to collaborate on a project, please contact me in the form provided by pressing the button alongside or DM me on any of my social media accounts in the top of the page.
+                    </CardContent>
+                    <CardFooter className='justify-end'>
+                        <Button asChild>
+                            <Link to='/contact-me'><i className='fa-regular fa-paper-plane'></i> Contact Me</Link>
+                        </Button>
+                    </CardFooter>
+                </Card>
 
-                        <div style={buttonContainerStyle}>
-                            <Link to='/posts'><Button variant='dark'><i className="fa-solid fa-book-open-reader"></i> Blog</Button></Link>
-                        </div>
-                    </Card.Body>
+                <Card className='flex flex-col'>
+                    <CardHeader>
+                        <CardTitle className='text-2xl'>Download Resume</CardTitle>
+                    </CardHeader>
+                    <CardContent className='flex-1 text-sm'>
+                        If you want to take a look at my resume, click the button below to download my cv in .pdf format
+                    </CardContent>
+                    <CardFooter className='justify-end'>
+                        <Button asChild>
+                            <a href='/docs/denzel-kinyua-de-resume.docx' download><i className='fa-solid fa-arrow-down'></i> Download Resume</a>
+                        </Button>
+                    </CardFooter>
                 </Card>
             </div>
-
-            <div className='mt-4 mb-4' style={outerDivStyle}>
-                <Card style={cardStyle}>
-                    <Card.Body>
-                        <h3>Contact Me: </h3>
-                        <p>
-                            If you have any queries, compliments, complaints (I hope you have none), or you would want to collaborate on a project, please contact me in the form provided by pressing the button alongside or DM me on any of my social media accounts in the top of the page.
-                        </p>
-
-                        <div style={buttonContainerStyle}>
-                            <Link to='/contact-me'><Button variant='dark'><i className="fa-regular fa-paper-plane"></i> Contact Me</Button></Link>
-                        </div>
-                    </Card.Body>
-                </Card>
-            </div>
-
-            <div className='mt-4 mb-4' style={outerDivStyle}>
-                <Card style={cardStyle}>
-                    <Card.Body>
-                        <h3>Download Resume: </h3>
-                        <p>
-                            If you want to take a look at my resume, click the button below to download my cv in .pdf format
-                        </p>
-
-                        <div style={buttonContainerStyle}>
-                            <a href="docs\denzel-kinyua-de-resume.docx" download><Button variant='dark'><i className="fa-solid fa-arrow-down"></i> Download Resume</Button></a>
-                        </div>
-                    </Card.Body>
-                </Card>
-            </div>
-
         </div>
     );
 }

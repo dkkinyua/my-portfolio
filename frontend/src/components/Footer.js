@@ -1,21 +1,9 @@
 import React from 'react'
 
-function Footer({ darkMode }) {
-    const footerStyles = {
-        backgroundColor: darkMode ? '#E5E4E2' : '#E5E4E2',
-        height: '50px',
-        color: darkMode ? '#E5E4E2' : '#000',
-    };
-
-    const textStyle = {
-        fontFamily: "PT Mono, monospace",
-        fontStyle: 'normal',
-        color: darkMode ? '#343434' : "#343434"
-    }
-
+function Footer() {
     return (
-        <footer style={footerStyles} className='justify-content-center text-center'>
-            <h6 style={textStyle}>Engineered with <i class="fa-solid fa-heart"></i> by dkkinyua. &copy; 2025, All Rights Reserved</h6>
+        <footer className='mt-12 border-t py-6 text-center text-sm text-muted-foreground'>
+            Engineered with <i className='fa-solid fa-heart'></i> by dkkinyua. &copy; {new Date().getFullYear()}, All Rights Reserved
         </footer>
     )
 }

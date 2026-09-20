@@ -1,26 +1,14 @@
 import React, { useState } from 'react'
-import { Button, Card, Form } from 'react-bootstrap'
 import toast, { Toaster } from 'react-hot-toast'
 import axios from 'axios'
 
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
 
 function ContactForm() {
-    const outerDivStyle = {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-    }
-
-    const cardStyle = {
-        width: '85%',
-        boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.7)',
-    }
-
-    const buttonStyle = {
-        textAlign: 'right'
-    }
-
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
@@ -36,7 +24,7 @@ function ContactForm() {
 
         try {
            const response = await axios.post('https://myportfoliobackend-rirg.onrender.com/api/contact-me/', body)
-           
+
            if (response.status === 200) {
             toast.success("Message delivered successfully")
             setName('')
@@ -51,28 +39,26 @@ function ContactForm() {
 
     return (
         <>
-            <div><Toaster /></div>
-            <div style={outerDivStyle} className='mt-3 mb-3'>
-                <Card style={cardStyle}>
-                    <Card.Body>
-                        <Form onSubmit={submitHandler}>
-                            <Form.Group className='mb-2'>
-                                <Form.Label>Your Name:</Form.Label>
-                                <Form.Control type='text' placeholder='Enter Name' value={name} onChange={(e) => setName(e.target.value)} />
-                            </Form.Group>
-                            <Form.Group className='mb-2'>
-                                <Form.Label>Your Email:</Form.Label>
-                                <Form.Control type='email' placeholder='Enter Email' value={email} onChange={(e) => setEmail(e.target.value)} />
-                            </Form.Group>
-                            <Form.Group className='mb-2'>
-                                <Form.Label>Your Message:</Form.Label>
-                                <Form.Control as='textarea' rows={5} placeholder='Your Message' value={message} onChange={(e) => setMessage(e.target.value)} />
-                            </Form.Group>
-                            <Button type='submit' variant='dark' style={buttonStyle}><i class="fa-regular fa-paper-plane"></i> Send Message</Button>
-                        </Form>
-                    </Card.Body>
-                </Card>
-            </div>
+            <Toaster />
+            <Card>
+                <CardContent className='p-6'>
+                    <form onSubmit={submitHandler} className='space-y-4'>
+                        <div className='space-y-2'>
+                            <Label htmlFor='name'>Your Name:</Label>
+                            <Input id='name' type='text' placeholder='Enter Name' value={name} onChange={(e) => setName(e.target.value)} />
+                        </div>
+                        <div className='space-y-2'>
+                            <Label htmlFor='email'>Your Email:</Label>
+                            <Input id='email' type='email' placeholder='Enter Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                        </div>
+                        <div className='space-y-2'>
+                            <Label htmlFor='message'>Your Message:</Label>
+                            <Textarea id='message' rows={5} placeholder='Your Message' value={message} onChange={(e) => setMessage(e.target.value)} />
+                        </div>
+                        <Button type='submit'><i className='fa-regular fa-paper-plane'></i> Send Message</Button>
+                    </form>
+                </CardContent>
+            </Card>
         </>
     )
 }

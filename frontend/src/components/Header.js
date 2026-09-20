@@ -1,50 +1,91 @@
-import React from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
-import { Switch } from '@mui/material';
+import React, { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { Menu, Moon, Sun } from 'lucide-react'
+
+import { Button } from '@/components/ui/button'
+import {
+    Sheet,
+    SheetContent,
+    SheetDescription,
+    SheetTitle,
+    SheetTrigger,
+} from '@/components/ui/sheet'
+import { cn } from '@/lib/utils'
+
+const navLinks = [
+    { to: '/', label: 'Home', icon: 'fa-solid fa-house', end: true },
+    { to: '/posts', label: 'Blog', icon: 'fa-solid fa-book-open-reader' },
+    { to: '/projects', label: 'Projects', icon: 'fa-solid fa-list-check' },
+    { to: '/potfolio', label: 'Potfolio', icon: 'fa-solid fa-palette' },
+]
+
+const linkClass = ({ isActive }) =>
+    cn(
+        'flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground',
+        isActive ? 'bg-accent text-accent-foreground' : 'text-muted-foreground'
+    )
 
 function Header({ darkMode, toggleDarkMode }) {
-    const navBarStyles = {
-        backgroundColor: '#E5E4E2'
-    }
+    const [menuOpen, setMenuOpen] = useState(false)
 
-    const textStyle = {
-        fontFamily: "PT Mono, monospace",
-        fontStyle: 'normal',
-        color: darkMode ? '#E5E4E2' : '#ffffff',
-    }
+    const themeToggle = (
+        <Button
+            variant='ghost'
+            size='icon'
+            onClick={toggleDarkMode}
+            aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+        >
+            {darkMode ? <Sun /> : <Moon />}
+        </Button>
+    )
 
     return (
-        <div className='mt-1'>
-            <Navbar expand="lg" style={navBarStyles}>
-                <Navbar.Brand href="/" className='mx-3'><i class="fa-solid fa-code fa-2x"></i></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav" style={textStyle}>
-                    <Nav className="ms-auto mx-5">
-                        <LinkContainer to='/'>
-                            <Nav.Link><i className="fa-solid fa-house"></i> Home</Nav.Link>
-                        </LinkContainer>
+        <header className='sticky top-0 z-40 border-y bg-background/80 backdrop-blur'>
+            <div className='mx-auto flex h-14 w-full max-w-5xl items-center justify-between px-4 sm:px-6'>
+                <Link to='/' aria-label='Home'>
+                    <i className='fa-solid fa-code fa-xl'></i>
+                </Link>
 
-                        <LinkContainer to='/posts'>
-                            <Nav.Link><i class="fa-solid fa-book-open-reader"></i> Blog</Nav.Link>
-                        </LinkContainer>
+                {/* Desktop nav */}
+                <nav className='hidden items-center gap-1 md:flex'>
+                    {navLinks.map((link) => (
+                        <NavLink key={link.to} to={link.to} end={link.end} className={linkClass}>
+                            <i className={link.icon}></i> {link.label}
+                        </NavLink>
+                    ))}
+                    {themeToggle}
+                </nav>
 
-                        <LinkContainer to='/projects'>
-                            <Nav.Link style={{ color: "#ffffff"}}><i class="fa-solid fa-list-check"></i> Projects</Nav.Link>
-                        </LinkContainer>
-                        
-                        <div className="d-flex align-items-center mx-2">
-                            <span style={{ marginRight: '10px', color: '#343434' }}> Dark Mode</span>
-                            <Switch
-                                checked={darkMode}
-                                onChange={toggleDarkMode}
-                                color="default"
-                            />
-                        </div>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-        </div>
+                {/* Mobile nav */}
+                <div className='flex items-center gap-1 md:hidden'>
+                    {themeToggle}
+                    <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
+                        <SheetTrigger asChild>
+                            <Button variant='ghost' size='icon' aria-label='Open menu'>
+                                <Menu />
+                            </Button>
+                        </SheetTrigger>
+                        <SheetContent side='right' className='w-64'>
+                            <SheetTitle>Menu</SheetTitle>
+                            <SheetDescription className='sr-only'>Site navigation</SheetDescription>
+                            <nav className='mt-6 flex flex-col gap-1'>
+                                {navLinks.map((link) => (
+                                    <NavLink
+                                        key={link.to}
+                                        to={link.to}
+                                        end={link.end}
+                                        className={linkClass}
+                                        onClick={() => setMenuOpen(false)}
+                                    >
+                                        <i className={link.icon}></i> {link.label}
+                                    </NavLink>
+                                ))}
+                            </nav>
+                        </SheetContent>
+                    </Sheet>
+                </div>
+            </div>
+        </header>
     )
 }
 

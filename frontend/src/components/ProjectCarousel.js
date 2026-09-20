@@ -1,5 +1,16 @@
-import React, { useEffect, useState } from 'react';
-import { Carousel, Card, Button } from 'react-bootstrap';
+import React, { useRef } from 'react';
+import Autoplay from 'embla-carousel-autoplay';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from '@/components/ui/carousel';
 
 const projectData = [
     {
@@ -60,81 +71,71 @@ const projectData = [
 ];
 
 function ProjectCarousel() {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const [isPaused, setIsPaused] = useState(false);
-
-    useEffect(() => {
-        if (!isPaused) {
-            const interval = setInterval(() => {
-                setCurrentSlide((prev) => (prev + 1) % projectData.length);
-            }, 3000);
-            return () => clearInterval(interval);
-        }
-    }, [isPaused]);
-
-    const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % projectData.length);
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((prev) => (prev - 1 + projectData.length) % projectData.length);
-    };
-
-    const handleLinkClick = (e, url) => {
-        e.stopPropagation();
-        window.open(url, '_blank', 'noopener,noreferrer');
-    };
+    // Autoplay pauses on hover and stops for good once the user touches/drags,
+    // so it never fights with someone reading on a phone.
+    const autoplay = useRef(
+        Autoplay({ delay: 4000, stopOnInteraction: true, stopOnMouseEnter: true })
+    );
+    const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
     return (
-        <div 
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-            className="d-flex flex-column align-items-center"
-        >
-            <div className="position-relative w-75">
-                <h2>Projects:</h2>
-                <p>Explore some of the projects I've done</p>
-                <Carousel activeIndex={currentSlide} controls={false} indicators={false} interval={null}>
-                    {projectData.map((project, idx) => (
-                        <Carousel.Item key={idx}>
-                            <Card className="p-3 border-0">
-                                <Card.Img 
-                                    variant="top" 
-                                    src={project.image} 
-                                    alt={project.title} 
-                                    style={{ 
-                                        height: '300px', 
-                                        width: '100%',
-                                        objectFit: 'contain',
-                                        backgroundColor: '#f8f9fa'
-                                    }} 
-                                />
-                                <Card.Body>
-                                    <Card.Title>{project.title}</Card.Title>
-                                    {project.tech && (
-                                        <Card.Text><strong>Tech Stack:</strong> {project.tech}</Card.Text>
-                                    )}
-                                    <div className="d-flex gap-2 flex-wrap">
-                                        {project.links.map((link, i) => (
-                                            <Button key={i} variant="dark" onClick={(e) => handleLinkClick(e, link.href)}>
-                                                <i className={link.icon} style={{ marginRight: '8px' }}></i>{link.text}
-                                            </Button>
-                                        ))}
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </Carousel.Item>
-                    ))}
-                </Carousel>
+        <section>
+            <Carousel
+                opts={{ align: 'start', loop: true }}
+                plugins={reduceMotion ? [] : [autoplay.current]}
+            >
+                <div className='mb-4 flex items-end justify-between gap-4'>
+                    <div>
+                        <h2 className='text-2xl font-semibold tracking-tight'>Projects</h2>
+                        <p className='text-sm text-muted-foreground'>Explore some of the projects I've done</p>
+                    </div>
+                    <div className='flex shrink-0 gap-2'>
+                        <CarouselPrevious className='static translate-y-0' />
+                        <CarouselNext className='static translate-y-0' />
+                    </div>
+                </div>
 
-                <Button variant="dark" onClick={prevSlide} className="position-absolute top-50 start-0 translate-middle-y">
-                    &#8592;
-                </Button>
-                <Button variant="dark" onClick={nextSlide} className="position-absolute top-50 end-0 translate-middle-y">
-                    &#8594;
-                </Button>
-            </div>
-        </div>
+                {/* Cards only stretch to equal height when several sit side by side */}
+                <CarouselContent className='items-start md:items-stretch'>
+                    {projectData.map((project, idx) => (
+                        <CarouselItem key={idx} className='md:basis-1/2 lg:basis-1/3'>
+                            <Card className='flex flex-col overflow-hidden md:h-full'>
+                                <div className='aspect-video bg-muted'>
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        loading='lazy'
+                                        draggable={false}
+                                        className='h-full w-full select-none object-contain'
+                                    />
+                                </div>
+                                <CardHeader className='pb-3'>
+                                    <CardTitle className='text-base leading-snug'>{project.title}</CardTitle>
+                                </CardHeader>
+                                <CardContent className='flex-1'>
+                                    {project.tech && (
+                                        <div className='flex flex-wrap gap-1.5'>
+                                            {project.tech.split(', ').map((tech) => (
+                                                <Badge key={tech} variant='secondary' className='font-normal'>{tech}</Badge>
+                                            ))}
+                                        </div>
+                                    )}
+                                </CardContent>
+                                <CardFooter className='flex-wrap gap-2'>
+                                    {project.links.map((link, i) => (
+                                        <Button key={i} asChild size='sm'>
+                                            <a href={link.href} target='_blank' rel='noopener noreferrer'>
+                                                <i className={link.icon}></i> {link.text}
+                                            </a>
+                                        </Button>
+                                    ))}
+                                </CardFooter>
+                            </Card>
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+            </Carousel>
+        </section>
     );
 }
 

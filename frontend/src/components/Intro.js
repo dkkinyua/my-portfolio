@@ -1,61 +1,27 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+
+import { Card, CardContent } from '@/components/ui/card'
 
 function Intro() {
-  const outerDivStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-  }
-
-  const imageDivStyle = {
-    height: '250px', // Set the height to 200px as required
-    width: '100%',   // Set the width to 100%
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    margin: '0 auto',
-  }
-
-  const imgStyle = {
-    width: '100%',   // Make the image take 100% of the width of its container
-    height: '100%',  // Set the height to fill the container
-    objectFit: 'contain',  // Ensures the image is scaled appropriately
-  }
-
-  const cardStyle = {
-    width: '95%',
-    boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.7)',
-  }
-
   return (
-    <div style={outerDivStyle}>
-      <Card style={cardStyle} className='mt-3 mb-3'>
-        <Card.Body className='d-flex flex-column align-items-center'>
-          <div style={imageDivStyle}>
-            <img
-              src='https://cdn.dribbble.com/users/244516/screenshots/15180098/media/35301f78c0ba0d242a6703b927814e23.gif'
-              alt='Profile GIF'
-              style={imgStyle}
-            />
-          </div>
-          <div className='mt-3 text-center'>
-            <h3>Denzel Kanyeki Kinyua</h3>
-            <h5>Data Engineer | Big Data Enthusiast</h5>
-          </div>
-          <div className='mt-3 text-center'>
-            <p>
-            I am a skilled Data Engineer specializing in ETL/ELT pipelines, web scraping, and data transformation. Proficient in Python, SQL, Pandas, and NumPy, I clean large datasets and create actionable insights using Tableau and Excel. I work with PostgreSQL, MySQL, and AWS S3 for data storage, and build applications with Django and Flask.
-            <br /><br />
-            With a Civil Engineering background, I bring precision and problem-solving skills honed through structural analysis using AutoCAD and Etabs. This engineering foundation complements my data-driven approach and continuous learning mindset.
-            <br /><br />
-            I'm adaptable, eager to contribute to innovative projects, and fluent in English, Kiswahili, and French (B1).
-            </p>
-          </div>
-        </Card.Body>
-      </Card>
-    </div>
+    <Card>
+      <CardContent className='flex flex-col items-center gap-6 p-6 text-center sm:p-8'>
+        <img
+          src='https://cdn.dribbble.com/users/244516/screenshots/15180098/media/35301f78c0ba0d242a6703b927814e23.gif'
+          alt='Profile GIF'
+          className='h-56 w-full rounded-lg object-contain'
+        />
+        <div className='space-y-1'>
+          <h1 className='text-2xl font-bold tracking-tight sm:text-3xl'>Denzel Kanyeki Kinyua</h1>
+          <h2 className='text-base text-muted-foreground sm:text-lg'>Data Engineer | Big Data Enthusiast</h2>
+        </div>
+        <div className='max-w-3xl space-y-4 text-sm leading-relaxed sm:text-base'>
+          <p>
+            Data Engineer with 3+ years of combined software and data engineering experience, including 2+ years building production ETL/ELT pipelines, real-time streaming systems, and enterprise data warehousing in regulated banking environments. Proficient in Python, SQL, Kafka, Airflow, dbt, and Snowflake, with hands-on experience in AWS, star-schema data modeling, data governance, and idempotent pipeline design. Strong track record collaborating across regional, cross-functional teams
+          </p>
+        </div>
+      </CardContent>
+    </Card>
   )
 }
 

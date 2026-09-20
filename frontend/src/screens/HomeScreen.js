@@ -2,24 +2,14 @@ import React from 'react'
 
 import Intro from '../components/Intro'
 import Main from '../components/Main'
-// import { Container } from 'react-bootstrap'
 
 function HomeScreen() {
-  const textStyle = {
-    fontFamily: "PT Mono, monospace",
-    fontStyle: 'normal'
-  }
-
   return (
-    <div style={textStyle}>
-      <div className='justify-content-center text-center'>
-        <Intro />
-      </div>
+    <div className='mx-auto w-full max-w-5xl space-y-8 px-4 py-6 sm:px-6'>
+      <Intro />
       <Main />
     </div>
-
   )
-
 }
 
 export default HomeScreen

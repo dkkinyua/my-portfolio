@@ -3,34 +3,11 @@ import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 
 function ProjectScreen() {
-
-  const textStyle = {
-    fontFamily: "PT Mono, monospace",
-    fontStyle: 'normal'
-  }
-
-  const divStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
-  }
-
-  const outerDivStyle = {
-    minHeight: '100vh'
-  }
-
   return (
-    <>
-      <div style={outerDivStyle}>
-        <div style={textStyle} className='text-center'>
-          <h2> PROJECTS </h2>
-        </div>
-        <div style={divStyle}>
-          <ProjectCard />
-        </div>
-      </div>
-    </>
+    <div className='mx-auto w-full max-w-5xl px-4 py-6 sm:px-6'>
+      <h1 className='mb-6 text-center text-3xl font-bold tracking-tight'>Projects</h1>
+      <ProjectCard />
+    </div>
   )
 }
 

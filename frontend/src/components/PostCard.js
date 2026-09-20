@@ -1,29 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Card, Container, Button } from 'react-bootstrap';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { JellyfishSpinner } from "react-spinners-kit";
 import axios from 'axios';
 
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+
 function PostCard() {
-    const containerStyle = {
-        display: 'flex',
-        alignItems: 'stretch', // Ensures the card and image are the same height
-        width: '98%',
-        marginBottom: '20px', // Space between cards
-    };
-
-    const cardStyle = {
-        flex: 1, // Takes the remaining space beside the image
-        boxShadow: '0px 4px 15px rgba(0, 0, 0, 0.7)',
-        overflow: 'hidden',
-    };
-
-    const textStyle = {
-        fontFamily: 'PT Mono, monospace',
-        fontStyle: 'normal',
-    };
-    
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -49,31 +33,24 @@ function PostCard() {
     }
 
     return (
-        <Container fluid>
-            <div>
-                <Toaster />
-            </div>
+        <div className='space-y-6'>
+            <Toaster />
             {posts.map((post) => (
-                <div style={containerStyle} key={post.id}>
-                    {/* Card on the right side */}
-                    <Card style={cardStyle}>
-                        <Card.Title style={textStyle} className="p-3">
-                            <h2>{post.title}</h2>
-                        </Card.Title>
-                        <Card.Body className="d-flex flex-column" style={textStyle}>
-                            <h5>{post.description}</h5>
-                            <div className="d-flex justify-content-end mt-3">
-                                <Link to={`/posts/${post.id}`}>
-                                    <Button variant="dark">
-                                        <i className="fa-solid fa-book-open"></i> Read More
-                                    </Button>
-                                </Link>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                </div>
+                <Card key={post.id}>
+                    <CardHeader>
+                        <CardTitle className='text-xl'>{post.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent className='text-sm text-muted-foreground'>{post.description}</CardContent>
+                    <CardFooter className='justify-end'>
+                        <Button asChild>
+                            <Link to={`/posts/${post.id}`}>
+                                <i className='fa-solid fa-book-open'></i> Read More
+                            </Link>
+                        </Button>
+                    </CardFooter>
+                </Card>
             ))}
-        </Container>
+        </div>
     );
 }
 
