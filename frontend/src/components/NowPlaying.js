@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ChevronUp } from 'lucide-react'
+import { ArrowUpRight, ChevronUp } from 'lucide-react'
 
 import { Progress } from '@/components/ui/progress'
 import { useSpotify } from '@/hooks/useSpotify'
@@ -108,7 +108,7 @@ function NowPlaying() {
                     {open && (
                         <div
                             id='recent-tracks'
-                            className='mb-2 rounded-xl border bg-background/95 p-2 shadow-lg backdrop-blur'
+                            className='mb-2 max-h-[calc(100dvh-14rem)] overflow-y-auto rounded-xl border bg-background/95 p-2 shadow-lg backdrop-blur'
                         >
                             <p className='flex items-center gap-2 px-2 pb-1 pt-1 text-xs font-medium uppercase tracking-wide text-muted-foreground'>
                                 <i className={cn('fa-brands fa-spotify text-sm', SPOTIFY_GREEN)}></i> Recently played
@@ -135,6 +135,34 @@ function NowPlaying() {
                                         </li>
                                     ))}
                                 </ol>
+                            )}
+
+                            {data.playlists?.length > 0 && (
+                                <div className='mt-1 border-t pt-2'>
+                                    <p className='flex items-center gap-2 px-2 pb-2 pt-1 text-xs font-medium uppercase tracking-wide text-muted-foreground'>
+                                        <i className={cn('fa-brands fa-spotify text-sm', SPOTIFY_GREEN)}></i> Follow my playlists
+                                    </p>
+                                    <ul className='grid grid-cols-3 gap-2'>
+                                        {data.playlists.map((playlist) => (
+                                            <li key={playlist.id}>
+                                                <a
+                                                    href={playlist.url ?? undefined}
+                                                    target='_blank'
+                                                    rel='noopener noreferrer'
+                                                    className='group flex h-full flex-col gap-2 rounded-lg p-2 transition-colors hover:bg-accent sm:flex-row sm:items-center sm:gap-3'
+                                                >
+                                                    <Art src={playlist.image} alt='' className='aspect-square w-full sm:h-12 sm:w-12' />
+                                                    <span className='min-w-0'>
+                                                        <span className='line-clamp-2 block text-xs font-medium sm:text-sm'>{playlist.name}</span>
+                                                        <span className='mt-0.5 flex items-center gap-0.5 text-[11px] text-muted-foreground group-hover:text-foreground'>
+                                                            Follow <ArrowUpRight className='size-3' />
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             )}
                         </div>
                     )}

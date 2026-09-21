@@ -15,6 +15,20 @@ calls the Spotify Web API; the browser only ever talks to `/api/spotify`.
 
 Local dev needs nothing extra: `npm start` serves `/api/spotify` through `src/setupProxy.js`.
 
+## "Follow my playlists"
+
+Opening the bar also shows up to 3 playlists, each linking to Spotify so visitors can follow it.
+Spotify has no per-playlist play counts, so "most listened" is derived: each of your last 50
+plays says which playlist it came from, and the most-played ones win (ties go to the most recent).
+
+- Only **public** playlists appear (visitors can't open private ones, and their names never leave
+  the server). Playlists you play from but that aren't on your profile are skipped too.
+- Plays from Liked Songs, albums or artist pages don't count. Spotify-owned playlists (Discover
+  Weekly, Daily Mix, editorial lists) usually can't be looked up by dev-mode apps, so they're skipped.
+- If fewer than 3 qualify, the gaps are filled from `SPOTIFY_PLAYLIST_IDS` (optional, comma-separated
+  links/URIs/IDs, set it in `.env` and in Vercel). It needs no extra Spotify permission.
+- The section hides itself when there's nothing to show. Playlist details are cached for 10 minutes.
+
 ## "redirect_uri: Not matching configuration"
 
 Spotify is saying the URI the script sent isn't saved on the app whose Client ID it used.
